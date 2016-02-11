@@ -1,0 +1,630 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    position: relative;
+}
+
+/* Landing Page */
+header {
+    background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') left bottom / cover no-repeat scroll;
+    background-blend-mode:saturation;
+    font-family:Georgia,serif;
+}
+
+#intro {
+    width: 40%;
+    background: #2e2e2e;
+    color:#fff;
+    border: 2px solid #e5e5e5;
+    margin: 10% auto;
+}
+
+/* Nav Bar */
+.navbar {
+    margin-bottom: 0;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+#wrap1 {
+    overflow:hidden !important;
+    position:relative !important;
+}
+
+#wrap2 {
+    float:left  !important;
+    position:relative  !important;
+    left:50%  !important;
+}
+
+.navbar-nav {
+    float:left!important;
+    position:relative !important;
+    left:-50% !important;
+}
+
+.navbar-nav li {
+    float: left !important;
+    font-size: 1.35em !important;
+}
+
+.navbar-nav > li > a {
+    float:left !important;
+    color: #cecece !important;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    color: #fff !important;
+    background-color: #080808 !important;
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix ~ .container-fluid  {
+    position: relative;
+    top: 50px;
+}
+
+/* About Section */
+#aboutSection {
+    padding-top:50px;
+    height: auto;
+    color: #191919;
+    background-color: #f2f2f2;
+}
+
+#myPhoto {
+    width:250px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px #e5e5e5, -3px -3px 3px #e5e5e5;
+}
+
+.center {
+    position: relative;
+    margin-left: auto; margin-right: auto;
+}
+
+.skills {
+    color: #fff !important;
+    background-color: #2e2e2e;
+    padding: 10px !important;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    position:relative;
+    width: 90%;
+}
+
+.separator {
+    content: " ";
+    border-right: 1px solid #191919;
+    line-height: 1.75em;
+}
+
+
+/* Portfolio Section */
+#portfolioSection {
+    position: relative;
+    padding-top:50px;
+    height:auto;
+    color: #fff;
+    background-color: #383838;
+    padding-bottom:5px !important;
+    margin-bottom: -5px !important;
+}
+
+#websitesSection {
+    position: relative;
+    padding-top:50px;
+    height:auto;
+    color: #fff;
+    background-color: #383838;
+}
+
+.nav-tabs > li {
+    background-color: #d9d9d9 !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-right: 2px;
+    width: 25%;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+
+.nav-tabs > li:not(li.active) {
+    border: 2px solid #4e4e4e!important;
+}
+
+.nav-tabs > li > a {
+    font-size: 1.2em;
+    color: #323232 !important;
+}
+
+.nav-tabs > li > a:focus, .nav-tabs > li > a:hover {
+    background-color: #f2f2f2 !important;
+}
+
+.nav-tabs > li.active > a {
+    color: #000000 !important;
+    background-color: #fff !important;
+    font-weight: bolder !important;
+    border-bottom: 3px solid #fff!important;
+    border-top: 2px solid #4e4e4e!important;
+    border-left: 2px solid #4e4e4e!important;
+    border-right: 2px solid #4e4e4e!important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: -3px;
+    margin-right: -1px;
+    z-index: 100;
+}
+
+.tab-content {
+    background-color: #fff !important;
+    color: #222!important;
+    border: 2px solid #4e4e4e!important;
+}
+
+.git {
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+hr.styleHr {
+    border-top: 1px solid #fff;
+    text-align: center;
+    width: 70%
+}
+
+hr.styleHr:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    padding: 0 5px;
+    background: #383838;
+    color: #fff;
+    font-size: 30px;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.portfolio  {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 5px 10px #dedede, -3px -3px 10px #dedede !important;
+}
+
+.imgdescription {
+    width: 300px;
+    background-color: #ededed;
+    font-size: 25px !important;
+    font-weight: 800 !important;
+    color: #383838 !important;
+    position: absolute;
+    top: 20%;
+    bottom:20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    opacity: 0.8;
+    z-index: 10;
+    border-radius: 3%;
+    box-shadow: 3px 5px 10px #dedede, -3px -3px 10px #dedede !important;
+    text-decoration: none !important;
+    visibility: hidden;
+}
+
+div.fly:hover #fly, div.fly:focus #fly  {
+    visibility: visible;
+}
+
+div.pop:hover #pop, div.pop:focus #pop  {
+    visibility: visible;
+}
+
+div.cookie:hover #cookie, div.cookie:focus #cookie  {
+    visibility: visible;
+}
+
+div.birth:hover #birth, div.birth:focus #birth  {
+     visibility: visible;
+ }
+
+div.ghost:hover #ghost, div.ghost:focus #ghost  {
+    visibility: visible;
+}
+
+div.nailsalon:hover #nailsalon, div.nailsalon:focus #nailsalon  {
+    visibility: visible;
+}
+
+div.bakeshop:hover #bakeshop, div.bakeshop:focus #bakeshop  {
+    visibility: visible;
+}
+
+div.hairsalon:hover #hairsalon, div.hairsalon:focus #hairsalon  {
+    visibility: visible;
+}
+
+div.barbie:hover #barbie, div.barbie:focus #barbie  {
+    visibility: visible;
+}
+
+/* Contact Section */
+#contactSection {
+    padding-top:50px;
+    height:auto;
+    color: #191919;
+    background-color: #f2f2f2;
+}
+
+.arrow {
+    animation-name: flicker;
+    -webkit-animation-name: flicker;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes flicker {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes flicker {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*
+.form-control {
+    border-radius: 0 !important;
+    color: #fff !important;
+    background-color: #383838 !important;
+}
+
+.form-control:focus {
+    border-color: #000!important;
+    box-shadow: none!important;
+}
+
+.form-control::-moz-placeholder {
+    color: #fff !important;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #fff !important;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #fff !important;
+}
+
+form > button {
+    color: #fff !important;
+    background-color: #383838 !important;
+    border-radius: 0 !important;
+}
+*/
+
+/* Footer Section */
+#footerSec {
+    padding-top:20px;
+    height:60px;
+    color: #fff;
+    background-color: #383838;
+}
+
+/* Margin & Padding */
+.indent {
+    text-indent: 100px;
+}
+
+.top10 {
+    margin-top: 10px;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+.top30 {
+    margin-top: 30px;
+}
+
+.top50 {
+    padding-top: 50px;
+}
+
+.bottom30 {
+    margin-bottom: 30px;
+}
+
+.bottom50 {
+    margin-bottom: 50px;
+}
+
+.bottom100 {
+    margin-bottom: 100px;
+}
+
+.marginLeftRight {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.LeftRight {
+    width: 85%
+}
+
+/* Font Size */
+.aboutFontSize {
+    font-size: 1.35em !important;
+}
+
+.contactFontSize{
+    font-size: 1.5em !important;
+}
+
+/* Icon */
+.arrowDown {
+    color: #fff !important;
+    background-color: #2e2e2e;
+    border: 2px solid #e5e5e5;
+    padding: 12px 10px 5px 12px !important;
+    font-size: 1.5em;
+    border-radius: 30px;
+    position:relative;
+    -webkit-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%       { bottom:2px; }
+    25%, 75% { bottom:4px; }
+    50%      { bottom:6px; }
+    100%     {bottom:0;}
+}
+
+@keyframes bounce {
+    0%       { bottom:2px; }
+    25%, 75% { bottom:4px; }
+    50%      { bottom:6px; }
+    100%     {bottom:0;}
+}
+
+/* Media */
+@media screen and (max-width: 1125px) {
+    #intro {
+        width: 45%;
+    }
+    .marginLeftRight {
+        margin-left: 8% !important;
+        margin-right: 8% !important;
+    }
+    #myPhoto {
+        width :230px !important;
+    }
+    .skills {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    header {
+        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 10% bottom / cover no-repeat scroll;
+    }
+    #intro {
+        width: 55%;
+        margin: 13% auto;
+    }
+    .marginLeftRight {
+        margin-left: 4%!important;
+        margin-right: 4% !important;
+    }
+    #myPhoto {
+        width :210px !important;
+    }
+    .skills {
+        font-size: 0.9em;
+    }
+    .imgdescription {
+        width: 280px;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .skills {
+        font-size: 0.8em;
+    }
+    .imgdescription {
+        width: 260px;
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
+    }
+    #intro {
+        width: 65%;
+        margin: 15% auto;
+    }
+    .marginLeftRight {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    #myPhoto {
+        width :190px !important;
+    }
+    .skills {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        margin: 0 !important;
+    }
+    .navbar-nav > li > a {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+    .marginLeftRight {
+        margin-left: 8% !important;
+        margin-right: 8% !important;
+}
+    #myPhoto {
+        width :200px !important;
+    }
+    .skills {
+        font-size: 1.05em;
+    }
+    .imgdescription {
+        width: 280px;
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
+    }
+    #intro {
+        width: 75%;
+        margin: 15% auto;
+    }
+    #myPhoto {
+        width: 190px !important;
+    }
+    .aboutFontSize {
+        font-size: 1.15em !important;
+    }
+    .contactFontSize {
+        font-size: 1.3em !important;
+    }
+    .nav-tabs > li {
+        width: 35%;
+    }
+    .nav-tabs > li > a {
+        font-size: 1.1em;
+    }
+    .nav-tabs > li.active > a {
+        font-size: 1.1em;
+    }
+    .LeftRight {
+        width: 88%
+    }
+    .skills {
+        font-size: 1.1em;
+    }
+    .imgdescription {
+        width: 260px;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #intro {
+        width: 60%;
+    }
+    .aboutFontSize {
+        font-size: 1.10em !important;
+    }
+    .contactFontSize{
+        font-size: 1.25em !important;
+    }
+    .nav-tabs > li {
+        width: 38%;
+    }
+    .skills {
+        font-size: 1.05em;
+    }
+    .imgdescription {
+        width: 240px;
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 17% bottom / cover no-repeat scroll;
+    }
+    #intro {
+        width: 77%;
+    }
+    #myPhoto {
+        width :150px !important;
+    }
+    .aboutFontSize {
+        font-size: 1.05em !important;
+    }
+    .contactFontSize{
+        font-size: 1.2em !important;
+    }
+    .nav-tabs > li {
+        width: 40%;
+    }
+    .nav-tabs > li > a {
+        font-size: 1em;
+    }
+    .nav-tabs > li.active > a {
+        font-size: 1em;
+    }
+    .LeftRight {
+        width: 90%
+    }
+    .skills {
+        font-size: 1em;
+    }
+    .imgdescription {
+        width: 220px;
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-tabs > li > a {
+        font-size: 0.95em;
+    }
+    .nav-tabs > li.active > a {
+        font-size: 0.95em;
+    }
+    .skills {
+        font-size: 0.95em;
+    }
+    .imgdescription {
+        width: 210px;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-tabs > li > a {
+        font-size: 0.85em;
+    }
+
+    .nav-tabs > li.active > a {
+        font-size: 0.85em;
+    }
+}
+
+
+
+
+
