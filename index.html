@@ -1,172 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>	
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Bernadette Engleman">
-    <meta http-equiv="refresh" content="30">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-	<link rel="stylesheet" href="css/bootstrap.css">
-  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="js/jquery-1.11.2.min.js"></script> 
-	<script src="js/bootstrap.min.js"></script>
-    <title>Bernadette Engleman</title>    
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Bernadette Engleman">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>Portfolio | Bernadette Engleman</title>
 </head>
 
-<body class="Site">
 
-<!-- Navigation bar starts here-->
-<nav class="navbar navbar-default navbar-fixed-top">
-  	<div class="container-fluid">
-    <div class="navbar-header">   
-      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1">			
-        <span class="sr-only">Toggle navigation</span> 
-       	<span class="icon-bar"></span> 
-        <span class="icon-bar"></span> 
-        <span class="icon-bar"></span> 
-      	</button>      
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Header starts here -->
+<header>
+  <div class="container-fluid" id="landing">
+    <div class="well text-center" id="intro">
+      <h1>Bernadette Engleman</h1>
+      <h4 class="top20">NYC-based Web Developer</h4>
     </div>
-    <div class="collapse navbar-collapse" id="myDefaultNavbar1">
-      	<ul class="nav navbar-nav">
-        	<li><a href="http://github.com/bernadette-engleman" target="_blank">
-        		<img src="http://digitalfellows.commons.gc.cuny.edu/files/2015/03/github_logo-1.png" alt="Github" style="width:112px;height:24px"><span class="sr-only">(current)</span></a></li>
-        	<li><a href="http://www.linkedin.com/in/bernadetteengleman" target="_blank">
-        		<img src="http://www.komarketingassociates.com/images/2014/02/Linkedin_Logo-300x81.jpg" alt="Linkedin" style="width:112px;height:30px"></a></li>    
-      	</ul>
-	</div>
-	</div>
+
+    <p class="text-center"><a href="#downSection" class="arrowDown">
+      <span class="glyphicon glyphicon-chevron-down"></span></a></p>
+
+  </div>
+</header>
+
+<!-- Menu starts here -->
+<nav class="navbar navbar-inverse" data-spy="affix" id="navSpace">
+  <div class="container-fluid" id="wrap1">
+    <div id="wrap2">
+    <ul class="nav navbar-nav">
+      <li><a href="#aboutSection">About</a></li>
+      <li><a href="#portfolioSection">Portfolio</a></li>
+      <li><a href="#contactSection">Contact</a></li>
+    </ul>
+    </div>
+  </div>
 </nav>
-<!-- Navigation bar ends here-->
 
-<section class="Site-content">
- 
-<!-- Header starts here--> 		
-	<div class="jumbotron text-center">
-    <div class="container">
-      	<div class="row">
-        	<div class="col-xs12">
-          		<h1>Bernadette Engleman</h1>
-          		<h4>HTML, CSS, JavaScript, jQuery and PHP</h4> 
-        	</div>
-      	</div>
+<!-- About Section starts here -->
+<section id="downSection">
+  <div id="aboutSection" class="container-fluid text-center">
+    <h1 class="top50">About Me</h1>
+
+    <div class="row marginLeftRight top30 bottom100">
+      <div class="col-sm-4">
+        <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive text-center center top20" id="myPhoto">
+
+        <h1 class="top30 ">Coding Skills</h1>
+        <div class="row top20 bottom30">
+          <div class="col-xs-6">
+            <p class="text-center skills">HTML</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">CSS</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">JavaScript</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">jQuery</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">Bootstrap</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">PHP</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-8 text-left">
+        <h3>Hello, I am Bernadette from New York City.</h3>
+        <p class="text-justify aboutFontSize top20">I moved here from Chicago in 2013. I am originally from the Philippines.</p>
+        <p class="text-justify aboutFontSize">
+          <!-- I have a degree in B.S. in Math and Business Management.
+          I worked as a Forex Broker, Financial Advisor and Business Manager.-->
+          I started studying web programming in 2015.
+          I love it because I like making fun websites and web apps<!-- that people enjoy-->.
+          The projects that I built so far are posted below.</p>
+        <p class="text-justify aboutFontSize">
+          I like to cook and I love to travel. I also like to volunteer and I am a team leader with the non-profit organization, NYCares.</p>
+
+        <!-- Email -->
+        <p class="aboutFontSize top20">
+          <a href="http://bit.ly/1ZQEuiB"><img src="img/github.jpg" alt="Github" style="width:30px; height:30px;"></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="http://bit.ly/1RXNWwm"><img src="img/linkedinblack.jpg" alt="LinkedIn" style="width:28px; height:28px;"></a>
+          &nbsp;&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
+
+        <!-- Education -->
+        <p class="aboutFontSize top20"><strong>Education:</strong></p>
+        <p class="aboutFontSize top10">Bachelor of Business Management &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2010</small><br>
+       Bachelor of Science in Mathematics &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007</small></p>
+
+        <!-- Education -->
+        <p class="aboutFontSize top20"><strong>Work Experience:</strong></p>
+        <p class="aboutFontSize">Operations Manager &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2009 - present</small><br>
+        Financial Advisor &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2008 - 2009</small><br>
+        Forex Broker &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007 - 2008</small></p>
+
+      </div>
     </div>
-  	</div>
-<!-- Header ends here-->
 
-
-<!-- Content starts here-->
-	<div class="container">
-    
-		<div class="row">
-        	<div class="col-lg-12 text-center">
-            	<h2>Latest Work</h2>
-                <p>&nbsp;</p>
-            </div>
-        </div>
-                           
-        <div class="row">
-        
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6">
-            	<a href="win_free_disneyland_tickets/disneyland_lottery.html">
-            	<img src="http://freebies2deals.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-27-at-11.09.09-AM-1024x675.png" alt="disneyland" style="width:200px;height:200px">
-                <h4>Win Free Disneyland Tickets!</h4></a>
-        	</div>
-            
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6">
-            	<a href="virtual_vacation/virtual_tour.html">
-            	<img src="http://kashmirdepartures.com/wp-content/uploads/2014/01/tours.jpg" alt="tour" style="width:200px;height:200px">
-                <h4>Virtual Vacation</h4></a>
-            </div>
-   
-			<div class="col-md-3 text-center col-sm-6 col-xs-6">
-		  		<a href="lazy_cat/lazy_cat.html"> 
-		  		<img src="lazy_cat/catthumbnail.jpg" alt="cat" style="width:200px;height:200px">
-        		<h4>Lazy Cat</h4></a> 
-	  		</div>
-            
-            <div class="col-md-3 text-center col-sm-6 col-xs-6">
-       			<a href="birth_month_meaning/birth_month_meaning.html">  
-                <img src="birth_month_meaning/birth month.jpg" alt="zodiacsign" style="width:200px;height:200px">
-                <h4>Birth Month Meaning</h4></a> 
-	  		</div>
-
-        </div>
- 
-       		<p>&nbsp;</p>
-                   
-        <div class="row">
-     
-			<div class="col-md-3 text-center col-sm-6 col-xs-6">
-            	<a href="locate_me/locate_me.html">
-            	<img src="locate_me/locate_me.jpg" alt="map" style="width:200px;height:200px"> 
-				<h4>Locate Me</h4></a> 
-      		</div>     
-<!-- unfinished       
-			<div class="col-md-3 text-center col-sm-6 col-xs-6">
-	    		<a href="facecardgame.html">
-	    		<img src="facecardthumbnail.jpg" alt="card" style="width:200px;height:200px" id="facecardthumbnail">  
-	    		<h4>Face Card Game</h4></a> 
-       	  	</div>
-             
-     	</div>            
-      
-       	<div class="row">
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6">
-            	<img src="img/200x200.gif" alt="">
-      		</div>
-            
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6">
-            	<img src="img/200x200.gif" alt="">
-      		</div>
-            
-			<div class="col-md-3 text-center col-sm-6 col-xs-6">
-            	<img src="img/200x200.gif" alt="">
-      		</div>
-            
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6">
-            	<img src="img/200x200.gif" alt="">
-      		</div> -->
-            
-            <p>&nbsp;</p>
-      		<p>&nbsp;</p>
-            
-      	</div>    
-	</div>
+  </div>
 </section>
 
-<hr>
+<!-- Web Apps Portfolio starts here -->
+<section>
+  <div id="portfolioSection" class="container-fluid text-center">
+    <h1 class="top50">Portfolio</h1>
 
-<div class="section well">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-md-8">
-            	<h3>About Me</h3>
-            	<h5>Hi! I am learning to code using HTML, CSS, JavaScript, jQuery and PHP.</h5>
-        	</div>
-			<div class="col-lg-4 col-md-4">
-		  		<h3>CONTACT</h3>
-  				<p title="email" class="glyphicon glyphicon-envelope">: bernadette@englemaninvest.com</p>
-			</div>	
-		</div>
-	</div>
-</div>
-    
-<!-- Content ends here--> 
+    <ul class="nav nav-tabs container top50 LeftRight">
+      <li class="active"><a data-toggle="tab" href="#webapp">Web Apps</a></li>
+      <li><a href="#websitesSection">Websites</a></li>
+    </ul>
 
-<!-- Footer starts here-->
+    <div class="tab-content container LeftRight">
+      <div id="webapp" class="tab-pane fade in active top50">
+
+        <!-- Git box -->
+        <div class="row text-right">
+          <div class="col-xs-12 git">
+            <a href="http://bit.ly/1ZQEuiB">
+              <img src="img/github.jpg" alt="Github" style="width:30px; height:30px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 fly">
+            <img src="img/flythumbnail.jpg" alt="Kill the fly game" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Fly%20Game/fly.html" target="_blank" class="imgdescription" id="fly">Kill The Fly Game</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center bottom30 pop">
+            <img src="img/popthumbnail.jpg" alt="Pop the bubbles game" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Pop%20Game/pop.html" target="_blank" class="imgdescription" id="pop">Pop The Bubbles Game</a>
+          </div>
+        </div>
+
+        <div class="row text-center bottom50">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 cookie">
+            <img src="img/fortunecookiethumbnail.jpg" alt="Fortune Cookie" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="imgdescription" id="cookie">Fortune Cookie</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center  bottom30 birth">
+            <img src="img/birthmonththumbnail.jpg" alt="Birth Month Meaning" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Birth%20Month%20Meaning/birthmonthmeaning.html" target="_blank" class="imgdescription" id="birth">Birth Month Meaning</a>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 ghost">
+            <img src="img/ghostthumbnail.jpg" alt="Find the Ghost Game" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Ghost%20Game/ghost.html" target="_blank" class="imgdescription" id="ghost">Find the Ghost Game</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center bottom30 ">
+            <img src="#" alt=" " class="img-responsive portfolio" style="width:400px;">
+            <a href="#" target="_blank" class="imgdescription" id=" "></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Websites Portfolio starts here -->
+<section>
+  <div id="websitesSection" class="container-fluid text-center">
+    <hr class="styleHr">
+
+    <ul class="nav nav-tabs container top50 LeftRight">
+      <li class="active"><a data-toggle="tab" href="#websites">Websites</a></li>
+      <li><a href="#portfolioSection">Web Apps</a></li>
+    </ul>
+
+    <div class="tab-content container LeftRight bottom100">
+      <div id="websites" class="tab-pane fade in active top50">
+
+        <!-- Git box -->
+        <div class="row text-right">
+          <div class="col-xs-12 git">
+            <a href="http://bit.ly/1ZQEuiB">
+              <img src="img/github.jpg" alt="Github" style="width:30px; height:30px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 nailsalon">
+            <img src="img/kukoliciousthumbnail.jpg" alt="Kukolicious Nail Salon" class="img-responsive portfolio" style="width:400px;">
+            <a href="Websites/Kukolicious%20Nail%20Salon/index.html" target="_blank" class="imgdescription" id="nailsalon">Nail Salon</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center bottom30 bakeshop">
+            <img src="img/panattierethumbnail.jpg" alt="Panettiere Bakeshop" class="img-responsive portfolio" style="width:400px;">
+            <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="imgdescription" id="bakeshop">Bakeshop</a>
+          </div>
+        </div>
+
+        <div class="row text-center bottom50">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 hairsalon">
+            <img src="img/koronathumbnail2.jpg" alt="Korona Hair Salon" class="img-responsive portfolio" style="width:400px;">
+            <a href="Websites/Korona%20Hair%20Salon/index.html" target="_blank" class="imgdescription" id="hairsalon">Hair Salon</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center bottom30 barbie">
+            <img src="img/barbiehumbnail.jpg" alt="Barbie Website" class="img-responsive portfolio" style="width:400px;">
+            <a href="http://www.brandyandnicky.com" target="_blank" class="imgdescription" id="barbie">Youtube Channel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact starts here -->
+<section>
+  <div id="contactSection" class="container-fluid text-center">
+    <h1 class="top50">Contact Me</h1>
+
+    <div class="row marginLeftRight top30 bottom100">
+
+      <div class="col-sm-6 text-left top20">
+        <p class="contactFontSize">Thank you for visiting my website.</p>
+        <p class="contactFontSize top10">If you have an offer or inquiries, you can contact me by sending an email<!-- or filling out this form-->.</p>
+        </div>
+
+      <div class="col-sm-6 text-left">
+        <p class="contactFontSize top20">
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
+        <p class="contactFontSize top20">Find me on :
+          <small><span class="glyphicon glyphicon-chevron-right arrow" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-chevron-right arrow" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-chevron-right arrow" aria-hidden="true"></span></small>
+          <a href="http://bit.ly/1ZQEuiB"><img src="img/github.jpg" alt="Github" style="width:29px; height:29px;"></a>
+          &nbsp;and&nbsp;
+          <a href="http://bit.ly/1RXNWwm"><img src="img/linkedinblack.jpg" alt="LinkedIn" style="width:28px; height:28px;"></a></p>
+        <!--
+        <form role="form" action="contact.php" method="post">
+          <input type="text" class="form-control" id="name" placeholder="Name" required>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+          <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+          <textarea class="form-control" rows="3" id="comment" placeholder="Message" required></textarea>
+
+          <button type="submit" class="btn btn-default">Send</button>
+
+        </form>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer starts here -->
 <footer class="text-center">
-	<div class="container">
-    	<div class="row">
-      		<div class="col-xs-12">
-        		<p>Copyright © Bernadette Engleman. All rights reserved.</p>
-      		</div>
-    	</div>
-  	</div>
+  <div id="footerSec" class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
 </footer>
-<!-- Footer ends here-->
 
 </body>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script>
+  // Copyright Year
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("year").innerHTML = n;
+
+  //Landing Page
+  $(document).ready(function(){
+    $("#landing").css("height",($(window).height()-49));
+    $("#navSpace").attr("data-offset-top",($(window).height()-52));
+
+    var windowWidth=$(window).width();
+     //alert(windowWidth);
+  });
+
+
+</script>
+
 </html>
