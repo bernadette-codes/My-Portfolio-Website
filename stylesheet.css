@@ -270,24 +270,6 @@ div.barbie:hover #barbie, div.barbie:focus #barbie  {
     background-color: #f2f2f2;
 }
 
-.arrow {
-    animation-name: flicker;
-    -webkit-animation-name: flicker;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-}
-
-@-webkit-keyframes flicker {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-@keyframes flicker {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 /*
 .form-control {
     border-radius: 0 !important;
