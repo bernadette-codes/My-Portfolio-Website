@@ -294,11 +294,14 @@
     $("#landing").css("height",($(window).height()-49));
     $("#navSpace").attr("data-offset-top",($(window).height()-52));
 
+    $(window).on("resize", function() {
+      $("#landing").css("height", ($(window).height() - 49));
+      $("#navSpace").attr("data-offset-top", ($(window).height() - 52));
+    });
+
     var windowWidth=$(window).width();
      //alert(windowWidth);
   });
-
-
 </script>
 
 </body>
