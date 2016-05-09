@@ -20,6 +20,10 @@ header {
     margin: 10% auto;
 }
 
+#wdTitle {
+    font-size: 1.3em !important;
+}
+
 /* Nav Bar */
 .navbar {
     margin-bottom: 0;
@@ -246,6 +250,11 @@ div.ghost:hover #ghost, div.ghost:focus #ghost  {
     visibility: visible;
 }
 
+div.catsdogs:hover #catsdogs, div.catsdogs:focus #catsdogs  {
+    visibility: visible;
+}
+
+
 div.nailsalon:hover #nailsalon, div.nailsalon:focus #nailsalon  {
     visibility: visible;
 }
@@ -381,6 +390,20 @@ form > button {
     100%     {bottom:0;}
 }
 
+@-moz-keyframes bounce {
+    0%       { bottom:2px; }
+    25%, 75% { bottom:4px; }
+    50%      { bottom:6px; }
+    100%     {bottom:0;}
+}
+
+@-o-keyframes bounce {
+    0%       { bottom:2px; }
+    25%, 75% { bottom:4px; }
+    50%      { bottom:6px; }
+    100%     {bottom:0;}
+}
+
 @keyframes bounce {
     0%       { bottom:2px; }
     25%, 75% { bottom:4px; }
@@ -388,7 +411,7 @@ form > button {
     100%     {bottom:0;}
 }
 
-/* Media */
+/* Media Queries */
 @media screen and (max-width: 1125px) {
     #intro {
         width: 45%;
@@ -605,8 +628,3 @@ form > button {
         font-size: 0.85em;
     }
 }
-
-
-
-
-
