@@ -86,7 +86,7 @@ header {
 #myPhoto {
     width:250px;
     border-radius: 50%;
-    box-shadow: 3px 3px 3px #e5e5e5, -3px -3px 3px #e5e5e5;
+    box-shadow: 0 0 8px 2px #e5e5e5;
 }
 
 .center {
@@ -204,7 +204,7 @@ hr.styleHr:after {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 3px 5px 10px #dedede, -3px -3px 10px #dedede !important;
+    box-shadow: 0 0 8px 2px #dedede;
 }
 
 .imgdescription {
@@ -225,7 +225,7 @@ hr.styleHr:after {
     opacity: 0.8;
     z-index: 10;
     border-radius: 3%;
-    box-shadow: 3px 5px 10px #dedede, -3px -3px 10px #dedede !important;
+    box-shadow: 0 0 8px 2px #dedede !important;
     text-decoration: none !important;
     visibility: hidden;
 }
