@@ -1,630 +1,312 @@
-@charset "utf-8";
-/* CSS Document */
-
-body {
-    position: relative;
-}
-
-/* Landing Page */
-header {
-    background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') left bottom / cover no-repeat scroll;
-    background-blend-mode:saturation;
-    font-family:Georgia,serif;
-}
-
-#intro {
-    width: 40%;
-    background: #2e2e2e;
-    color:#fff;
-    border: 2px solid #e5e5e5;
-    margin: 10% auto;
-}
-
-#wdTitle {
-    font-size: 1.3em !important;
-}
-
-/* Nav Bar */
-.navbar {
-    margin-bottom: 0;
-    border: none !important;
-    border-radius: 0 !important;
-}
-
-#wrap1 {
-    overflow:hidden !important;
-    position:relative !important;
-}
-
-#wrap2 {
-    float:left  !important;
-    position:relative  !important;
-    left:50%  !important;
-}
-
-.navbar-nav {
-    float:left!important;
-    position:relative !important;
-    left:-50% !important;
-}
-
-.navbar-nav li {
-    float: left !important;
-    font-size: 1.35em !important;
-}
-
-.navbar-nav > li > a {
-    float:left !important;
-    color: #cecece !important;
-}
-
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
-    color: #fff !important;
-    background-color: #080808 !important;
-}
-
-.affix {
-    top:0;
-    width: 100%;
-    z-index: 9999 !important;
-}
-
-.affix ~ .container-fluid  {
-    position: relative;
-    top: 50px;
-}
-
-/* About Section */
-#aboutSection {
-    padding-top:50px;
-    height: auto;
-    color: #191919;
-    background-color: #f2f2f2;
-}
-
-#myPhoto {
-    width:250px;
-    border-radius: 50%;
-    box-shadow: 0 0 8px 2px #e5e5e5;
-}
-
-.center {
-    position: relative;
-    margin-left: auto; margin-right: auto;
-}
-
-.skills {
-    color: #fff !important;
-    background-color: #2e2e2e;
-    padding: 10px !important;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 30px;
-    position:relative;
-    width: 90%;
-}
-
-.separator {
-    content: " ";
-    border-right: 1px solid #191919;
-    line-height: 1.75em;
-}
-
-
-/* Portfolio Section */
-#portfolioSection {
-    position: relative;
-    padding-top:50px;
-    height:auto;
-    color: #fff;
-    background-color: #383838;
-    padding-bottom:5px !important;
-    margin-bottom: -5px !important;
-}
-
-#websitesSection {
-    position: relative;
-    padding-top:50px;
-    height:auto;
-    color: #fff;
-    background-color: #383838;
-}
-
-.nav-tabs > li {
-    background-color: #d9d9d9 !important;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    margin-right: 2px;
-    width: 25%;
-    text-align: center !important;
-    font-weight: bold !important;
-}
-
-.nav-tabs > li:not(li.active) {
-    border: 2px solid #4e4e4e!important;
-}
-
-.nav-tabs > li > a {
-    font-size: 1.2em;
-    color: #323232 !important;
-}
-
-.nav-tabs > li > a:focus, .nav-tabs > li > a:hover {
-    background-color: #f2f2f2 !important;
-}
-
-.nav-tabs > li.active > a {
-    color: #000000 !important;
-    background-color: #fff !important;
-    font-weight: bolder !important;
-    border-bottom: 3px solid #fff!important;
-    border-top: 2px solid #4e4e4e!important;
-    border-left: 2px solid #4e4e4e!important;
-    border-right: 2px solid #4e4e4e!important;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    margin-bottom: -3px;
-    margin-right: -1px;
-    z-index: 100;
-}
-
-.tab-content {
-    background-color: #fff !important;
-    color: #222!important;
-    border: 2px solid #4e4e4e!important;
-}
-
-.git {
-    margin-top: -40px;
-    margin-bottom: 30px;
-}
-
-hr.styleHr {
-    border-top: 1px solid #fff;
-    text-align: center;
-    width: 70%
-}
-
-hr.styleHr:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -20px;
-    padding: 0 5px;
-    background: #383838;
-    color: #fff;
-    font-size: 30px;
-    -webkit-transform: rotate(50deg);
-    -moz-transform: rotate(50deg);
-    transform: rotate(50deg);
-}
-
-.portfolio  {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 8px 2px #dedede;
-}
-
-.imgdescription {
-    width: 300px;
-    background-color: #ededed;
-    font-size: 25px !important;
-    font-weight: 800 !important;
-    color: #383838 !important;
-    position: absolute;
-    top: 20%;
-    bottom:20%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    opacity: 0.8;
-    z-index: 10;
-    border-radius: 3%;
-    box-shadow: 0 0 8px 2px #dedede !important;
-    text-decoration: none !important;
-    visibility: hidden;
-}
-
-div.fly:hover #fly, div.fly:focus #fly  {
-    visibility: visible;
-}
-
-div.pop:hover #pop, div.pop:focus #pop  {
-    visibility: visible;
-}
-
-div.cookie:hover #cookie, div.cookie:focus #cookie  {
-    visibility: visible;
-}
-
-div.birth:hover #birth, div.birth:focus #birth  {
-     visibility: visible;
- }
-
-div.ghost:hover #ghost, div.ghost:focus #ghost  {
-    visibility: visible;
-}
-
-div.catsdogs:hover #catsdogs, div.catsdogs:focus #catsdogs  {
-    visibility: visible;
-}
-
-
-div.nailsalon:hover #nailsalon, div.nailsalon:focus #nailsalon  {
-    visibility: visible;
-}
-
-div.bakeshop:hover #bakeshop, div.bakeshop:focus #bakeshop  {
-    visibility: visible;
-}
-
-div.hairsalon:hover #hairsalon, div.hairsalon:focus #hairsalon  {
-    visibility: visible;
-}
-
-div.barbie:hover #barbie, div.barbie:focus #barbie  {
-    visibility: visible;
-}
-
-/* Contact Section */
-#contactSection {
-    padding-top:50px;
-    height:auto;
-    color: #191919;
-    background-color: #f2f2f2;
-}
-
-/*
-.form-control {
-    border-radius: 0 !important;
-    color: #fff !important;
-    background-color: #383838 !important;
-}
-
-.form-control:focus {
-    border-color: #000!important;
-    box-shadow: none!important;
-}
-
-.form-control::-moz-placeholder {
-    color: #fff !important;
-    opacity: 1;
-}
-
-.form-control:-ms-input-placeholder {
-    color: #fff !important;
-}
-
-.form-control::-webkit-input-placeholder {
-    color: #fff !important;
-}
-
-form > button {
-    color: #fff !important;
-    background-color: #383838 !important;
-    border-radius: 0 !important;
-}
-*/
-
-/* Footer Section */
-#footerSec {
-    padding-top:20px;
-    height:60px;
-    color: #fff;
-    background-color: #383838;
-}
-
-/* Margin & Padding */
-.indent {
-    text-indent: 100px;
-}
-
-.top10 {
-    margin-top: 10px;
-}
-
-.top20 {
-    margin-top: 20px;
-}
-
-.top30 {
-    margin-top: 30px;
-}
-
-.top50 {
-    padding-top: 50px;
-}
-
-.bottom30 {
-    margin-bottom: 30px;
-}
-
-.bottom50 {
-    margin-bottom: 50px;
-}
-
-.bottom100 {
-    margin-bottom: 100px;
-}
-
-.marginLeftRight {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.LeftRight {
-    width: 85%
-}
-
-/* Font Size */
-.aboutFontSize {
-    font-size: 1.35em !important;
-}
-
-.contactFontSize{
-    font-size: 1.5em !important;
-}
-
-/* Icon */
-.arrowDown {
-    color: #fff !important;
-    background-color: #2e2e2e;
-    border: 2px solid #e5e5e5;
-    padding: 12px 10px 5px 12px !important;
-    font-size: 1.5em;
-    border-radius: 30px;
-    position:relative;
-    -webkit-animation:bounce 1s infinite;
-    animation:bounce 1s infinite;
-}
-
-@-webkit-keyframes bounce {
-    0%       { bottom:2px; }
-    25%, 75% { bottom:4px; }
-    50%      { bottom:6px; }
-    100%     {bottom:0;}
-}
-
-@-moz-keyframes bounce {
-    0%       { bottom:2px; }
-    25%, 75% { bottom:4px; }
-    50%      { bottom:6px; }
-    100%     {bottom:0;}
-}
-
-@-o-keyframes bounce {
-    0%       { bottom:2px; }
-    25%, 75% { bottom:4px; }
-    50%      { bottom:6px; }
-    100%     {bottom:0;}
-}
-
-@keyframes bounce {
-    0%       { bottom:2px; }
-    25%, 75% { bottom:4px; }
-    50%      { bottom:6px; }
-    100%     {bottom:0;}
-}
-
-/* Media Queries */
-@media screen and (max-width: 1125px) {
-    #intro {
-        width: 45%;
-    }
-    .marginLeftRight {
-        margin-left: 8% !important;
-        margin-right: 8% !important;
-    }
-    #myPhoto {
-        width :230px !important;
-    }
-    .skills {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 965px) {
-    header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 10% bottom / cover no-repeat scroll;
-    }
-    #intro {
-        width: 55%;
-        margin: 13% auto;
-    }
-    .marginLeftRight {
-        margin-left: 4%!important;
-        margin-right: 4% !important;
-    }
-    #myPhoto {
-        width :210px !important;
-    }
-    .skills {
-        font-size: 0.9em;
-    }
-    .imgdescription {
-        width: 280px;
-        font-size: 20px !important;
-    }
-}
-
-@media screen and (max-width: 860px) {
-    .skills {
-        font-size: 0.8em;
-    }
-    .imgdescription {
-        width: 260px;
-        font-size: 18px !important;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
-    }
-    #intro {
-        width: 65%;
-        margin: 15% auto;
-    }
-    .marginLeftRight {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-    #myPhoto {
-        width :190px !important;
-    }
-    .skills {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .navbar-nav {
-        margin: 0 !important;
-    }
-    .navbar-nav > li > a {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-    }
-    .marginLeftRight {
-        margin-left: 8% !important;
-        margin-right: 8% !important;
-}
-    #myPhoto {
-        width :200px !important;
-    }
-    .skills {
-        font-size: 1.05em;
-    }
-    .imgdescription {
-        width: 280px;
-        font-size: 22px !important;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
-    }
-    #intro {
-        width: 75%;
-        margin: 15% auto;
-    }
-    #myPhoto {
-        width: 190px !important;
-    }
-    .aboutFontSize {
-        font-size: 1.15em !important;
-    }
-    .contactFontSize {
-        font-size: 1.3em !important;
-    }
-    .nav-tabs > li {
-        width: 35%;
-    }
-    .nav-tabs > li > a {
-        font-size: 1.1em;
-    }
-    .nav-tabs > li.active > a {
-        font-size: 1.1em;
-    }
-    .LeftRight {
-        width: 88%
-    }
-    .skills {
-        font-size: 1.1em;
-    }
-    .imgdescription {
-        width: 260px;
-        font-size: 20px !important;
-    }
-}
-
-@media screen and (max-width: 570px) {
-    #intro {
-        width: 60%;
-    }
-    .aboutFontSize {
-        font-size: 1.10em !important;
-    }
-    .contactFontSize{
-        font-size: 1.25em !important;
-    }
-    .nav-tabs > li {
-        width: 38%;
-    }
-    .skills {
-        font-size: 1.05em;
-    }
-    .imgdescription {
-        width: 240px;
-        font-size: 18px !important;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 17% bottom / cover no-repeat scroll;
-    }
-    #intro {
-        width: 77%;
-    }
-    #myPhoto {
-        width :150px !important;
-    }
-    .aboutFontSize {
-        font-size: 1.05em !important;
-    }
-    .contactFontSize{
-        font-size: 1.2em !important;
-    }
-    .nav-tabs > li {
-        width: 40%;
-    }
-    .nav-tabs > li > a {
-        font-size: 1em;
-    }
-    .nav-tabs > li.active > a {
-        font-size: 1em;
-    }
-    .LeftRight {
-        width: 90%
-    }
-    .skills {
-        font-size: 1em;
-    }
-    .imgdescription {
-        width: 220px;
-        font-size: 16px !important;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .nav-tabs > li > a {
-        font-size: 0.95em;
-    }
-    .nav-tabs > li.active > a {
-        font-size: 0.95em;
-    }
-    .skills {
-        font-size: 0.95em;
-    }
-    .imgdescription {
-        width: 210px;
-        font-size: 14px !important;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .nav-tabs > li > a {
-        font-size: 0.85em;
-    }
-
-    .nav-tabs > li.active > a {
-        font-size: 0.85em;
-    }
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Bernadette Engleman">
+  <meta property="og:image" content="http://bernadetteengleman.com/img/profilephoto.jpg"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>Portfolio | Bernadette Engleman</title>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Header starts here -->
+<header>
+  <div class="container-fluid" id="landing">
+    <div class="well text-center" id="intro">
+      <h1>Bernadette Engleman</h1>
+      <h2 id="wdTitle" class="top20">NYC-based Web Developer</h2>
+    </div>
+
+    <p class="text-center"><a href="#downSection" class="arrowDown">
+      <span class="glyphicon glyphicon-chevron-down"></span></a></p>
+
+  </div>
+</header>
+
+<!-- Menu starts here -->
+<nav class="navbar navbar-inverse" data-spy="affix" id="navSpace">
+  <div class="container-fluid" id="wrap1">
+    <div id="wrap2">
+    <ul class="nav navbar-nav">
+      <li><a href="#aboutSection">About</a></li>
+      <li><a href="#portfolioSection">Portfolio</a></li>
+      <li><a href="#contactSection">Contact</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section starts here -->
+<section id="downSection">
+  <div id="aboutSection" class="container-fluid text-center">
+    <h1 class="top50">About Me</h1>
+
+    <div class="row marginLeftRight top30 bottom100">
+      <div class="col-sm-4">
+        <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive text-center center top20" id="myPhoto">
+
+        <h2 class="top30 ">Coding Skills</h2>
+        <div class="row top20 bottom30">
+          <div class="col-xs-6">
+            <p class="text-center skills">HTML</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">CSS</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">JavaScript</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">jQuery</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">Bootstrap</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">PHP</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-8 text-left">
+        <h3>Hello, I am Bernadette from New York City.</h3>
+        <p class="text-justify aboutFontSize top20">I moved here from Chicago in 2013. I am originally from the Philippines.</p>
+        <p class="text-justify aboutFontSize">
+          <!-- I have a degree in B.S. in Math and Business Management.
+          I worked as a Forex Broker, Financial Advisor and Business Manager.-->
+          I started studying web programming in 2015.
+          I love it because I like making fun websites and web apps<!-- that people enjoy-->.
+          The projects that I built so far are posted below.</p>
+        <p class="text-justify aboutFontSize">
+          I like to cook and I love to travel. I also like to volunteer and I am a team leader with the non-profit organization, NYCares.</p>
+
+        <!-- Email -->
+        <p class="aboutFontSize top20">
+          <a href="http://bit.ly/1ZQEuiB" target="_blank"><img src="img/github.jpg" alt="Github" style="width:30px; height:30px;"></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="http://bit.ly/1RXNWwm" target="_blank"><img src="img/linkedinblack.jpg" alt="LinkedIn" style="width:28px; height:28px;"></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="http://www.bernadetteengleman.com/blog/" target="_blank"><img src="img/wordpress.jpg" alt="Wordpress" style="width:28px; height:28px;"></a>
+          &nbsp;&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
+
+        <!-- Education -->
+        <h2 class="aboutFontSize top20"><strong>Education:</strong></h2>
+        <p class="aboutFontSize top10">Bachelor of Business Management &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2010</small><br>
+       Bachelor of Science in Mathematics &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007</small></p>
+
+        <!-- Work Experience -->
+        <h2 class="aboutFontSize top20"><strong>Work Experience:</strong></h2>
+        <p class="aboutFontSize">Operations Manager &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2009 - present</small><br>
+        Financial Advisor &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2008 - 2009</small><br>
+        Forex Broker &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007 - 2008</small></p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Web Apps Portfolio starts here -->
+<section>
+  <div id="portfolioSection" class="container-fluid text-center">
+    <h1 class="top50">Portfolio</h1>
+
+    <ul class="nav nav-tabs container top50 LeftRight">
+      <li class="active"><a data-toggle="tab" href="#webapp">Web Apps</a></li>
+      <li><a href="#websitesSection">Websites</a></li>
+    </ul>
+
+    <div class="tab-content container LeftRight">
+      <div id="webapp" class="tab-pane fade in active top50">
+
+        <!-- Git box -->
+        <div class="row text-right">
+          <div class="col-xs-12 git">
+            <a href="http://bit.ly/1ZQEuiB">
+              <img src="img/github.jpg" alt="Github" style="width:30px; height:30px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 fly">
+            <img src="img/flythumbnail.jpg" alt="Kill the fly game" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Fly%20Game/fly.html" target="_blank" class="imgdescription" id="fly">Kill The Fly Game</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center bottom30 pop">
+            <img src="img/popthumbnail.jpg" alt="Pop the bubbles game" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Pop%20Game/pop.html" target="_blank" class="imgdescription" id="pop">Pop The Bubbles Game</a>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 ghost">
+            <img src="img/ghostthumbnail.jpg" alt="Find the Ghost Game" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Ghost%20Game/ghost.html" target="_blank" class="imgdescription" id="ghost">Find the Ghost Game</a>
+          </div>
+
+          <div class="col-sm-6 col-xs-12 text-center  bottom30 catsdogs">
+            <img src="img/catsdogsthumbnail.jpg" alt="Cats and Dogs Game" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Cats%20and%20Dogs/catsdogs.html" target="_blank" class="imgdescription" id="catsdogs">Cats and Dogs Game</a>
+          </div>
+        </div>
+
+        <div class="row text-center bottom50">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 cookie">
+            <img src="img/fortunecookiethumbnail.jpg" alt="Fortune Cookie" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="imgdescription" id="cookie">Fortune Cookie</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center  bottom30 birth">
+            <img src="img/birthmonththumbnail.jpg" alt="Birth Month Meaning" class="img-responsive portfolio" style="width:400px;">
+            <a href="Apps/Birth%20Month%20Meaning/birthmonthmeaning.html" target="_blank" class="imgdescription" id="birth">Birth Month Meaning</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Websites Portfolio starts here -->
+<section>
+  <div id="websitesSection" class="container-fluid text-center">
+    <hr class="styleHr">
+
+    <ul class="nav nav-tabs container top50 LeftRight">
+      <li class="active"><a data-toggle="tab" href="#websites">Websites</a></li>
+      <li><a href="#portfolioSection">Web Apps</a></li>
+    </ul>
+
+    <div class="tab-content container LeftRight bottom100">
+      <div id="websites" class="tab-pane fade in active top50">
+
+        <!-- Git box -->
+        <div class="row text-right">
+          <div class="col-xs-12 git">
+            <a href="http://bit.ly/1ZQEuiB">
+              <img src="img/github.jpg" alt="Github" style="width:30px; height:30px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 nailsalon">
+            <img src="img/kukoliciousthumbnail.jpg" alt="Kukolicious Nail Salon" class="img-responsive portfolio" style="width:400px;">
+            <a href="Websites/Kukolicious%20Nail%20Salon/index.html" target="_blank" class="imgdescription" id="nailsalon">Nail Salon</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center bottom30 bakeshop">
+            <img src="img/panattierethumbnail.jpg" alt="Panettiere Bakeshop" class="img-responsive portfolio" style="width:400px;">
+            <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="imgdescription" id="bakeshop">Bakeshop</a>
+          </div>
+        </div>
+
+        <div class="row text-center bottom50">
+          <div class="col-sm-6 col-xs-12 text-center bottom30 hairsalon">
+            <img src="img/koronathumbnail2.jpg" alt="Korona Hair Salon" class="img-responsive portfolio" style="width:400px;">
+            <a href="Websites/Korona%20Hair%20Salon/index.html" target="_blank" class="imgdescription" id="hairsalon">Hair Salon</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 text-center bottom30 barbie">
+            <img src="img/barbiehumbnail.jpg" alt="Barbie Website" class="img-responsive portfolio" style="width:400px;">
+            <a href="http://www.brandyandnicky.com" target="_blank" class="imgdescription" id="barbie">Youtube Channel</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact starts here -->
+<section>
+  <div id="contactSection" class="container-fluid text-center">
+    <h1 class="top50">Contact Me</h1>
+
+    <div class="row marginLeftRight top30 bottom100">
+
+      <div class="col-sm-6 text-left top20">
+        <p class="contactFontSize">Thank you for visiting my website.</p>
+        <p class="contactFontSize top10">If you have an offer or inquiries, you can contact me by sending an email<!-- or filling out this form-->.</p>
+      </div>
+
+      <div class="col-sm-6 text-left">
+        <p class="contactFontSize top20">
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
+        <p class="contactFontSize top20">Find me on :
+          &nbsp;
+          <a href="http://bit.ly/1ZQEuiB"><img src="img/github.jpg" alt="Github" style="width:30px; height:30px;"></a>
+          &nbsp;&nbsp;
+          <a href="http://bit.ly/1RXNWwm"><img src="img/linkedinblack.jpg" alt="LinkedIn" style="width:28px; height:28px;"></a>
+          &nbsp;&nbsp;
+          <a href="http://www.bernadetteengleman.com/blog/"><img src="img/wordpress.jpg" alt="Wordpress" style="width:28px; height:28px;"></a>
+        <!--
+        <form role="form" action="contact.php" method="post">
+          <input type="text" class="form-control" id="name" placeholder="Name" required>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+          <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+          <textarea class="form-control" rows="3" id="comment" placeholder="Message" required></textarea>
+
+          <button type="submit" class="btn btn-default">Send</button>
+
+        </form>-->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer starts here -->
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center" id="footerSec">
+      <div class="col-xs-12">
+        <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Copyright Year
+  var d = new Date(), n = d.getFullYear();
+  document.getElementById("year").innerHTML = n;
+
+  //Landing Page
+  $(document).ready(function(){
+    $("#landing").css("height",($(window).height()-49));
+    $("#navSpace").attr("data-offset-top",($(window).height()-52));
+
+    $(window).on("resize", function() {
+      $("#landing").css("height", ($(window).height() - 49));
+      $("#navSpace").attr("data-offset-top", ($(window).height() - 52));
+    });
+
+    var windowWidth=$(window).width();
+     //alert(windowWidth);
+  });
+</script>
+
+</body>
+
+</html>
