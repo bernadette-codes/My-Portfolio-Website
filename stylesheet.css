@@ -8,66 +8,66 @@ body {
 /* Landing Page */
 header {
     background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') left bottom / cover no-repeat scroll;
-    background-blend-mode:saturation;
-    font-family:Georgia,serif;
+    background-blend-mode: saturation;
+    font-family: Georgia, serif;
 }
 
-#intro {
+.landing .intro {
     width: 40%;
     background: #2e2e2e;
-    color:#fff;
+    color: #fff;
     border: 2px solid #e5e5e5;
     margin: 10% auto;
 }
 
-#wdTitle {
-    font-size: 1.3em !important;
+.landing .intro .wdTitle {
+    font-size: 1.3em;
 }
 
 /* Nav Bar */
-.navbar {
+nav.navbar {
     margin-bottom: 0;
-    border: none !important;
-    border-radius: 0 !important;
+    border: none;
+    border-radius: 0;
 }
 
-#wrap1 {
-    overflow:hidden !important;
-    position:relative !important;
+nav.navSpace .wrap1 {
+    overflow: hidden;
+    position: relative;
 }
 
-#wrap2 {
-    float:left  !important;
-    position:relative  !important;
-    left:50%  !important;
+nav.navSpace .wrap1 .wrap2 {
+    float: left;
+    position: relative;
+    left: 50%;
 }
 
-.navbar-nav {
-    float:left!important;
-    position:relative !important;
-    left:-50% !important;
+nav.navSpace .wrap1 .wrap2 ul.navbar-nav {
+    float: left;
+    position: relative;
+    left: -50%;
 }
 
-.navbar-nav li {
-    float: left !important;
-    font-size: 1.35em !important;
+nav.navSpace .wrap1 .wrap2 ul.navbar-nav li {
+    float: left;
+    font-size: 1.35em;
 }
 
-.navbar-nav > li > a {
-    float:left !important;
-    color: #cecece !important;
+nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a {
+    float: left;
+    color: #cecece;
 }
 
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
-    color: #fff !important;
-    background-color: #080808 !important;
+nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a:hover,
+nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #080808;
 }
 
-.affix {
-    top:0;
+nav.affix {
+    top: 0;
     width: 100%;
-    z-index: 9999 !important;
+    z-index: 9999;
 }
 
 .affix ~ .container-fluid  {
@@ -77,14 +77,14 @@ header {
 
 /* About Section */
 #aboutSection {
-    padding-top:50px;
+    padding-top: 50px;
     height: auto;
     color: #191919;
     background-color: #f2f2f2;
 }
 
-#myPhoto {
-    width:250px;
+.marginLeftRight img.myPhoto {
+    width: 250px;
     border-radius: 50%;
     box-shadow: 0 0 8px 2px #e5e5e5;
 }
@@ -94,14 +94,14 @@ header {
     margin-left: auto; margin-right: auto;
 }
 
-.skills {
-    color: #fff !important;
+#aboutSection .marginLeftRight .skills {
+    color: #fff;
     background-color: #2e2e2e;
-    padding: 10px !important;
+    padding: 10px;
     font-size: 1.1em;
     font-weight: bold;
     border-radius: 30px;
-    position:relative;
+    position: relative;
     width: 90%;
 }
 
@@ -113,55 +113,55 @@ header {
 
 
 /* Portfolio Section */
-#portfolioSection {
+section #portfolioSection {
     position: relative;
     padding-top:50px;
-    height:auto;
+    height: auto;
     color: #fff;
     background-color: #383838;
-    padding-bottom:5px !important;
-    margin-bottom: -5px !important;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
 }
 
 #websitesSection {
     position: relative;
     padding-top:50px;
-    height:auto;
+    height: auto;
     color: #fff;
     background-color: #383838;
 }
 
-.nav-tabs > li {
-    background-color: #d9d9d9 !important;
+ul.nav-tabs > li {
+    background-color: #d9d9d9;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     margin-right: 2px;
     width: 25%;
-    text-align: center !important;
-    font-weight: bold !important;
+    text-align: center;
+    font-weight: bold;
 }
 
-.nav-tabs > li:not(li.active) {
-    border: 2px solid #4e4e4e!important;
+ul.nav-tabs > li:not(li.active) {
+    border: 2px solid #4e4e4e;
 }
 
-.nav-tabs > li > a {
+ul.nav-tabs > li > a {
     font-size: 1.2em;
-    color: #323232 !important;
+    color: #323232;
 }
 
-.nav-tabs > li > a:focus, .nav-tabs > li > a:hover {
-    background-color: #f2f2f2 !important;
+ul.nav-tabs > li > a:focus, ul.nav-tabs > li > a:hover {
+    background-color: #f2f2f2;
 }
 
-.nav-tabs > li.active > a {
-    color: #000000 !important;
-    background-color: #fff !important;
-    font-weight: bolder !important;
-    border-bottom: 3px solid #fff!important;
-    border-top: 2px solid #4e4e4e!important;
-    border-left: 2px solid #4e4e4e!important;
-    border-right: 2px solid #4e4e4e!important;
+ul.nav-tabs > li.active > a {
+    color: #000000;
+    background-color: #fff;
+    font-weight: bolder;
+    border-bottom: 3px solid #fff;
+    border-top: 2px solid #4e4e4e;
+    border-left: 2px solid #4e4e4e;
+    border-right: 2px solid #4e4e4e;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     margin-bottom: -3px;
@@ -169,10 +169,10 @@ header {
     z-index: 100;
 }
 
-.tab-content {
-    background-color: #fff !important;
-    color: #222!important;
-    border: 2px solid #4e4e4e!important;
+section div.tab-content {
+    background-color: #fff;
+    color: #222;
+    border: 2px solid #4e4e4e;
 }
 
 .git {
@@ -207,12 +207,12 @@ hr.styleHr:after {
     box-shadow: 0 0 8px 2px #dedede;
 }
 
-.imgdescription {
+section div a.imgdescription {
     width: 300px;
     background-color: #ededed;
-    font-size: 25px !important;
-    font-weight: 800 !important;
-    color: #383838 !important;
+    font-size: 25px;
+    font-weight: 800;
+    color: #383838;
     position: absolute;
     top: 20%;
     bottom:20%;
@@ -225,8 +225,8 @@ hr.styleHr:after {
     opacity: 0.8;
     z-index: 10;
     border-radius: 3%;
-    box-shadow: 0 0 8px 2px #dedede !important;
-    text-decoration: none !important;
+    box-shadow: 0 0 8px 2px #dedede;
+    text-decoration: none;
     visibility: hidden;
 }
 
@@ -273,48 +273,48 @@ div.barbie:hover #barbie, div.barbie:focus #barbie  {
 
 /* Contact Section */
 #contactSection {
-    padding-top:50px;
-    height:auto;
+    padding-top: 50px;
+    height: auto;
     color: #191919;
     background-color: #f2f2f2;
 }
 
 /*
-.form-control {
-    border-radius: 0 !important;
-    color: #fff !important;
-    background-color: #383838 !important;
+form .form-control {
+    border-radius: 0;
+    color: #fff;
+    background-color: #383838;
 }
 
-.form-control:focus {
-    border-color: #000!important;
-    box-shadow: none!important;
+form .form-control:focus {
+    border-color: #000;
+    box-shadow: none;
 }
 
-.form-control::-moz-placeholder {
-    color: #fff !important;
+form .form-control::-moz-placeholder {
+    color: #fff;
     opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
-    color: #fff !important;
+form .form-control:-ms-input-placeholder {
+    color: #fff;
 }
 
-.form-control::-webkit-input-placeholder {
-    color: #fff !important;
+form .form-control::-webkit-input-placeholder {
+    color: #fff;
 }
 
-form > button {
-    color: #fff !important;
-    background-color: #383838 !important;
-    border-radius: 0 !important;
+form > button.btn {
+    color: #fff;
+    background-color: #383838;
+    border-radius: 0;
 }
 */
 
 /* Footer Section */
-#footerSec {
-    padding-top:20px;
-    height:60px;
+footer .footerSec {
+    padding-top: 20px;
+    height: 60px;
     color: #fff;
     background-color: #383838;
 }
@@ -362,66 +362,66 @@ form > button {
 }
 
 /* Font Size */
-.aboutFontSize {
-    font-size: 1.35em !important;
+section div .aboutFontSize {
+    font-size: 1.35em;
 }
 
-.contactFontSize{
-    font-size: 1.5em !important;
+section div p.contactFontSize {
+    font-size: 1.5em;
 }
 
 /* Icon */
-.arrowDown {
-    color: #fff !important;
+header .landing a.arrowDown {
+    color: #fff;
     background-color: #2e2e2e;
     border: 2px solid #e5e5e5;
-    padding: 12px 10px 5px 12px !important;
+    padding: 12px 10px 5px 12px;
     font-size: 1.5em;
     border-radius: 30px;
-    position:relative;
-    -webkit-animation:bounce 1s infinite;
-    animation:bounce 1s infinite;
+    position: relative;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
 }
 
 @-webkit-keyframes bounce {
     0%       { bottom:2px; }
     25%, 75% { bottom:4px; }
     50%      { bottom:6px; }
-    100%     {bottom:0;}
+    100%     { bottom:0; }
 }
 
 @-moz-keyframes bounce {
     0%       { bottom:2px; }
     25%, 75% { bottom:4px; }
     50%      { bottom:6px; }
-    100%     {bottom:0;}
+    100%     { bottom:0; }
 }
 
 @-o-keyframes bounce {
     0%       { bottom:2px; }
     25%, 75% { bottom:4px; }
     50%      { bottom:6px; }
-    100%     {bottom:0;}
+    100%     { bottom:0; }
 }
 
 @keyframes bounce {
     0%       { bottom:2px; }
     25%, 75% { bottom:4px; }
     50%      { bottom:6px; }
-    100%     {bottom:0;}
+    100%     { bottom:0; }
 }
 
 /* Media Queries */
 @media screen and (max-width: 1125px) {
-    #intro {
+    .landing .intro {
         width: 45%;
     }
-    .marginLeftRight {
-        margin-left: 8% !important;
-        margin-right: 8% !important;
+    section div .marginLeftRight {
+        margin-left: 8%;
+        margin-right: 8%;
     }
-    #myPhoto {
-        width :230px !important;
+    .marginLeftRight img.myPhoto {
+        width: 230px;
     }
     .skills {
         font-size: 1em;
@@ -432,23 +432,23 @@ form > button {
     header {
         background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 10% bottom / cover no-repeat scroll;
     }
-    #intro {
+    .landing .intro {
         width: 55%;
         margin: 13% auto;
     }
-    .marginLeftRight {
-        margin-left: 4%!important;
-        margin-right: 4% !important;
+    section div .marginLeftRight {
+        margin-left: 4%;
+        margin-right: 4%;
     }
-    #myPhoto {
-        width :210px !important;
+    .marginLeftRight img.myPhoto {
+        width: 210px;
     }
     .skills {
         font-size: 0.9em;
     }
-    .imgdescription {
+    section div a.imgdescription {
         width: 280px;
-        font-size: 20px !important;
+        font-size: 20px;
     }
 }
 
@@ -456,9 +456,9 @@ form > button {
     .skills {
         font-size: 0.8em;
     }
-    .imgdescription {
+    section div a.imgdescription {
         width: 260px;
-        font-size: 18px !important;
+        font-size: 18px;
     }
 }
 
@@ -466,16 +466,16 @@ form > button {
     header {
         background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
     }
-    #intro {
+    .landing .intro {
         width: 65%;
         margin: 15% auto;
     }
-    .marginLeftRight {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+    section div .marginLeftRight {
+        margin-left: 0;
+        margin-right: 0;
     }
-    #myPhoto {
-        width :190px !important;
+    .marginLeftRight img.myPhoto {
+        width: 190px;
     }
     .skills {
         font-size: 0.9em;
@@ -483,26 +483,26 @@ form > button {
 }
 
 @media screen and (max-width: 767px) {
-    .navbar-nav {
-        margin: 0 !important;
+    nav.navSpace .wrap1 .wrap2 ul.navbar-nav {
+        margin: 0;
     }
-    .navbar-nav > li > a {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
+    nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
-    .marginLeftRight {
-        margin-left: 8% !important;
-        margin-right: 8% !important;
-}
-    #myPhoto {
-        width :200px !important;
+    section div .marginLeftRight {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .marginLeftRight img.myPhoto {
+        width: 200px;
     }
     .skills {
         font-size: 1.05em;
     }
-    .imgdescription {
+    section div a.imgdescription {
         width: 280px;
-        font-size: 22px !important;
+        font-size: 22px;
     }
 }
 
@@ -510,18 +510,18 @@ form > button {
     header {
         background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
     }
-    #intro {
+    .landing .intro {
         width: 75%;
         margin: 15% auto;
     }
-    #myPhoto {
-        width: 190px !important;
+    .marginLeftRight img.myPhoto {
+        width: 190px;
     }
-    .aboutFontSize {
-        font-size: 1.15em !important;
+    section div .aboutFontSize {
+        font-size: 1.15em;
     }
-    .contactFontSize {
-        font-size: 1.3em !important;
+    section div p.contactFontSize {
+        font-size: 1.3em;
     }
     .nav-tabs > li {
         width: 35%;
@@ -538,21 +538,21 @@ form > button {
     .skills {
         font-size: 1.1em;
     }
-    .imgdescription {
+    section div a.imgdescription {
         width: 260px;
-        font-size: 20px !important;
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 570px) {
-    #intro {
+    .landing .intro {
         width: 60%;
     }
-    .aboutFontSize {
-        font-size: 1.10em !important;
+    section div .aboutFontSize {
+        font-size: 1.10em;
     }
-    .contactFontSize{
-        font-size: 1.25em !important;
+    section div p.contactFontSize {
+        font-size: 1.25em;
     }
     .nav-tabs > li {
         width: 38%;
@@ -560,9 +560,9 @@ form > button {
     .skills {
         font-size: 1.05em;
     }
-    .imgdescription {
+    section div a.imgdescription {
         width: 240px;
-        font-size: 18px !important;
+        font-size: 18px;
     }
 }
 
@@ -570,17 +570,17 @@ form > button {
     header {
         background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 17% bottom / cover no-repeat scroll;
     }
-    #intro {
+    .landing .intro {
         width: 77%;
     }
-    #myPhoto {
-        width :150px !important;
+    .marginLeftRight img.myPhoto {
+        width: 150px;
     }
-    .aboutFontSize {
-        font-size: 1.05em !important;
+    section div .aboutFontSize {
+        font-size: 1.05em;
     }
-    .contactFontSize{
-        font-size: 1.2em !important;
+    section div p.contactFontSize {
+        font-size: 1.2em;
     }
     .nav-tabs > li {
         width: 40%;
@@ -597,9 +597,9 @@ form > button {
     .skills {
         font-size: 1em;
     }
-    .imgdescription {
+    section div a.imgdescription {
         width: 220px;
-        font-size: 16px !important;
+        font-size: 16px;
     }
 }
 
@@ -613,9 +613,9 @@ form > button {
     .skills {
         font-size: 0.95em;
     }
-    .imgdescription {
+    section div a.imgdescription {
         width: 210px;
-        font-size: 14px !important;
+        font-size: 14px;
     }
 }
 
