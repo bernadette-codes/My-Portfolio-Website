@@ -7,7 +7,7 @@ body {
 
 /* Landing Page */
 header {
-    background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') left bottom / cover no-repeat scroll;
+    background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') left bottom / cover no-repeat scroll;
     background-blend-mode: saturation;
     font-family: Georgia, serif;
 }
