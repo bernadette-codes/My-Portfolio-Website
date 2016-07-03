@@ -430,7 +430,7 @@ header .landing a.arrowDown {
 
 @media screen and (max-width: 965px) {
     header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 10% bottom / cover no-repeat scroll;
+        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 10% bottom / cover no-repeat scroll;
     }
     .landing .intro {
         width: 55%;
@@ -464,7 +464,7 @@ header .landing a.arrowDown {
 
 @media screen and (max-width: 780px) {
     header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
+        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
     .landing .intro {
         width: 65%;
@@ -508,7 +508,7 @@ header .landing a.arrowDown {
 
 @media screen and (max-width: 650px) {
     header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 20% bottom / cover no-repeat scroll;
+        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
     .landing .intro {
         width: 75%;
@@ -568,7 +568,7 @@ header .landing a.arrowDown {
 
 @media screen and (max-width: 450px) {
     header {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background1.jpg') 17% bottom / cover no-repeat scroll;
+        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 17% bottom / cover no-repeat scroll;
     }
     .landing .intro {
         width: 77%;
