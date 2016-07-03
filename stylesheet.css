@@ -6,13 +6,13 @@ body {
 }
 
 /* Landing Page */
-header {
+header.landing {
     background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') left bottom / cover no-repeat scroll;
     background-blend-mode: saturation;
     font-family: Georgia, serif;
 }
 
-.landing .intro {
+header.landing div.intro {
     width: 40%;
     background: #2e2e2e;
     color: #fff;
@@ -20,358 +20,12 @@ header {
     margin: 10% auto;
 }
 
-.landing .intro .wdTitle {
+header.landing div.intro h2 {
     font-size: 1.3em;
 }
 
-/* Nav Bar */
-nav.navbar {
-    margin-bottom: 0;
-    border: none;
-    border-radius: 0;
-}
-
-nav.navSpace .wrap1 {
-    overflow: hidden;
-    position: relative;
-}
-
-nav.navSpace .wrap1 .wrap2 {
-    float: left;
-    position: relative;
-    left: 50%;
-}
-
-nav.navSpace .wrap1 .wrap2 ul.navbar-nav {
-    float: left;
-    position: relative;
-    left: -50%;
-}
-
-nav.navSpace .wrap1 .wrap2 ul.navbar-nav li {
-    float: left;
-    font-size: 1.35em;
-}
-
-nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a {
-    float: left;
-    color: #cecece;
-}
-
-nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a:hover,
-nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a:focus {
-    color: #fff;
-    background-color: #080808;
-}
-
-nav.affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-.affix ~ .container-fluid  {
-    position: relative;
-    top: 50px;
-}
-
-/* About Section */
-#aboutSection {
-    padding-top: 50px;
-    height: auto;
-    color: #191919;
-    background-color: #f2f2f2;
-}
-
-.marginLeftRight img.myPhoto {
-    width: 250px;
-    border-radius: 50%;
-    box-shadow: 0 0 8px 2px #e5e5e5;
-}
-
-.center {
-    position: relative;
-    margin-left: auto; margin-right: auto;
-}
-
-#aboutSection .marginLeftRight .skills {
-    color: #fff;
-    background-color: #2e2e2e;
-    padding: 10px;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 30px;
-    position: relative;
-    width: 90%;
-}
-
-.separator {
-    content: " ";
-    border-right: 1px solid #191919;
-    line-height: 1.75em;
-}
-
-
-/* Portfolio Section */
-section #portfolioSection {
-    position: relative;
-    padding-top:50px;
-    height: auto;
-    color: #fff;
-    background-color: #383838;
-    padding-bottom: 5px;
-    margin-bottom: -5px;
-}
-
-#websitesSection {
-    position: relative;
-    padding-top:50px;
-    height: auto;
-    color: #fff;
-    background-color: #383838;
-}
-
-ul.nav-tabs > li {
-    background-color: #d9d9d9;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    margin-right: 2px;
-    width: 25%;
-    text-align: center;
-    font-weight: bold;
-}
-
-ul.nav-tabs > li:not(li.active) {
-    border: 2px solid #4e4e4e;
-}
-
-ul.nav-tabs > li > a {
-    font-size: 1.2em;
-    color: #323232;
-}
-
-ul.nav-tabs > li > a:focus, ul.nav-tabs > li > a:hover {
-    background-color: #f2f2f2;
-}
-
-ul.nav-tabs > li.active > a {
-    color: #000000;
-    background-color: #fff;
-    font-weight: bolder;
-    border-bottom: 3px solid #fff;
-    border-top: 2px solid #4e4e4e;
-    border-left: 2px solid #4e4e4e;
-    border-right: 2px solid #4e4e4e;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    margin-bottom: -3px;
-    margin-right: -1px;
-    z-index: 100;
-}
-
-section div.tab-content {
-    background-color: #fff;
-    color: #222;
-    border: 2px solid #4e4e4e;
-}
-
-.git {
-    margin-top: -40px;
-    margin-bottom: 30px;
-}
-
-hr.styleHr {
-    border-top: 1px solid #fff;
-    text-align: center;
-    width: 70%
-}
-
-hr.styleHr:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -20px;
-    padding: 0 5px;
-    background: #383838;
-    color: #fff;
-    font-size: 30px;
-    -webkit-transform: rotate(50deg);
-    -moz-transform: rotate(50deg);
-    transform: rotate(50deg);
-}
-
-.portfolio  {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 8px 2px #dedede;
-}
-
-section div a.imgdescription {
-    width: 300px;
-    background-color: #ededed;
-    font-size: 25px;
-    font-weight: 800;
-    color: #383838;
-    position: absolute;
-    top: 20%;
-    bottom:20%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    opacity: 0.8;
-    z-index: 10;
-    border-radius: 3%;
-    box-shadow: 0 0 8px 2px #dedede;
-    text-decoration: none;
-    visibility: hidden;
-}
-
-div.fly:hover #fly, div.fly:focus #fly  {
-    visibility: visible;
-}
-
-div.pop:hover #pop, div.pop:focus #pop  {
-    visibility: visible;
-}
-
-div.cookie:hover #cookie, div.cookie:focus #cookie  {
-    visibility: visible;
-}
-
-div.birth:hover #birth, div.birth:focus #birth  {
-     visibility: visible;
- }
-
-div.ghost:hover #ghost, div.ghost:focus #ghost  {
-    visibility: visible;
-}
-
-div.catsdogs:hover #catsdogs, div.catsdogs:focus #catsdogs  {
-    visibility: visible;
-}
-
-
-div.nailsalon:hover #nailsalon, div.nailsalon:focus #nailsalon  {
-    visibility: visible;
-}
-
-div.bakeshop:hover #bakeshop, div.bakeshop:focus #bakeshop  {
-    visibility: visible;
-}
-
-div.hairsalon:hover #hairsalon, div.hairsalon:focus #hairsalon  {
-    visibility: visible;
-}
-
-div.barbie:hover #barbie, div.barbie:focus #barbie  {
-    visibility: visible;
-}
-
-/* Contact Section */
-#contactSection {
-    padding-top: 50px;
-    height: auto;
-    color: #191919;
-    background-color: #f2f2f2;
-}
-
-/*
-form .form-control {
-    border-radius: 0;
-    color: #fff;
-    background-color: #383838;
-}
-
-form .form-control:focus {
-    border-color: #000;
-    box-shadow: none;
-}
-
-form .form-control::-moz-placeholder {
-    color: #fff;
-    opacity: 1;
-}
-
-form .form-control:-ms-input-placeholder {
-    color: #fff;
-}
-
-form .form-control::-webkit-input-placeholder {
-    color: #fff;
-}
-
-form > button.btn {
-    color: #fff;
-    background-color: #383838;
-    border-radius: 0;
-}
-*/
-
-/* Footer Section */
-footer .footerSec {
-    padding-top: 20px;
-    height: 60px;
-    color: #fff;
-    background-color: #383838;
-}
-
-/* Margin & Padding */
-.indent {
-    text-indent: 100px;
-}
-
-.top10 {
-    margin-top: 10px;
-}
-
-.top20 {
-    margin-top: 20px;
-}
-
-.top30 {
-    margin-top: 30px;
-}
-
-.top50 {
-    padding-top: 50px;
-}
-
-.bottom30 {
-    margin-bottom: 30px;
-}
-
-.bottom50 {
-    margin-bottom: 50px;
-}
-
-.bottom100 {
-    margin-bottom: 100px;
-}
-
-.marginLeftRight {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.LeftRight {
-    width: 85%
-}
-
-/* Font Size */
-section div .aboutFontSize {
-    font-size: 1.35em;
-}
-
-section div p.contactFontSize {
-    font-size: 1.5em;
-}
-
-/* Icon */
-header .landing a.arrowDown {
+/* Arrow Icon */
+header.landing a {
     color: #fff;
     background-color: #2e2e2e;
     border: 2px solid #e5e5e5;
@@ -411,220 +65,423 @@ header .landing a.arrowDown {
     100%     { bottom:0; }
 }
 
+/* Nav Bar */
+nav.navbar.navbar-inverse {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+
+nav.navbar.navbar-inverse .wrap1 {
+    overflow: hidden;
+    position: relative;
+}
+
+nav.navbar.navbar-inverse .wrap2 {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+nav.navbar.navbar-inverse ul.nav.navbar-nav {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+nav.navbar.navbar-inverse ul.nav.navbar-nav li {
+    float: left;
+    font-size: 1.35em;
+}
+
+nav.navbar.navbar-inverse ul.nav.navbar-nav > li > a {
+    float: left;
+    color: #cecece;
+}
+
+nav.navbar.navbar-inverse ul.nav.navbar-nav > li > a:hover,
+nav.navbar.navbar-inverse ul.nav.navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+
+nav.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.affix ~ .container-fluid  {
+    position: relative;
+    top: 50px;
+}
+
+/* About Section */
+div#aboutSection {
+    padding-top: 50px;
+    height: auto;
+    color: #191919;
+    background-color: #f2f2f2;
+}
+
+div#aboutSection img.myPhoto {
+    position: relative;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px #e5e5e5;
+}
+
+div#aboutSection div.row p.skills {
+    color: #fff;
+    background-color: #2e2e2e;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    position: relative;
+    width: 90%;
+}
+
+div#aboutSection span.separator {
+    content: " ";
+    border-right: 1px solid #191919;
+    line-height: 1.75em;
+}
+
+/* Portfolio Section */
+section div#portfolioSection {
+    position: relative;
+    padding-top:50px;
+    height: auto;
+    color: #fff;
+    background-color: #383838;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+}
+
+section div#portfolioSection div.portfolioContent {
+    background-color: #fff;
+    color: #222;
+    border: 2px solid #4e4e4e;
+}
+
+section div#portfolioSection div.git {
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+section div#portfolioSection img.portfolio  {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 8px 2px #dedede;
+}
+
+section div#portfolioSection a.imgdescription {
+    width: 300px;
+    background-color: #ededed;
+    font-size: 25px;
+    font-weight: 800;
+    color: #383838;
+    position: absolute;
+    top: 20%;
+    bottom:20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    opacity: 0.8;
+    z-index: 10;
+    border-radius: 3%;
+    box-shadow: 0 0 8px 2px #dedede;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+div.fly:hover #fly, div.fly:focus #fly,
+div.pop:hover #pop, div.pop:focus #pop,
+div.cookie:hover #cookie, div.cookie:focus #cookie,
+div.birth:hover #birth, div.birth:focus #birth,
+div.ghost:hover #ghost, div.ghost:focus #ghost,
+div.catsdogs:hover #catsdogs, div.catsdogs:focus #catsdogs,
+div.nailsalon:hover #nailsalon, div.nailsalon:focus #nailsalon,
+div.bakeshop:hover #bakeshop, div.bakeshop:focus #bakeshop,
+div.hairsalon:hover #hairsalon, div.hairsalon:focus #hairsalon,
+div.barbie:hover #barbie, div.barbie:focus #barbie  {
+    visibility: visible;
+}
+
+/* Contact Section */
+section #contactSection {
+    padding-top: 50px;
+    height: auto;
+    color: #191919;
+    background-color: #f2f2f2;
+}
+
+/*
+form .form-control {
+    border-radius: 0;
+    color: #fff;
+    background-color: #383838;
+}
+form .form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+form .form-control::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+form .form-control:-ms-input-placeholder {
+    color: #fff;
+}
+form .form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+form > button.btn {
+    color: #fff;
+    background-color: #383838;
+    border-radius: 0;
+}
+*/
+
+/* Footer Section */
+footer div.footerSec {
+    padding-top: 20px;
+    height: 60px;
+    color: #fff;
+    background-color: #383838;
+}
+
+/* Margin & Padding */
+.top10 {
+    margin-top: 10px;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+.top30 {
+    margin-top: 30px;
+}
+
+.top50 {
+    padding-top: 50px;
+}
+
+.bottom30 {
+    margin-bottom: 30px;
+}
+
+.bottom50 {
+    margin-bottom: 50px;
+}
+
+.bottom100 {
+    margin-bottom: 100px;
+}
+
+section div.marginLeftRight {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.LeftRight {
+    width: 85%
+}
+
+/* Font Size */
+section .aboutFontSize {
+    font-size: 1.35em;
+}
+
+section p.contactFontSize {
+    font-size: 1.5em;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1125px) {
-    .landing .intro {
+    header.landing div.intro {
         width: 45%;
     }
-    section div .marginLeftRight {
+    section div.marginLeftRight {
         margin-left: 8%;
         margin-right: 8%;
     }
-    .marginLeftRight img.myPhoto {
+    div#aboutSection img.myPhoto {
         width: 230px;
     }
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 1em;
     }
 }
 
 @media screen and (max-width: 965px) {
-    header {
+    header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 10% bottom / cover no-repeat scroll;
     }
-    .landing .intro {
+    header.landing div.intro {
         width: 55%;
         margin: 13% auto;
     }
-    section div .marginLeftRight {
+    section div.marginLeftRight {
         margin-left: 4%;
         margin-right: 4%;
     }
-    .marginLeftRight img.myPhoto {
+    div#aboutSection img.myPhoto {
         width: 210px;
     }
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 0.9em;
     }
-    section div a.imgdescription {
+    section div#portfolioSection a.imgdescription {
         width: 280px;
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 860px) {
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 0.8em;
     }
-    section div a.imgdescription {
+    section div#portfolioSection a.imgdescription {
         width: 260px;
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 780px) {
-    header {
+    header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
-    .landing .intro {
+    header.landing div.intro {
         width: 65%;
         margin: 15% auto;
     }
-    section div .marginLeftRight {
+    section div.marginLeftRight {
         margin-left: 0;
         margin-right: 0;
     }
-    .marginLeftRight img.myPhoto {
+    div#aboutSection img.myPhoto {
         width: 190px;
     }
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 767px) {
-    nav.navSpace .wrap1 .wrap2 ul.navbar-nav {
+    nav.navbar.navbar-inverse ul.nav.navbar-nav {
         margin: 0;
     }
-    nav.navSpace .wrap1 .wrap2 ul.navbar-nav > li > a {
+    nav.navbar.navbar-inverse ul.nav.navbar-nav > li > a {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    section div .marginLeftRight {
+    section div.marginLeftRight {
         margin-left: 8%;
         margin-right: 8%;
     }
-    .marginLeftRight img.myPhoto {
+    div#aboutSection img.myPhoto {
         width: 200px;
     }
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 1.05em;
     }
-    section div a.imgdescription {
+    section div#portfolioSection a.imgdescription {
         width: 280px;
         font-size: 22px;
     }
 }
 
 @media screen and (max-width: 650px) {
-    header {
+    header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
-    .landing .intro {
+    header.landing div.intro {
         width: 75%;
         margin: 15% auto;
     }
-    .marginLeftRight img.myPhoto {
+    div#aboutSection img.myPhoto {
         width: 190px;
     }
-    section div .aboutFontSize {
+    section .aboutFontSize {
         font-size: 1.15em;
     }
-    section div p.contactFontSize {
+    section p.contactFontSize {
         font-size: 1.3em;
-    }
-    .nav-tabs > li {
-        width: 35%;
-    }
-    .nav-tabs > li > a {
-        font-size: 1.1em;
-    }
-    .nav-tabs > li.active > a {
-        font-size: 1.1em;
     }
     .LeftRight {
         width: 88%
     }
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 1.1em;
     }
-    section div a.imgdescription {
+    section div#portfolioSection a.imgdescription {
         width: 260px;
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 570px) {
-    .landing .intro {
+    header.landing div.intro {
         width: 60%;
     }
-    section div .aboutFontSize {
+    section .aboutFontSize {
         font-size: 1.10em;
     }
-    section div p.contactFontSize {
+    section p.contactFontSize {
         font-size: 1.25em;
     }
-    .nav-tabs > li {
-        width: 38%;
-    }
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 1.05em;
     }
-    section div a.imgdescription {
+    section div#portfolioSection a.imgdescription {
         width: 240px;
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    header {
+    header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 17% bottom / cover no-repeat scroll;
     }
-    .landing .intro {
+    header.landing div.intro {
         width: 77%;
     }
-    .marginLeftRight img.myPhoto {
+    div#aboutSection img.myPhoto {
         width: 150px;
     }
-    section div .aboutFontSize {
+    section .aboutFontSize {
         font-size: 1.05em;
     }
-    section div p.contactFontSize {
+    section p.contactFontSize {
         font-size: 1.2em;
-    }
-    .nav-tabs > li {
-        width: 40%;
-    }
-    .nav-tabs > li > a {
-        font-size: 1em;
-    }
-    .nav-tabs > li.active > a {
-        font-size: 1em;
     }
     .LeftRight {
         width: 90%
     }
-    .skills {
+    div#aboutSection div.row p.skills {
         font-size: 1em;
     }
-    section div a.imgdescription {
+    section div#portfolioSection a.imgdescription {
         width: 220px;
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .nav-tabs > li > a {
+    div#aboutSection div.row p.skills {
         font-size: 0.95em;
     }
-    .nav-tabs > li.active > a {
-        font-size: 0.95em;
-    }
-    .skills {
-        font-size: 0.95em;
-    }
-    section div a.imgdescription {
+    section div#portfolioSection a.imgdescription {
         width: 210px;
         font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .nav-tabs > li > a {
-        font-size: 0.85em;
-    }
-
-    .nav-tabs > li.active > a {
-        font-size: 0.85em;
     }
 }
