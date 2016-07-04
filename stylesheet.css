@@ -12,6 +12,7 @@ header.landing {
     font-family: Georgia, serif;
 }
 
+/* Name Box */
 header.landing div.intro {
     width: 40%;
     background: #2e2e2e;
@@ -20,6 +21,7 @@ header.landing div.intro {
     margin: 10% auto;
 }
 
+/* Name */
 header.landing div.intro h2 {
     font-size: 1.3em;
 }
@@ -124,6 +126,7 @@ div#aboutSection {
     padding-top: 30px;
 }
 
+/* Profile Photo */
 div#aboutSection img.myPhoto {
     position: relative;
     width: 250px;
@@ -133,6 +136,7 @@ div#aboutSection img.myPhoto {
     box-shadow: 0 0 8px 2px #e5e5e5;
 }
 
+/* Skills */
 div#aboutSection div.row p.skills {
     color: #fff;
     background-color: #2e2e2e;
@@ -144,6 +148,7 @@ div#aboutSection div.row p.skills {
     width: 90%;
 }
 
+/* Date Separator */
 div#aboutSection span.separator {
     content: " ";
     border-right: 1px solid #191919;
@@ -161,10 +166,12 @@ section div#portfolioSection {
     margin-bottom: -5px;
 }
 
+/* Portfolio Title */
 section div#portfolioSection h1 {
     margin-bottom: 30px;
 }
 
+/* Portfolio White Background */
 section div#portfolioSection div.portfolioContent {
     background-color: #fff;
     color: #222;
@@ -176,6 +183,7 @@ section div#portfolioSection div.git {
     margin-bottom: 30px;
 }
 
+/* Portfolio Thumbnails */
 div.portfolioContent figure img {
     border-radius: 5px;
     box-shadow: 0 0 8px 2px #dedede;
@@ -187,6 +195,7 @@ div.portfolioContent figure {
     margin: 5px;
 }
 
+/* Portfolio Thumbnails Layover */
 div.portfolioContent figcaption {
     position: absolute;
     top: 0;
@@ -205,6 +214,7 @@ figure:hover figcaption {
     opacity: 1;
 }
 
+/* Portfolio Thumbnails Description */
 div.portfolioContent figcaption a {
     font-size: 25px;
     font-weight: 800;
@@ -283,11 +293,13 @@ footer div.footerSec {
     margin-bottom: 100px;
 }
 
+/* About & Contact Margin */
 section div.marginLeftRight {
     margin-left: 10%;
     margin-right: 10%;
 }
 
+/* Portfolio Width */
 .LeftRight {
     width: 85%
 }
@@ -303,107 +315,118 @@ section p.contactFontSize {
 
 /* Media Queries */
 @media screen and (max-width: 1125px) {
+    /* Name Box */
     header.landing div.intro {
         width: 45%;
     }
+    /* About & Contact Margin */
     section div.marginLeftRight {
         margin-left: 8%;
         margin-right: 8%;
     }
+    /* Profile Photo */
     div#aboutSection img.myPhoto {
         width: 230px;
     }
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 1em;
     }
 }
 
 @media screen and (max-width: 965px) {
+    /* Landing Page */
     header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 10% bottom / cover no-repeat scroll;
     }
+    /* Name Box */
     header.landing div.intro {
         width: 55%;
         margin: 13% auto;
     }
+    /* About & Contact Margin */
     section div.marginLeftRight {
         margin-left: 4%;
         margin-right: 4%;
     }
+    /* Profile Photo */
     div#aboutSection img.myPhoto {
         width: 210px;
     }
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 0.9em;
-    }
-    section div#portfolioSection a.imgdescription {
-        width: 280px;
-        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 860px) {
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 0.8em;
-    }
-    section div#portfolioSection a.imgdescription {
-        width: 260px;
-        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 780px) {
+    /* Landing Page */
     header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
+    /* Name Box */
     header.landing div.intro {
         width: 65%;
         margin: 15% auto;
     }
+    /* About & Contact Margin */
     section div.marginLeftRight {
         margin-left: 0;
         margin-right: 0;
     }
+    /* Profile Photo */
     div#aboutSection img.myPhoto {
         width: 190px;
     }
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 767px) {
+    /* Nav Bar */
     nav.navbar.navbar-inverse ul.nav.navbar-nav {
         margin: 0;
     }
+    /* Nav Bar Link */
     nav.navbar.navbar-inverse ul.nav.navbar-nav > li > a {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    /* About & Contact Margin */
     section div.marginLeftRight {
         margin-left: 8%;
         margin-right: 8%;
     }
+    /* Profile Photo */
     div#aboutSection img.myPhoto {
         width: 200px;
     }
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 1.05em;
-    }
-    section div#portfolioSection a.imgdescription {
-        width: 280px;
-        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 650px) {
+    /* Landing Page */
     header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
+    /* Name Box */
     header.landing div.intro {
         width: 75%;
         margin: 15% auto;
     }
+    /* Profile Photo */
     div#aboutSection img.myPhoto {
         width: 190px;
     }
@@ -413,19 +436,18 @@ section p.contactFontSize {
     section p.contactFontSize {
         font-size: 1.3em;
     }
+    /* Portfolio Width */
     .LeftRight {
         width: 88%
     }
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 1.1em;
-    }
-    section div#portfolioSection a.imgdescription {
-        width: 260px;
-        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 570px) {
+    /* Name Box */
     header.landing div.intro {
         width: 60%;
     }
@@ -435,22 +457,22 @@ section p.contactFontSize {
     section p.contactFontSize {
         font-size: 1.25em;
     }
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 1.05em;
-    }
-    section div#portfolioSection a.imgdescription {
-        width: 240px;
-        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 450px) {
+    /* Landing Page */
     header.landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 17% bottom / cover no-repeat scroll;
     }
+    /* Name Box */
     header.landing div.intro {
         width: 77%;
     }
+    /* Profile Photo */
     div#aboutSection img.myPhoto {
         width: 150px;
     }
@@ -460,24 +482,19 @@ section p.contactFontSize {
     section p.contactFontSize {
         font-size: 1.2em;
     }
+    /* Portfolio Width */
     .LeftRight {
         width: 90%
     }
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 1em;
-    }
-    section div#portfolioSection a.imgdescription {
-        width: 220px;
-        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 400px) {
+    /* Skills */
     div#aboutSection div.row p.skills {
         font-size: 0.95em;
-    }
-    section div#portfolioSection a.imgdescription {
-        width: 210px;
-        font-size: 14px;
     }
 }
