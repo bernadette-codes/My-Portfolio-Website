@@ -6,14 +6,14 @@ body {
 }
 
 /* Landing Page */
-header.landing {
+.landing {
     background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') left bottom / cover no-repeat scroll;
     background-blend-mode: saturation;
     font-family: Georgia, serif;
 }
 
 /* Name Box */
-header.landing .intro {
+.intro {
     width: 40%;
     background: #2e2e2e;
     color: #fff;
@@ -22,12 +22,12 @@ header.landing .intro {
 }
 
 /* Name */
-.landing .intro h2 {
+.intro h2 {
     font-size: 1.3em;
 }
 
 /* Arrow Icon */
-header.landing a {
+.landing a {
     color: #fff;
     background-color: #2e2e2e;
     border: 2px solid #e5e5e5;
@@ -68,7 +68,7 @@ header.landing a {
 }
 
 /* Nav Bar */
-nav.navbar.navbar-inverse {
+.navbar.navbar-inverse {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
@@ -85,24 +85,24 @@ nav.navbar.navbar-inverse {
     left: 50%;
 }
 
-.navbar ul.nav.navbar-nav {
+ul.nav.navbar-nav {
     float: left;
     position: relative;
     left: -50%;
 }
 
-.navbar ul.nav.navbar-nav li {
+ul.nav.navbar-nav li {
     float: left;
     font-size: 1.35em;
 }
 
-.navbar ul.nav.navbar-nav > li > a {
+ul.nav.navbar-nav > li > a {
     float: left;
     color: #cecece;
 }
 
-.navbar ul.nav.navbar-nav > li > a:hover,
-.navbar ul.nav.navbar-nav > li > a:focus {
+ul.nav.navbar-nav > li > a:hover,
+ul.nav.navbar-nav > li > a:focus {
     color: #fff;
     background-color: #080808;
 }
@@ -119,7 +119,7 @@ nav.affix {
 }
 
 /* About Section */
-div#aboutSection {
+#aboutSection {
     background-color: #f2f2f2;
     color: #191919;
     height: auto;
@@ -127,7 +127,7 @@ div#aboutSection {
 }
 
 /* Profile Photo */
-#aboutSection img.myPhoto {
+.myPhoto {
     position: relative;
     width: 250px;
     margin-left: auto;
@@ -137,7 +137,7 @@ div#aboutSection {
 }
 
 /* Skills */
-#aboutSection p.skills {
+.skills {
     color: #fff;
     background-color: #2e2e2e;
     padding: 10px;
@@ -149,22 +149,20 @@ div#aboutSection {
 }
 
 /* Social Media Icons */
-#aboutSection img.socialIcons,
-#portfolioSection img.socialIcons,
-#contactSection img.socialIcons {
+.socialIcons {
     width:30px;
     height:30px;
 }
 
 /* Date Separator */
-#aboutSection span.separator {
+.separator {
     content: " ";
     border-right: 1px solid #191919;
     line-height: 1.75em;
 }
 
 /* Portfolio Section */
-section #portfolioSection {
+#portfolioSection {
     position: relative;
     padding-top: 30px;
     height: auto;
@@ -175,37 +173,37 @@ section #portfolioSection {
 }
 
 /* Portfolio Title */
-section #portfolioSection h1 {
+#portfolioSection h1 {
     margin-bottom: 30px;
 }
 
 /* Portfolio White Background */
-section #portfolioSection .portfolioContent {
+.portfolioContent {
     background-color: #fff;
     color: #222;
     border: 2px solid #4e4e4e;
 }
 
-section #portfolioSection .git {
+#portfolioSection .git {
     margin-top: -40px;
     margin-bottom: 30px;
 }
 
 /* Portfolio Thumbnails */
-.portfolioContent figure img {
+figure img {
     width:400px;
     border-radius: 5px;
     box-shadow: 0 0 8px 2px #dedede;
 }
 
-.portfolioContent figure {
+figure {
     display: inline-block;
     position: relative;
     margin: 5px;
 }
 
 /* Portfolio Thumbnails Layover */
-.portfolioContent figcaption {
+figcaption {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -224,14 +222,14 @@ figure:hover figcaption {
 }
 
 /* Portfolio Thumbnails Description */
-.portfolioContent figure a {
+a.portfolioLink {
     font-size: 25px;
     font-weight: 800;
     color: #383838;
 }
 
 /* Contact Section */
-section #contactSection {
+#contactSection {
     padding-top: 30px;
     height: auto;
     color: #191919;
@@ -266,7 +264,7 @@ form > button.btn {
 */
 
 /* Footer Section */
-footer .footerSec {
+.footerSec {
     padding-top: 20px;
     height: 60px;
     color: #fff;
@@ -303,7 +301,7 @@ footer .footerSec {
 }
 
 /* About & Contact Margin */
-section .marginLeftRight {
+.marginLeftRight {
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -314,135 +312,135 @@ section .marginLeftRight {
 }
 
 /* Font Size */
-section .aboutFontSize {
+.aboutFontSize {
     font-size: 1.35em;
 }
 
-section p.contactFontSize {
+.contactFontSize {
     font-size: 1.5em;
 }
 
 /* Media Queries */
 @media screen and (max-width: 1125px) {
     /* Name Box */
-    header.landing .intro {
+    .intro {
         width: 45%;
     }
     /* About & Contact Margin */
-    section .marginLeftRight {
+    .marginLeftRight {
         margin-left: 8%;
         margin-right: 8%;
     }
     /* Profile Photo */
-    #aboutSection img.myPhoto {
+    .myPhoto {
         width: 230px;
     }
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 1em;
     }
 }
 
 @media screen and (max-width: 965px) {
     /* Landing Page */
-    header.landing {
+    .landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 10% bottom / cover no-repeat scroll;
     }
     /* Name Box */
-    header.landing .intro {
+    .intro {
         width: 55%;
         margin: 13% auto;
     }
     /* About & Contact Margin */
-    section .marginLeftRight {
+    .marginLeftRight {
         margin-left: 4%;
         margin-right: 4%;
     }
     /* Profile Photo */
-    #aboutSection img.myPhoto {
+    .myPhoto {
         width: 210px;
     }
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 860px) {
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 0.8em;
     }
 }
 
 @media screen and (max-width: 780px) {
     /* Landing Page */
-    header.landing {
+    .landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
     /* Name Box */
-    header.landing .intro {
+    .intro {
         width: 65%;
         margin: 15% auto;
     }
     /* About & Contact Margin */
-    section .marginLeftRight {
+    .marginLeftRight {
         margin-left: 0;
         margin-right: 0;
     }
     /* Profile Photo */
-    #aboutSection img.myPhoto {
+    .myPhoto {
         width: 190px;
     }
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 767px) {
     /* Nav Bar */
-    .navbar ul.nav.navbar-nav {
+    ul.nav.navbar-nav {
         margin: 0;
     }
     /* Nav Bar Link */
-    .navbar. ul.nav.navbar-nav > li > a {
+    ul.nav.navbar-nav > li > a {
         padding-top: 15px;
         padding-bottom: 15px;
     }
     /* About & Contact Margin */
-    section .marginLeftRight {
+    .marginLeftRight {
         margin-left: 8%;
         margin-right: 8%;
     }
     /* Profile Photo */
-    #aboutSection img.myPhoto {
+    .myPhoto {
         width: 200px;
     }
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 1.05em;
     }
 }
 
 @media screen and (max-width: 650px) {
     /* Landing Page */
-    header.landing {
+    .landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
     }
     /* Name Box */
-    header.landing .intro {
+    .intro {
         width: 75%;
         margin: 15% auto;
     }
     /* Profile Photo */
-    #aboutSection img.myPhoto {
+    .myPhoto {
         width: 190px;
     }
-    section .aboutFontSize {
+    .aboutFontSize {
         font-size: 1.15em;
     }
-    section p.contactFontSize {
+    .contactFontSize {
         font-size: 1.3em;
     }
     /* Portfolio Width */
@@ -450,45 +448,45 @@ section p.contactFontSize {
         width: 88%
     }
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 1.1em;
     }
 }
 
 @media screen and (max-width: 570px) {
     /* Name Box */
-    header.landing .intro {
+    .intro {
         width: 60%;
     }
-    section .aboutFontSize {
+    .aboutFontSize {
         font-size: 1.10em;
     }
-    section p.contactFontSize {
+    .contactFontSize {
         font-size: 1.25em;
     }
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 1.05em;
     }
 }
 
 @media screen and (max-width: 450px) {
     /* Landing Page */
-    header.landing {
+    .landing {
         background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 17% bottom / cover no-repeat scroll;
     }
     /* Name Box */
-    header.landing .intro {
+    .intro {
         width: 77%;
     }
     /* Profile Photo */
-    #aboutSection img.myPhoto {
+    .myPhoto {
         width: 150px;
     }
-    section .aboutFontSize {
+    .aboutFontSize {
         font-size: 1.05em;
     }
-    section p.contactFontSize {
+    .contactFontSize {
         font-size: 1.2em;
     }
     /* Portfolio Width */
@@ -496,14 +494,14 @@ section p.contactFontSize {
         width: 90%
     }
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 1em;
     }
 }
 
 @media screen and (max-width: 400px) {
     /* Skills */
-    #aboutSection p.skills {
+    .skills {
         font-size: 0.95em;
     }
 }
