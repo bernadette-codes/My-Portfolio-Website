@@ -113,13 +113,9 @@ nav.affix {
     z-index: 9999;
 }
 
-.affix ~ .container-fluid  {
-    position: relative;
-    top: 50px;
-}
-
 /* About Section */
 #aboutSection {
+    position: relative;
     background-color: #f2f2f2;
     color: #191919;
     height: auto;
@@ -164,12 +160,10 @@ nav.affix {
 /* Portfolio Section */
 #portfolioSection {
     position: relative;
-    padding-top: 30px;
     height: auto;
     color: #fff;
     background-color: #383838;
-    padding-bottom: 5px;
-    margin-bottom: -5px;
+    padding-top: 30px;
 }
 
 /* Portfolio Title */
@@ -230,10 +224,10 @@ a.portfolioLink {
 
 /* Contact Section */
 #contactSection {
-    padding-top: 30px;
-    height: auto;
     color: #191919;
     background-color: #f2f2f2;
+    height: auto;
+    padding-top: 30px;
 }
 
 /*
@@ -344,7 +338,7 @@ form > button.btn {
 @media screen and (max-width: 965px) {
     /* Landing Page */
     .landing {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 10% bottom / cover no-repeat scroll;
+        background-position: 10% bottom;
     }
     /* Name Box */
     .intro {
@@ -376,7 +370,7 @@ form > button.btn {
 @media screen and (max-width: 780px) {
     /* Landing Page */
     .landing {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
+        background-position: 20% bottom;
     }
     /* Name Box */
     .intro {
@@ -426,7 +420,7 @@ form > button.btn {
 @media screen and (max-width: 650px) {
     /* Landing Page */
     .landing {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 20% bottom / cover no-repeat scroll;
+        background-position: 20% bottom;
     }
     /* Name Box */
     .intro {
@@ -473,7 +467,7 @@ form > button.btn {
 @media screen and (max-width: 450px) {
     /* Landing Page */
     .landing {
-        background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') 17% bottom / cover no-repeat scroll;
+        background-position: 17% bottom;
     }
     /* Name Box */
     .intro {
