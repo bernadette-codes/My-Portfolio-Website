@@ -11,16 +11,16 @@
   <meta name="author" content="Bernadette Engleman">
   <meta property="og:image" content="http://bernadetteengleman.com/img/profilephoto.jpg"/>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="stylesheet.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </head>
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="160">
 
 <!-- Header -->
-<header class="container-fluid landing">
+<header class="container-fluid landing stellar-bg" data-stellar-background-ratio="0.8">
   <!-- Name Box -->
   <div class="well text-center intro">
     <h1>Bernadette Engleman</h1>
@@ -29,7 +29,7 @@
 
   <!-- Arrow Down Icon -->
   <div class="text-center">
-    <a href="#downSection">
+    <a href="#aboutSection" id="arrow">
       <span class="glyphicon glyphicon-chevron-down"></span>
     </a>
   </div>
@@ -50,12 +50,12 @@
 </nav>
 
 <!-- About Section -->
-<section id="downSection">
+<section>
   <div id="aboutSection" class="container-fluid text-center">
-    <h1 class="top50">About Me</h1>
+    <h1>About Me</h1>
 
     <div class="row marginLeftRight top30 bottom100">
-      <div class="col-sm-4">
+      <div class="col-sm-4 wow slideInUp">
         <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive text-center top20 myPhoto">
 
         <!-- Coding Skills -->
@@ -63,10 +63,10 @@
 
         <div class="row top20 bottom30">
           <div class="col-xs-6">
-            <p class="text-center skills">HTML5</p>
+            <p class="text-center skills">HTML</p>
           </div>
           <div class="col-xs-6">
-            <p class="text-center skills">CSS3</p>
+            <p class="text-center skills">CSS</p>
           </div>
           <div class="col-xs-6">
             <p class="text-center skills">JavaScript</p>
@@ -146,8 +146,8 @@
 
 <!-- Portfolio -->
 <section>
-  <div class="container-fluid text-center" id="portfolioSection">
-    <h1 class="top50">Portfolio</h1>
+  <div id="portfolioSection" class="container-fluid text-center">
+    <h1>Portfolio</h1>
 
     <div class="portfolioContent container LeftRight top50 bottom100">
 
@@ -160,7 +160,7 @@
         </div>
       </div>
 
-      <div class="row text-center bottom30">
+      <div class="row text-center bottom30 wow slideInUp">
         <div class="col-sm-6 col-xs-12">
           <a href="Apps/Cats%20and%20Dogs/catsdogs.html" target="_blank" class="portfolioLink">
             <figure>
@@ -179,7 +179,7 @@
         </div>
       </div>
 
-      <div class="row text-center bottom30">
+      <div class="row text-center bottom30 wow slideInUp">
         <div class="col-sm-6 col-xs-12">
           <a href="Apps/Pop%20Game/pop.html" target="_blank" class="portfolioLink">
             <figure>
@@ -198,7 +198,7 @@
         </div>
       </div>
 
-      <div class="row text-center bottom30">
+      <div class="row text-center bottom30 wow slideInUp">
         <div class="col-sm-6 col-xs-12">
           <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="portfolioLink">
             <figure>
@@ -217,7 +217,7 @@
         </div>
       </div>
 
-      <div class="row text-center bottom30">
+      <div class="row text-center bottom30 wow slideInUp">
         <div class="col-sm-6 col-xs-12">
           <a href="Apps/Weather%20App/weatherapp.html" target="_blank" class="portfolioLink">
             <figure>
@@ -236,7 +236,7 @@
         </div>
       </div>
 
-      <div class="row text-center bottom50">
+      <div class="row text-center bottom50 wow slideInUp">
         <div class="col-sm-6 col-xs-12">
           <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="portfolioLink">
             <figure>
@@ -262,9 +262,9 @@
 <!-- Contact -->
 <section>
   <div id="contactSection" class="container-fluid text-center">
-    <h1 class="top50">Contact Me</h1>
+    <h1>Contact Me</h1>
 
-    <div class="row marginLeftRight top30 bottom100">
+    <div class="row marginLeftRight top30 bottom100 wow slideInUp">
 
       <div class="col-sm-6 text-left top20">
         <p class="contactFontSize">Thank you for visiting my website.</p>
@@ -309,25 +309,12 @@
   </div>
 </footer>
 
-<script>
-  // Copyright Year
-  var d = new Date(), n = d.getFullYear();
-  document.getElementById("year").innerHTML = n;
-
-  //Landing Page
-  $(document).ready(function(){
-    $(".landing").css("height",($(window).height()-49));
-    $(".navbar.navbar-inverse").attr("data-offset-top",($(window).height()-52));
-
-    $(window).on("resize", function() {
-      $(".landing").css("height", ($(window).height() - 49));
-      $(".navbar.navbar-inverse").attr("data-offset-top", ($(window).height() - 52));
-    });
-
-    var windowWidth=$(window).width();
-    //alert(windowWidth);
-  });
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.stellar.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/portfolio.js"></script>
 
 </body>
 
