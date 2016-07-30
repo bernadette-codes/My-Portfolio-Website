@@ -37,9 +37,6 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
-    // parallax scrolling with stellar.js
-    $(window).stellar();
-
     // initialize WOW for animation
     new WOW().init();
 });
