@@ -45,21 +45,6 @@ body {
     50%      { bottom:9px; }
     100%     { bottom:0; }
 }
-
-@-moz-keyframes bounce {
-    0%       { bottom:3px; }
-    25%, 75% { bottom:6px; }
-    50%      { bottom:9px; }
-    100%     { bottom:0; }
-}
-
-@-o-keyframes bounce {
-    0%       { bottom:3px; }
-    25%, 75% { bottom:6px; }
-    50%      { bottom:9px; }
-    100%     { bottom:0; }
-}
-
 @keyframes bounce {
     0%       { bottom:3px; }
     25%, 75% { bottom:6px; }
