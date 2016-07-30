@@ -1,486 +1,318 @@
-@charset "utf-8";
-/* CSS Document */
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    position: relative;
-}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Bernadette Engleman</title>
+  <meta name="description" content="bernadette engleman portfolio website">
+  <meta name="keywords" content="bernadette engleman, bernadette engleman portfolio, bernadette engleman website">
+  <meta name="author" content="Bernadette Engleman">
+  <meta property="og:image" content="http://bernadetteengleman.com/img/profilephoto.jpg"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
 
-/* Landing Page */
-.landing {
-    background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') left bottom / cover no-repeat scroll;
-    background-blend-mode: saturation;
-    font-family: Georgia, serif;
-}
+<body data-spy="scroll" data-target=".navbar" data-offset="160">
 
-/* Name Box */
-.intro {
-    width: 40%;
-    background: #2e2e2e;
-    color: #fff;
-    border: 2px solid #e5e5e5;
-    margin: 10% auto;
-}
+<!-- Header -->
+<header class="container-fluid landing">
+  <!-- Name Box -->
+  <div class="well text-center intro wow zoomIn">
+    <h1>Bernadette Engleman</h1>
+    <h2 class="top20">NYC-based Web Developer</h2>
+  </div>
 
-/* Name */
-.intro h2 {
-    font-size: 1.3em;
-}
+  <!-- Arrow Down Icon -->
+  <div class="text-center">
+    <a href="#aboutSection" id="arrow">
+      <span class="glyphicon glyphicon-chevron-down"></span>
+    </a>
+  </div>
+</header>
 
-/* Arrow Icon */
-.landing a {
-    color: #fff;
-    background-color: #2e2e2e;
-    border: 2px solid #e5e5e5;
-    padding: 12px 10px 5px 12px;
-    font-size: 1.5em;
-    border-radius: 30px;
-    position: relative;
-    -webkit-animation: bounce 0.75s infinite;
-    animation: bounce 0.75s infinite;
-}
+<!-- Nav Bar -->
+<nav class="container-fluid navbar navbar-inverse" data-spy="affix">
+  <div class="wrap1">
+    <div class="wrap2">
+      <ul class="nav navbar-nav">
+        <li><a href="#aboutSection">About</a></li>
+        <li><a href="#portfolioSection">Portfolio</a></li>
+        <li><a href="#contactSection">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-@-webkit-keyframes bounce {
-    0%       { bottom:3px; }
-    25%, 75% { bottom:6px; }
-    50%      { bottom:9px; }
-    100%     { bottom:0; }
-}
-@keyframes bounce {
-    0%       { bottom:3px; }
-    25%, 75% { bottom:6px; }
-    50%      { bottom:9px; }
-    100%     { bottom:0; }
-}
+<!-- About Section -->
+<section>
+  <div id="aboutSection" class="container-fluid text-center">
+    <h1>About Me</h1>
 
-/* Nav Bar */
-.navbar.navbar-inverse {
-    margin-bottom: 0;
-    border: none;
-    border-radius: 0;
-}
+    <div class="row marginLeftRight top30 bottom100">
+      <div class="col-sm-4 wow slideInUp">
+        <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive text-center top20 myPhoto">
 
-.navbar.navbar-inverse .wrap1 {
-    overflow: hidden;
-    position: relative;
-}
+        <!-- Coding Skills -->
+        <h2 class="top30">Coding Skills</h2>
 
-.navbar.navbar-inverse .wrap2 {
-    float: left;
-    position: relative;
-    left: 50%;
-}
+        <div class="row top20 bottom30">
+          <div class="col-xs-6">
+            <p class="text-center skills">HTML</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">CSS</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">JavaScript</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">jQuery</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">Bootstrap</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">AngularJS</p>
+          </div>
+        </div>
+      </div>
 
-ul.nav.navbar-nav {
-    float: left;
-    position: relative;
-    left: -50%;
-}
+      <!-- About Me Description -->
+      <div class="col-sm-8 text-left">
+        <h3>Hello, I am Bernadette from New York City.</h3>
+        <p class="text-justify aboutFontSize top20">I moved here from Chicago in 2013. I am originally from the Philippines.</p>
+        <p class="text-justify aboutFontSize">
+          <!-- I have a degree in B.S. in Math and Business Management.
+          I worked as a Forex Broker, Financial Advisor and Business Manager.-->
+          I started studying web programming in 2015.
+          I love it because I like making fun websites and web apps<!-- that people enjoy-->.
+          The projects that I built so far are posted below.</p>
+        <p class="text-justify aboutFontSize">
+          I like to cook and I love to travel. I also like to volunteer and I am a team leader with the non-profit organization, NYCares.</p>
 
-ul.nav.navbar-nav li {
-    float: left;
-    font-size: 1.35em;
-}
 
-ul.nav.navbar-nav > li > a {
-    float: left;
-    color: #cecece;
-}
+        <p class="aboutFontSize top20">
+          <!-- Github -->
+          <a href="http://bit.ly/1ZQEuiB" target="_blank">
+            <img src="img/github.png" alt="Github" class="socialIcons">
+          </a>&nbsp;&nbsp;&nbsp;
 
-ul.nav.navbar-nav > li > a:hover,
-ul.nav.navbar-nav > li > a:focus {
-    color: #fff;
-    background-color: #080808;
-}
+          <!-- Linkedin -->
+          <a href="http://bit.ly/1RXNWwm" target="_blank">
+            <img src="img/linkedinblack.png" alt="LinkedIn" class="socialIcons">
+          </a>&nbsp;&nbsp;&nbsp;
 
-nav.affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
+          <!-- Wordpress -->
+          <a href="http://www.bernadetteengleman.com/blog/" target="_blank">
+            <img src="img/wordpress.jpg" alt="Wordpress" class="socialIcons">
+          </a>&nbsp;&nbsp;&nbsp;
 
-/* About Section */
-#aboutSection {
-    position: relative;
-    background-color: #f2f2f2;
-    color: #191919;
-    height: auto;
-    padding-top: 30px;
-}
+          <!-- Email -->
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
 
-/* Profile Photo */
-.myPhoto {
-    position: relative;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 8px 2px #e5e5e5;
-}
+        <!-- Education -->
+        <h2 class="aboutFontSize top20"><strong>Education:</strong></h2>
+        <p class="aboutFontSize top10">Bachelor of Business Management &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2010</small><br>
+          Bachelor of Science in Mathematics &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007</small></p>
 
-/* Skills */
-.skills {
-    color: #fff;
-    background-color: #2e2e2e;
-    padding: 10px;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 30px;
-    position: relative;
-    width: 90%;
-}
+        <!-- Work Experience -->
+        <h2 class="aboutFontSize top20"><strong>Work Experience:</strong></h2>
+        <p class="aboutFontSize">Operations Manager &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2009 - present</small><br>
+          Financial Advisor &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2008 - 2009</small><br>
+          Forex Broker &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007 - 2008</small></p>
 
-/* Social Media Icons */
-.socialIcons {
-    width:30px;
-    height:30px;
-}
+      </div>
+    </div>
 
-/* Date Separator */
-.separator {
-    content: " ";
-    border-right: 1px solid #191919;
-    line-height: 1.75em;
-}
+  </div>
+</section>
 
-/* Portfolio Section */
-#portfolioSection {
-    position: relative;
-    height: auto;
-    color: #fff;
-    background-color: #383838;
-    padding-top: 30px;
-}
+<!-- Portfolio -->
+<section>
+  <div id="portfolioSection" class="container-fluid text-center">
+    <h1>Portfolio</h1>
 
-/* Portfolio Title */
-#portfolioSection h1 {
-    margin-bottom: 30px;
-}
+    <div class="portfolioContent container LeftRight top50 bottom100">
 
-/* Portfolio White Background */
-.portfolioContent {
-    background-color: #fff;
-    color: #222;
-    border: 2px solid #4e4e4e;
-}
+      <!-- Git box -->
+      <div class="row text-right">
+        <div class="col-xs-12 git">
+          <a href="http://bit.ly/1ZQEuiB" target="_blank">
+            <img src="img/github.png" alt="Github" class="socialIcons">
+          </a>
+        </div>
+      </div>
 
-#portfolioSection .git {
-    margin-top: -40px;
-    margin-bottom: 30px;
-}
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Cats%20and%20Dogs/catsdogs.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/catsdogsthumbnail.jpg" alt="Cats and Dogs Game" class="img-responsive">
+              <figcaption>Cats and Dogs Game</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Fly%20Game/fly.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/flythumbnail.jpg" alt="Kill the fly game" class="img-responsive">
+              <figcaption>Kill The Fly Game</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
 
-/* Portfolio Thumbnails */
-figure img {
-    width:400px;
-    border-radius: 5px;
-    box-shadow: 0 0 8px 2px #dedede;
-}
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Pop%20Game/pop.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/popthumbnail.jpg" alt="Pop the bubbles game" class="img-responsive">
+              <figcaption>Pop The Bubbles Game</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Ghost%20Game/ghost.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/ghostthumbnail.jpg" alt="Find the Ghost Game" class="img-responsive">
+              <figcaption>Find the Ghost Game</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
 
-figure {
-    display: inline-block;
-    position: relative;
-    margin: 5px;
-}
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/fortunecookiethumbnail.jpg" alt="Fortune Cookie" class="img-responsive">
+              <figcaption>Fortune Cookie</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Birth%20Month%20Meaning/birthmonthmeaning.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/birthmonththumbnail.jpg" alt="Birth Month Meaning" class="img-responsive">
+              <figcaption>Birth Month Meaning</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
 
-/* Portfolio Thumbnails Layover */
-figcaption {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #ededed;
-    padding-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    transition: opacity .5s ease-out;
-}
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Weather%20App/weatherapp.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="#" alt="Weather App" class="img-responsive">
+              <figcaption>Weather App</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Websites/Korona%20Hair%20Salon/index.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/koronathumbnail.jpg" alt="Korona Hair Salon" class="img-responsive">
+              <figcaption>Hair Salon</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
 
-figure:hover figcaption {
-    opacity: 1;
-}
+      <div class="row text-center bottom50 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/panattierethumbnail.jpg" alt="Panettiere Bakeshop" class="img-responsive">
+              <figcaption>Bakeshop</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Websites/Kukolicious%20Nail%20Salon/index.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/kukoliciousthumbnail.jpg" alt="Kukolicious Nail Salon" class="img-responsive">
+              <figcaption>Nail Salon</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
 
-/* Portfolio Thumbnails Description */
-a.portfolioLink {
-    font-size: 25px;
-    font-weight: 800;
-    color: #383838;
-}
+    </div>
+  </div>
+</section>
 
-/* Contact Section */
-#contactSection {
-    color: #191919;
-    background-color: #f2f2f2;
-    height: auto;
-    padding-top: 30px;
-}
+<!-- Contact -->
+<section>
+  <div id="contactSection" class="container-fluid text-center">
+    <h1>Contact Me</h1>
 
-/*
-form .form-control {
-    border-radius: 0;
-    color: #fff;
-    background-color: #383838;
-}
-form .form-control:focus {
-    border-color: #000;
-    box-shadow: none;
-}
-form .form-control::-moz-placeholder {
-    color: #fff;
-    opacity: 1;
-}
-form .form-control:-ms-input-placeholder {
-    color: #fff;
-}
-form .form-control::-webkit-input-placeholder {
-    color: #fff;
-}
-form > button.btn {
-    color: #fff;
-    background-color: #383838;
-    border-radius: 0;
-}
-*/
+    <div class="row marginLeftRight top30 bottom100 wow slideInUp">
 
-/* Footer Section */
-.footerSec {
-    padding-top: 20px;
-    height: 60px;
-    color: #fff;
-    background-color: #383838;
-}
+      <div class="col-sm-6 text-left top20">
+        <p class="contactFontSize">Thank you for visiting my website.</p>
+        <p class="contactFontSize top10">If you have an offer or inquiries, you can contact me by sending an email<!-- or filling out this form-->.</p>
+      </div>
 
-/* Margin & Padding */
-.top10 {
-    margin-top: 10px;
-}
+      <div class="col-sm-6 text-left">
+        <p class="contactFontSize top20">
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
+        <p class="contactFontSize top20">Find me on :&nbsp;
 
-.top20 {
-    margin-top: 20px;
-}
+          <a href="http://bit.ly/1ZQEuiB"><img src="img/github.png" alt="Github" class="socialIcons"></a>&nbsp;&nbsp;
 
-.top30 {
-    margin-top: 30px;
-}
+          <a href="http://bit.ly/1RXNWwm"><img src="img/linkedinblack.png" alt="LinkedIn" class="socialIcons"></a>&nbsp;&nbsp;
 
-.top50 {
-    padding-top: 50px;
-}
+          <a href="http://www.bernadetteengleman.com/blog/"><img src="img/wordpress.jpg" alt="Wordpress" class="socialIcons"></a></p>
+          <!--
+          <form role="form" action="contact.php" method="post">
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            <textarea class="form-control" rows="3" id="comment" placeholder="Message" required></textarea>
 
-.bottom30 {
-    margin-bottom: 30px;
-}
+            <button type="submit" class="btn btn-default">Send</button>
 
-.bottom50 {
-    margin-bottom: 50px;
-}
+          </form>-->
+      </div>
 
-.bottom100 {
-    margin-bottom: 100px;
-}
+    </div>
+  </div>
+</section>
 
-/* About & Contact Margin */
-.marginLeftRight {
-    margin-left: 10%;
-    margin-right: 10%;
-}
+<!-- Footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center footerSec">
+      <div class="col-xs-12">
+        <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-/* Portfolio Width */
-.LeftRight {
-    width: 85%
-}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script> <!-- Smooth Scrolling -->
+<script src="js/jquery.stellar.js"></script> <!-- Parallax scrolling -->
+<script src="js/wow.min.js"></script> <!-- Entrance Animation Scroll -->
+<script src="js/portfolio.js"></script>
 
-/* Font Size */
-.aboutFontSize {
-    font-size: 1.35em;
-}
+</body>
 
-.contactFontSize {
-    font-size: 1.5em;
-}
-
-/* Media Queries */
-@media screen and (max-width: 1125px) {
-    /* Name Box */
-    .intro {
-        width: 45%;
-    }
-    /* About & Contact Margin */
-    .marginLeftRight {
-        margin-left: 8%;
-        margin-right: 8%;
-    }
-    /* Profile Photo */
-    .myPhoto {
-        width: 230px;
-    }
-    /* Skills */
-    .skills {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 965px) {
-    /* Landing Page */
-    .landing {
-        background-position: 10% bottom;
-    }
-    /* Name Box */
-    .intro {
-        width: 55%;
-        margin: 13% auto;
-    }
-    /* About & Contact Margin */
-    .marginLeftRight {
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-    /* Profile Photo */
-    .myPhoto {
-        width: 210px;
-    }
-    /* Skills */
-    .skills {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 860px) {
-    /* Skills */
-    .skills {
-        font-size: 0.8em;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    /* Landing Page */
-    .landing {
-        background-position: 20% bottom;
-    }
-    /* Name Box */
-    .intro {
-        width: 65%;
-        margin: 15% auto;
-    }
-    /* About & Contact Margin */
-    .marginLeftRight {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    /* Profile Photo */
-    .myPhoto {
-        width: 190px;
-    }
-    /* Skills */
-    .skills {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    /* Nav Bar */
-    ul.nav.navbar-nav {
-        margin: 0;
-    }
-    /* Nav Bar Link */
-    ul.nav.navbar-nav > li > a {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    /* About & Contact Margin */
-    .marginLeftRight {
-        margin-left: 8%;
-        margin-right: 8%;
-    }
-    /* Profile Photo */
-    .myPhoto {
-        width: 200px;
-    }
-    /* Skills */
-    .skills {
-        font-size: 1.05em;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    /* Landing Page */
-    .landing {
-        background-position: 20% bottom;
-    }
-    /* Name Box */
-    .intro {
-        width: 75%;
-        margin: 15% auto;
-    }
-    /* Profile Photo */
-    .myPhoto {
-        width: 190px;
-    }
-    .aboutFontSize {
-        font-size: 1.15em;
-    }
-    .contactFontSize {
-        font-size: 1.3em;
-    }
-    /* Portfolio Width */
-    .LeftRight {
-        width: 88%
-    }
-    /* Skills */
-    .skills {
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 570px) {
-    /* Name Box */
-    .intro {
-        width: 60%;
-    }
-    .aboutFontSize {
-        font-size: 1.10em;
-    }
-    .contactFontSize {
-        font-size: 1.25em;
-    }
-    /* Skills */
-    .skills {
-        font-size: 1.05em;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    /* Landing Page */
-    .landing {
-        background-position: 17% bottom;
-    }
-    /* Name Box */
-    .intro {
-        width: 77%;
-    }
-    /* Profile Photo */
-    .myPhoto {
-        width: 150px;
-    }
-    .aboutFontSize {
-        font-size: 1.05em;
-    }
-    .contactFontSize {
-        font-size: 1.2em;
-    }
-    /* Portfolio Width */
-    .LeftRight {
-        width: 90%
-    }
-    /* Skills */
-    .skills {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    /* Skills */
-    .skills {
-        font-size: 0.95em;
-    }
-}
+</html>
