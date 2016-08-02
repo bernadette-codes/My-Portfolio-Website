@@ -222,7 +222,7 @@ form .form-control {
     background-color: #383838;
 }
 form .form-control:focus {
-    border-color: #000;
+    border-color: #666666;
     box-shadow: none;
 }
 form .form-control::-moz-placeholder {
