@@ -11,7 +11,7 @@ Page 1 - Landing Page
      h2: NYC-based Web Developer 
 Page 2
      h2: About Me
-     p: Introduction
+          p: Introduction
      h3: Education
      h3: Coding Skills
 Page 3 
