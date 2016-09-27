@@ -110,7 +110,6 @@ nav.affix {
 /* Profile Photo */
 .myPhoto {
     position: relative;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -127,12 +126,6 @@ nav.affix {
     border-radius: 30px;
     position: relative;
     width: 90%;
-}
-
-/* Social Media Icons */
-.socialIcons {
-    width:30px;
-    height:30px;
 }
 
 /* Date Separator */
@@ -170,7 +163,6 @@ nav.affix {
 
 /* Portfolio Thumbnails */
 figure img {
-    width:400px;
     border-radius: 5px;
     box-shadow: 0 0 8px 2px #dedede;
 }
