@@ -1,33 +1,33 @@
-/**
- * Created by Bernadette on 7/27/2016.
- */
-
 // Copyright Year
-var d = new Date(), n = d.getFullYear();
+var d = new Date(),
+    n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
 
 $(document).ready(function(){
+    var windowHeight = $(window).height(),
+        windowWidth=$(window).width(),
+        landing = $(".landing"),
+        navBar = $(".navbar.navbar-inverse");
+
+    //alert(windowWidth);
 
     //Landing Page Size
-    $(".landing").css("height",($(window).height()-49));
-    $(".navbar.navbar-inverse").attr("data-offset-top",($(window).height() - 52));
+    landing.css("height",(windowHeight-49));
+    navBar.attr("data-offset-top",(windowHeight - 52));
 
     //Landing Page on Resize
     $(window).on("resize", function() {
-        $(".landing").css("height", ($(window).height() - 49));
-        $(".navbar.navbar-inverse").attr("data-offset-top", ($(window).height() - 52));
+        landing.css("height", (windowHeight - 49));
+        navBar.attr("data-offset-top", (windowHeight - 52));
     });
 
     //Contact Section Size
-    //$("#contactSection").css("height",($(window).height()-109));
+    //$("#contactSection").css("height",(windowHeight - 109));
 
     //Contact Section on Resize
     //$(window).on("resize", function() {
-    //    $("#contactSection").css("height", ($(window).height()-109));
+    //    $("#contactSection").css("height", (windowHeight - 109));
     //});
-
-    var windowWidth=$(window).width();
-    //alert(windowWidth);
 
     //Smooth Scrolling
     $('nav a, a#arrow').bind('click', function () {
