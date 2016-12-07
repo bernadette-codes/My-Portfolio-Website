@@ -39,4 +39,4 @@ $(document).ready(function(){
 
     // initialize WOW for animation
     new WOW().init();
-});
+}); // end ready
