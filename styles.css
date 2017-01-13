@@ -4,6 +4,7 @@
 body {
     position: relative;
     font: 400 15px Lato, sans-serif;
+    color: #434142;
     line-height: 1.8;
   }
 
@@ -14,53 +15,73 @@ body {
     background-color: #f2f2f2;
 }
 
-form .form-control,
-form > button.btn {
-    background-color: #383838;
+#portfolioSection {
+    background-color: #d9d9d9;
+}
+
+header .well,
+header a,
+a.portfolioLink ul li,
+form > button.btn,
+footer {
+    background-color: #2e2e2e;
 }
 
 form .form-control,
 .form-control::-webkit-input-placeholder,
 .form-control::-moz-placeholder,
 .form-control:-ms-input-placeholder,
-.form-control:-moz-placeholder,
-form > button.btn {
-    color: #fff;
+.form-control:-moz-placeholder {
+    background-color: #fff;
 }
 
-#aboutSection, #contactSection {
-    color: #434142;
+header,
+header a,
+header a:hover,
+header a:visited,
+header a:active,
+ul.nav.navbar-nav > li > a:hover,
+ul.nav.navbar-nav > li > a:focus,
+a.portfolioLink ul li,
+form > button.btn,
+footer {
+    color: #fff;
 }
 
 /** Landing Page **/
-.landing {
-    background: linear-gradient(#000000, #2e2e2e), url('img/background.jpg') left bottom / cover no-repeat scroll;
-    background-blend-mode: saturation;
+header {
+    height: 100vh;
+    background: linear-gradient(-25deg, #7aeaaf, #029eff);
     font-family: Georgia, serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
 }
 
 /* Name Box */
-.intro {
-    background: #2e2e2e;
-    color: #fff;
+header .well {
     width: 40%;
-    border: 2px solid #e5e5e5;
     margin: 10% auto;
+    border: 1px solid #cecece;
 }
 
-.intro h2 {
+header h2 {
     font-size: 1.3em;
 }
 
 /* Arrow Icon */
-.landing a {
-    color: #fff;
-    background-color: #2e2e2e;
-    border: 2px solid #e5e5e5;
-    padding: 12px 10px 5px 12px;
-    font-size: 1.5em;
-    border-radius: 30px;
+header a {
     position: relative;
+    font-size: 1.5em;
+    padding: 12px 10px 5px 12px;
+    border: 1px solid #cecece;
+    border-radius: 30px;
     -webkit-animation: bounce 0.75s infinite;
     animation: bounce 0.75s infinite;
 }
@@ -119,7 +140,6 @@ ul.nav.navbar-nav > li > a {
 
 ul.nav.navbar-nav > li > a:hover,
 ul.nav.navbar-nav > li > a:focus {
-    color: #fff;
     background-color: #080808;
 }
 
@@ -145,6 +165,7 @@ ul.nav.navbar-nav > li > a:focus {
     animation-duration: 1s;
     visibility: visible;
 }
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -159,6 +180,7 @@ ul.nav.navbar-nav > li > a:focus {
         transform: translateY(0%);
     }
 }
+
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
@@ -175,6 +197,9 @@ ul.nav.navbar-nav > li > a:focus {
 }
 
 /** About Section **/
+div.aboutMe {
+    margin-left: 10%;
+}
 
 /* Profile Photo */
 .myPhoto {
@@ -201,33 +226,11 @@ ul.nav.navbar-nav > li > a:focus {
 }
 
 /** Portfolio Section **/
-#portfolioSection {
-    color: #fff;
-    background-color: #383838;
-}
-
 /* Portfolio White Background */
 .portfolioContent {
     width: 100%;
     color: #222;
     padding: 5%;
-    border: 2px solid #4e4e4e;
-}
-
-/* Portfolio Git Link */
-#portfolioSection .git {
-    position: relative;
-    top: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-}
-
-#portfolioSection .git img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: -5%;
 }
 
 /* Portfolio Thumbnails */
@@ -263,9 +266,25 @@ ul.nav.navbar-nav > li > a:focus {
 
 /* Portfolio Thumbnails Description */
 a.portfolioLink {
-    font-size: 25px;
-    font-weight: 800;
     color: #383838;
+}
+
+a.portfolioLink h3 {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+a.portfolioLink ul {
+    list-style: none;
+    width: 90%;
+    text-align: left;
+}
+
+a.portfolioLink ul li {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
 }
 
 /** Contact Section **/
@@ -286,20 +305,18 @@ form > button.btn {
 
 /** Footer Section **/
 footer {
-    background-color: #383838;
-    color: #fff;
     height: 50px;
     padding-top: 10px;
     margin: 0;
 }
 
 /* Font Styles */
-.bigFontSize {
-    font-size: 1.2em;
-}
-
 .biggerFontSize {
     font-size: 1.3em;
+}
+
+.bigFontSize {
+    font-size: 1.2em;
 }
 
 /* Margin & Padding */
@@ -320,40 +337,64 @@ footer {
 }
 
 /** Media Queries **/
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1200px) {
     /* Name Box */
-    .intro {
+    header .well {
         width: 45%;
     }
     /* Profile Photo */
     .myPhoto {
         width: 230px;
     }
+    /* Portfolio Section Width */
+    #portfolioSection {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    /* Portfolio Thumbnails Layover */
+    #portfolioSection figcaption {
+        padding-top: 20px;
+    }
+    a.portfolioLink ul li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 950px) {
-    /* Landing Page */
-    .landing {
-        background-position: 10% bottom;
-    }
     /* Name Box */
-    .intro {
+    header .well {
         width: 55%;
         margin: 13% auto;
+    }
+    /* About Section */
+    div.aboutMe {
+        margin-left: 3%;
     }
     /* Profile Photo */
     .myPhoto {
         width: 210px;
     }
+    /* Portfolio Section Width */
+    #portfolioSection {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .portfolioContent {
+        padding: 3%;
+    }
+    /* Portfolio Thumbnails Layover */
+    #portfolioSection figcaption {
+        padding-top: 10px;
+    }
+    a.portfolioLink ul li {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    /* Landing Page */
-    .landing {
-        background-position: 20% bottom;
-    }
     /* Name Box */
-    .intro {
+    header .well {
         width: 65%;
         margin: 15% auto;
     }
@@ -366,20 +407,34 @@ footer {
        padding-top: 15px;
        padding-bottom: 15px;
     }
+    div.aboutMe {
+        margin-left: 0;
+    }
     /* Profile Photo */
     .myPhoto {
-        width: 220px;
+        width: 200px;
     }
     /* Skills */
     #aboutSection ul {
         margin: 0 10%;
     }
+    /* Portfolio Section Width */
+    #portfolioSection {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .portfolioContent {
+        padding: 5%;
+    }
+    /* Portfolio Thumbnails Layover */
+    #portfolioSection figcaption {
+        padding-top: 12px;
+    }
+    a.portfolioLink ul li {
+        font-size: 15px;
+    }
     #contactSection {
         text-align: center;
-    }
-    /* Portfolio Thumbnails Description */
-    a.portfolioLink {
-        font-size: 22px;
     }
     form {
         width: 70%;
@@ -389,33 +444,28 @@ footer {
 
 @media screen and (max-width: 650px) {
     /* Name Box */
-    .intro {
+    header .well {
        width: 75%;
        margin: 15% auto;
+    }
+    .myPhoto {
+        width: 190px;
     }
     /* First Portfolio*/
     .first {
         margin-top: 15px;
     }
-    /* Profile Photo */
-    .myPhoto {
-        width: 200px;
-    }
-    /* Portfolio Thumbnails Description */
-    a.portfolioLink {
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width: 570px) {
     /* Name Box */
-    .intro {
+    header .well {
        width: 60%;
     }
-    .intro h1 {
+    header h1 {
         font-size: 1.9em;
     }
-    .intro h2 {
+    header h2 {
         font-size: 1.1em;
     }
     /* Profile Photo */
@@ -430,10 +480,6 @@ footer {
         width: 60px;
         height: 64px;
     }
-    /* Portfolio Thumbnails Description */
-    a.portfolioLink {
-        font-size: 18px;
-    }
     form {
         width: 80%;
         margin: 0 auto;
@@ -444,17 +490,17 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-    /* Landing Page */
-    .landing {
-        background-position: 17% bottom;
-    }
-   /* Name Box */
-   .intro {
+    /* Name Box */
+    header .well {
        width: 77%;
-   }
-   .navbar.navbar-main {
+    }
+    .navbar.navbar-inverse {
         letter-spacing: 0;
-   }
+    }
+    /* Profile Photo */
+    .myPhoto {
+        width: 170px;
+    }
     /* Skills */
     #aboutSection ul {
         margin: 0 0;
@@ -463,9 +509,16 @@ footer {
         width: 50px;
         height: 52px;
     }
-    /* Portfolio Thumbnails Description */
-    a.portfolioLink {
-        font-size: 16px;
+    /* Portfolio Thumbnails Layover */
+    #portfolioSection figcaption {
+        padding-top: 8px;
+    }
+    a.portfolioLink h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    a.portfolioLink ul li {
+        font-size: 12px;
     }
     form {
         width: 100%;
@@ -473,5 +526,51 @@ footer {
     }
     .biggerFontSize {
         font-size: 1.1em;
+    }
+    .bigFontSize {
+        font-size: 1em;
+    }
+    footer {
+        height: 70px;
+    }
+    .footer2ndLine {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Profile Photo */
+    .myPhoto {
+        width: 160px;
+    }
+    /* Portfolio Thumbnails Layover */
+    a.portfolioLink h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    a.portfolioLink ul li {
+        padding: 1px 5px;
+        margin-bottom: 3px;
+    }
+    .biggerFontSize {
+        font-size: 1em;
+    }
+    .bigFontSize {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .navbar.navbar-inverse {
+        font-size: 12px;
+    }
+    /* Profile Photo */
+    .myPhoto {
+        width: 150px;
+    }
+    /* Portfolio Thumbnails Layover */
+    a.portfolioLink h3 {
+        margin-top: 8px;
     }
 }
