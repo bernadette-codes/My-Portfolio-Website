@@ -204,19 +204,34 @@ $(document).ready(function(){
         windowHeight = $(window).height(),
         $landing = $("header"),
         $navBar = $(".navbar.navbar-inverse"),
-        $navbarA = $(".navbar a, header a");
+        $navbarA = $(".navbar a, header a"),
+        $contactSection = $("#contactSection"),
+        contactHeight = $contactSection.height(),
+        footerHeight = $("footer").height();
 
-    //alert(windowWidth);
+    alert(windowHeight);
 
     //Landing Page Size
     $landing.css("height",(windowHeight - 49));
     $navBar.attr("data-offset-top",(windowHeight - 52));
 
-    //Landing Page on Resize
+    //Contact Section Height
+    if ( 52 + footerHeight + contactHeight < windowHeight) {
+        $contactSection.css("height",(windowHeight - 49 - footerHeight));
+    }
+
+    //Page on Resize
     $(window).on("resize", function() {
-        var windowHeight = $(window).height();
+        var windowHeight = $(window).height(),
+            contactHeight = $contactSection.height(),
+            footerHeight = $("footer").height();
+        //Landing Page Size
         $landing.css("height", (windowHeight - 49));
         $navBar.attr("data-offset-top", (windowHeight - 52));
+        //Contact Section Height
+        if ( 52 + footerHeight + contactHeight < windowHeight) {
+            $contactSection.css("height",(windowHeight - 49 - footerHeight));
+        }
     });
 
     // Smooth scrolling to all links in navbar and arrow
