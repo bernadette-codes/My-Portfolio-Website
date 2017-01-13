@@ -9,7 +9,7 @@
     <meta name="description" content="Bernadette Engleman Portfolio Website">
     <meta name="keywords" content="Bernadette Engleman, Bernadette Engleman Portfolio, Bernadette Engleman Website">
     <meta name="author" content="Bernadette Engleman">
-    <link rel="shortcut icon" href="img/profilephoto.jpg">
+    <link rel="shortcut icon" href="img/beIcon.png">
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -20,16 +20,20 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Landing Section -->
-<header class="container-fluid landing">
+<header class="container-fluid">
+    <!-- Background -->
+    <canvas id="canvas">
+    </canvas>
+
     <!-- Name Box -->
-    <div class="well text-center intro wow zoomIn">
+    <div class="well text-center wow zoomIn">
         <h1 class="wow zoomIn">Bernadette Engleman</h1>
         <h2 class="top20 wow zoomIn">Front-end Web Developer</h2>
     </div>
 
     <!-- Arrow Down Icon -->
     <div class="text-center">
-        <a href="#aboutSection" id="arrow">
+        <a href="#aboutSection">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
     </div>
@@ -50,8 +54,7 @@
 <section id="aboutSection" class="container-fluid contentWidth">
     <h2 class="text-center bottom30 slideanim">ABOUT ME</h2>
 
-    <div class="row bigFontSize">
-
+    <div class="row aboutMe bigFontSize">
         <div class="col-sm-4 top30 slideanim">
             <!-- Profile Photo -->
             <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive text-center myPhoto" width="250">
@@ -67,31 +70,26 @@
                 <a href="https://bernadetteengleman.wordpress.com/" target="_blank"><img src="img/wordpress.jpg" alt="Wordpress" width="29" class="socialIcons"></a>
             </p>
         </div>
-
         <div class="col-sm-8 top30">
+            <!-- Introduction -->
             <div class="slideanim">
-                <!-- Introduction -->
-                <p class="biggerFontSize">Hello, I am Bernadette from New York City.</p>
-
-                <p class="top20">I started studying web programming in 2015.<br>
-                    I love coding because it feels like putting a puzzle together.<br>
+                <p class="biggerFontSize">Hello, I am Bernadette!</p>
+                <p class="top20">I learned how to make a basic website in college and I started studying JavaScript in 2015.<br>
+                    I love coding because building a website feels like putting a puzzle together.<br>
                     The projects that I built so far are posted below.</p>
             </div>
+            <!-- Education -->
             <div class="slideanim">
-                <!-- Education -->
                 <h3 class="top30">Education:</h3>
-
                 <p class="top20">
                     <span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Bachelor of Business Management <br>
                     <span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Bachelor of Science in Mathematics
                 </p>
-
                 <p class="top20">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                     :&nbsp; bernadette@englemaninvest.com</p>
             </div>
         </div>
-
     </div>
 
     <!-- Coding Skills -->
@@ -99,36 +97,38 @@
 
     <ul class="row text-center biggerFontSize">
         <li class="col-xs-4 slideanim">
-            <img src="img/html.png" alt="HTML" width="80" height="85">
+            <img src="img/skills/html.png" alt="HTML" width="80" height="85">
             <p>HTML</p>
         </li>
         <li class="col-xs-4 slideanim">
-            <img src="img/css.png" alt="CSS" width="80" height="85">
+            <img src="img/skills/css.png" alt="CSS" width="80" height="85">
             <p>CSS</p>
         </li>
         <li class="col-xs-4 slideanim">
-            <img src="img/javascript.png" alt="HTML" width="80" height="85">
-            <p>JavaScript</p>
-        </li>
-        <li class="col-xs-4 slideanim">
-            <img src="img/bootstrap.png" alt="Bootstrap" width="80" height="85">
+            <img src="img/skills/bootstrap.png" alt="Bootstrap" width="80" height="85">
             <p>Bootstrap</p>
         </li>
         <li class="col-xs-4 slideanim">
-            <img src="img/jquery.png" alt="jQuery" width="75" height="85">
+            <img src="img/skills/javascript.png" alt="HTML" width="80" height="85">
+            <p>JavaScript</p>
+        </li>
+        <li class="col-xs-4 slideanim">
+            <img src="img/skills/jquery.png" alt="jQuery" width="75" height="85">
             <p>jQuery</p>
         </li>
         <li class="col-xs-4 slideanim">
-            <img src="img/angularjs.png" alt="AngularJS" width="80" height="85">
+            <img src="img/skills/angularjs.png" alt="AngularJS" width="80" height="85">
             <p>AngularJS</p>
         </li>
         <li class="col-xs-4 slideanim">
-            <img src="img/sql.png" alt="SQL" width="80" height="85">
+            <img src="img/skills/sql.png" alt="SQL" width="80" height="85">
             <p>SQL</p>
         </li>
-
+        <li class="col-xs-4 slideanim">
+            <img src="img/skills/mongodb.png" alt="SQL" width="80" height="85">
+            <p>NoSQL</p>
+        </li>
     </ul>
-
 </section>
 
 <!-- Portfolio Section -->
@@ -136,111 +136,207 @@
     <h2 class="slideanim bottom30">PORTFOLIO</h2>
 
     <div class="portfolioContent">
-
-        <!-- Git box -->
-        <div class="text-right git slideanim">
-            <a href="http://bit.ly/1ZQEuiB" target="_blank">
-                <img src="img/github.png" alt="Github" width="30" class="socialIcons">
-            </a>
-        </div>
-
         <div class="row text-center">
             <div class="col-sm-6 col-xs-12 slideanim first">
+                <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="portfolioLink">
+                    <figure>
+                        <img src="img/portfolio/panattierethumbnail.jpg" alt="Panettiere Bakeshop" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Bakeshop Website<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>AngularJS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-sm-6 col-xs-12 slideanim">
+                <a href="Websites/DMCI/index.html" target="_blank" class="portfolioLink">
+                    <figure>
+                        <img src="img/portfolio/dmcithumbnail.jpg" alt="Real Estate Website" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Real Estate Website<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-xs-12 slideanim">
                 <a href="Apps/Cats%20and%20Dogs/catsdogs.html" target="_blank" class="portfolioLink">
                     <figure>
-                        <img src="img/catsdogsthumbnail.jpg" alt="Cats and Dogs Game" class="img-responsive" width="400">
-                        <figcaption>Cats and Dogs Game</figcaption>
+                        <img src="img/portfolio/catsdogsthumbnail.jpg" alt="Cats and Dogs Game" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Cats and Dogs Game<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
                     </figure>
                 </a>
             </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Fly%20Game/fly.html" target="_blank" class="portfolioLink">
-                    <figure>
-                        <img src="img/flythumbnail.jpg" alt="Kill the fly game" class="img-responsive" width="400">
-                        <figcaption>Kill The Fly Game</figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Pop%20Game/pop.html" target="_blank" class="portfolioLink">
-                    <figure>
-                        <img src="img/popthumbnail.jpg" alt="Pop the bubbles game" class="img-responsive" width="400">
-                        <figcaption>Pop The Bubbles Game</figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Ghost%20Game/ghost.html" target="_blank" class="portfolioLink">
-                    <figure>
-                        <img src="img/ghostthumbnail.jpg" alt="Find the Ghost Game" class="img-responsive" width="400">
-                        <figcaption>Find the Ghost Game</figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="portfolioLink">
-                    <figure>
-                        <img src="img/fortunecookiethumbnail.jpg" alt="Fortune Cookie" class="img-responsive" width="400">
-                        <figcaption>Fortune Cookie</figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Birth%20Month%20Meaning/birthmonthmeaning.html" target="_blank" class="portfolioLink">
-                    <figure>
-                        <img src="img/birthmonththumbnail.jpg" alt="Birth Month Meaning" class="img-responsive" width="400">
-                        <figcaption>Birth Month Meaning</figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-
-        <div class="row text-center">
             <div class="col-sm-6 col-xs-12 slideanim">
                 <a href="Apps/Weather%20App/weatherapp.html" target="_blank" class="portfolioLink">
                     <figure>
-                        <img src="#" alt="Weather App" class="img-responsive" width="400">
-                        <figcaption>Weather App</figcaption>
+                        <img src="img/portfolio/weatherappthumbnail.jpg" alt="Weather App" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Weather App<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-xs-12 slideanim">
+                <a href="Apps/Fly%20Game/fly.html" target="_blank" class="portfolioLink">
+                    <figure>
+                        <img src="img/portfolio/flythumbnail.jpg" alt="Kill the fly game" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Kill The Fly Game<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-sm-6 col-xs-12 slideanim">
+                <a href="Apps/Pop%20Game/pop.html" target="_blank" class="portfolioLink">
+                    <figure>
+                        <img src="img/portfolio/popthumbnail.jpg" alt="Pop the bubbles game" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Pop The Bubbles Game<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-xs-12 slideanim">
+                <a href="Apps/Ghost%20Game/ghost.html" target="_blank" class="portfolioLink">
+                    <figure>
+                        <img src="img/portfolio/ghostthumbnail.jpg" alt="Find the Ghost Game" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Find the Ghost Game<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-sm-6 col-xs-12 slideanim">
+                <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="portfolioLink">
+                    <figure>
+                        <img src="img/portfolio/fortunecookiethumbnail.jpg" alt="Fortune Cookie" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Fortune Cookie App<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-xs-12 slideanim">
+                <a href="Apps/Birth%20Month%20Meaning/birthmonthmeaning.html" target="_blank" class="portfolioLink">
+                    <figure>
+                        <img src="img/portfolio/birthmonththumbnail.jpg" alt="Birth Month Meaning" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Birth Month Meaning App<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
                     </figure>
                 </a>
             </div>
             <div class="col-sm-6 col-xs-12 slideanim">
                 <a href="Websites/Korona%20Hair%20Salon/index.html" target="_blank" class="portfolioLink">
                     <figure>
-                        <img src="img/koronathumbnail.jpg" alt="Korona Hair Salon" class="img-responsive" width="400">
-                        <figcaption>Hair Salon</figcaption>
+                        <img src="img/portfolio/koronathumbnail.jpg" alt="Korona Hair Salon" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Hair Salon Website<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
                     </figure>
                 </a>
             </div>
         </div>
-
         <div class="row text-center">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="portfolioLink">
-                    <figure>
-                        <img src="img/panattierethumbnail.jpg" alt="Panettiere Bakeshop" class="img-responsive" width="400">
-                        <figcaption>Bakeshop</figcaption>
-                    </figure>
-                </a>
-            </div>
             <div class="col-sm-6 col-xs-12 slideanim">
                 <a href="Websites/Kukolicious%20Nail%20Salon/index.html" target="_blank" class="portfolioLink">
                     <figure>
-                        <img src="img/kukoliciousthumbnail.jpg" alt="Kukolicious Nail Salon" class="img-responsive" width="400">
-                        <figcaption>Nail Salon</figcaption>
+                        <img src="img/portfolio/kukoliciousthumbnail.jpg" alt="Kukolicious Nail Salon" class="img-responsive" width="400">
+                        <figcaption>
+                            <h3>Nail Salon Website<sup><small>&#128279;</small></sup></h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </figcaption>
                     </figure>
                 </a>
             </div>
         </div>
-
     </div>
-
 </section>
 
 <!-- Contact Section -->
@@ -263,27 +359,25 @@
                 <a href="http://bit.ly/1RXNWwm" target="_blank"><img src="img/linkedinblack.png" alt="LinkedIn" width="30" class="socialIcons"></a>
 
                 <!-- Wordpress Icon Link -->
-                <a href="http://www.bernadetteengleman.com/blog/" target="_blank"><img src="img/wordpress.jpg" alt="Wordpress" width="29" class="socialIcons"></a>
+                <a href="https://bernadetteengleman.wordpress.com/" target="_blank"><img src="img/wordpress.jpg" alt="Wordpress" width="29" class="socialIcons"></a>
             </p>
         </div>
 
         <div class="col-sm-6 top40">
-            <form role="form" action="contact.php" method="post" class="slideanim">
+            <form action="contact.php" method="post" class="slideanim">
                 <input class="form-control" id="name" name="name" type="text" placeholder="Name" required>
                 <input class="form-control" id="email" name="email" type="email" placeholder="Email" required>
                 <input class="form-control" id="subject" name="subject" type="text" placeholder="Subject" required>
                 <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5" required></textarea>
                 <button class="btn btn-default pull-right" type="submit">Send</button>
             </form>
-
         </div>
-
     </div>
 </section>
 
 <!-- Footer -->
 <footer class="container-fluid text-center">
-    <p><small>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</small></p>
+    <p><small>Copyright © <span id="year"></span> Bernadette Engleman. <span class="footer2ndLine">All rights reserved.</span></small></p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
