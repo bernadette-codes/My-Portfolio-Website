@@ -209,7 +209,7 @@ $(document).ready(function(){
         contactHeight = $contactSection.height(),
         footerHeight = $("footer").height();
 
-    alert(windowHeight);
+    //alert(windowHeight);
 
     //Landing Page Size
     $landing.css("height",(windowHeight - 49));
@@ -261,4 +261,19 @@ $(document).ready(function(){
     // initialize WOW for animation
     new WOW().init();
 
+    $('#contactForm').validate({
+
+        rules: {
+            email: {
+                required: true,
+                email: true
+            }
+        }, //end rules
+        messages: {
+            email: {
+                required: "Your email address is required",
+                email: "This is not a valid email address"
+            }
+        }
+    }); // end validate
 }); // end ready
