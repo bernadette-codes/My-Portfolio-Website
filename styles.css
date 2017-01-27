@@ -11,17 +11,17 @@ body {
 /** Colors **/
 #aboutSection,
 #contactSection,
-.portfolioContent {
+.projectsContent {
     background-color: #f2f2f2;
 }
 
-#portfolioSection {
+#projetSection {
     background-color: #d9d9d9;
 }
 
 header .well,
 header a,
-a.portfolioLink ul li,
+a.projectLink ul li,
 form > button.btn,
 footer {
     background-color: #2e2e2e;
@@ -42,7 +42,7 @@ header a:visited,
 header a:active,
 ul.nav.navbar-nav > li > a:hover,
 ul.nav.navbar-nav > li > a:focus,
-a.portfolioLink ul li,
+a.projectLink ul li,
 form > button.btn,
 footer {
     color: #fff;
@@ -227,26 +227,26 @@ div.aboutMe {
 
 /** Portfolio Section **/
 /* Portfolio White Background */
-.portfolioContent {
+.projectsContent {
     width: 100%;
     color: #222;
     padding: 5%;
 }
 
 /* Portfolio Thumbnails */
-#portfolioSection figure {
+#projetSection figure {
     position: relative;
     display: inline-block;
     margin: 5px;
 }
 
-#portfolioSection figure img {
+#projetSection figure img {
     border-radius: 5px;
     box-shadow: 0 0 8px 2px #dedede;
 }
 
 /* Portfolio Thumbnails Layover */
-#portfolioSection figcaption {
+#projetSection figcaption {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -260,27 +260,27 @@ div.aboutMe {
     transition: opacity .5s ease-out;
 }
 
-#portfolioSection figure:hover figcaption {
+#projetSection figure:hover figcaption {
     opacity: 0.9;
 }
 
 /* Portfolio Thumbnails Description */
-a.portfolioLink {
+a.projectLink {
     color: #383838;
 }
 
-a.portfolioLink h3 {
+a.projectLink h3 {
     font-weight: 800;
     margin-bottom: 15px;
 }
 
-a.portfolioLink ul {
+a.projectLink ul {
     list-style: none;
     width: 90%;
     text-align: left;
 }
 
-a.portfolioLink ul li {
+a.projectLink ul li {
     display: inline-block;
     padding: 1px 8px;
     border-radius: 5px;
@@ -352,15 +352,15 @@ footer {
         width: 230px;
     }
     /* Portfolio Section Width */
-    #portfolioSection {
+    #projetSection {
         padding-left: 7%;
         padding-right: 7%;
     }
     /* Portfolio Thumbnails Layover */
-    #portfolioSection figcaption {
+    #projetSection figcaption {
         padding-top: 20px;
     }
-    a.portfolioLink ul li {
+    a.projectLink ul li {
         font-size: 14px;
         margin-bottom: 5px;
     }
@@ -381,18 +381,18 @@ footer {
         width: 210px;
     }
     /* Portfolio Section Width */
-    #portfolioSection {
+    #projetSection {
         padding-left: 5%;
         padding-right: 5%;
     }
-    .portfolioContent {
+    .projectsContent {
         padding: 3%;
     }
     /* Portfolio Thumbnails Layover */
-    #portfolioSection figcaption {
+    #projetSection figcaption {
         padding-top: 10px;
     }
-    a.portfolioLink ul li {
+    a.projectLink ul li {
         font-size: 13px;
     }
 }
@@ -424,18 +424,18 @@ footer {
         margin: 0 10%;
     }
     /* Portfolio Section Width */
-    #portfolioSection {
+    #projetSection {
         padding-left: 7%;
         padding-right: 7%;
     }
-    .portfolioContent {
+    .projectsContent {
         padding: 5%;
     }
     /* Portfolio Thumbnails Layover */
-    #portfolioSection figcaption {
+    #projetSection figcaption {
         padding-top: 12px;
     }
-    a.portfolioLink ul li {
+    a.projectLink ul li {
         font-size: 15px;
     }
     #contactSection {
@@ -515,18 +515,18 @@ footer {
         height: 52px;
     }
     /* Portfolio Thumbnails Layover */
-    #portfolioSection figcaption {
+    #projetSection figcaption {
         padding-top: 8px;
     }
-    a.portfolioLink h3 {
+    a.projectLink h3 {
         font-size: 20px;
         margin-bottom: 10px;
     }
-    a.portfolioLink ul {
+    a.projectLink ul {
         width: 95%;
         margin-left: -10px;
     }
-    a.portfolioLink ul li {
+    a.projectLink ul li {
         font-size: 12px;
     }
     form {
@@ -553,12 +553,12 @@ footer {
         width: 160px;
     }
     /* Portfolio Thumbnails Layover */
-    a.portfolioLink h3 {
+    a.projectLink h3 {
         font-size: 18px;
         margin-top: 10px;
         margin-bottom: 8px;
     }
-    a.portfolioLink ul li {
+    a.projectLink ul li {
         padding: 1px 5px;
         margin-bottom: 3px;
     }
@@ -579,12 +579,12 @@ footer {
         width: 150px;
     }
     /* Portfolio Thumbnails Layover */
-    a.portfolioLink h3 {
+    a.projectLink h3 {
         font-size: 18px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    a.portfolioLink ul li {
+    a.projectLink ul li {
         padding: 1px 3px;
         margin-bottom: 3px;
     }
