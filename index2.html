@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="portfolio">
 
 <head>
     <meta charset="utf-8">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -60,14 +61,7 @@
             <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive myPhoto" width="250">
 
             <p class="top40">Find me on:<br>
-                <!-- Github Icon Link -->
-                <a href="http://bit.ly/1ZQEuiB" target="_blank"><img src="img/github.png" alt="Github" width="30" class="socialIcons"></a>
-
-                <!-- Linkedin Icon Link -->
-                <a href="http://bit.ly/1RXNWwm" target="_blank"><img src="img/linkedinblack.png" alt="LinkedIn" width="30" class="socialIcons"></a>
-
-                <!-- Wordpress Icon Link -->
-                <a href="https://bernadetteengleman.wordpress.com/" target="_blank"><img src="img/wordpress.jpg" alt="Wordpress" width="29" class="socialIcons"></a>
+                <div social-media-icons></div>
             </p>
         </div>
         <div class="col-sm-8 top30">
@@ -96,38 +90,10 @@
 
     <!-- Coding Skills -->
     <h3 class="text-center top40 bottom30">Coding Skills</h3>
-    <ul class="row text-center biggerFontSize">
-        <li class="col-xs-4">
-            <img src="img/skills/html.png" alt="HTML" width="80" height="85">
-            <p>HTML5</p>
-        </li>
-        <li class="col-xs-4">
-            <img src="img/skills/css.png" alt="CSS" width="80" height="85">
-            <p>CSS3</p>
-        </li>
-        <li class="col-xs-4">
-            <img src="img/skills/bootstrap.png" alt="Bootstrap" width="80" height="85">
-            <p>Bootstrap</p>
-        </li>
-        <li class="col-xs-4">
-            <img src="img/skills/javascript.png" alt="HTML" width="80" height="85">
-            <p>JavaScript</p>
-        </li>
-        <li class="col-xs-4">
-            <img src="img/skills/jquery.png" alt="jQuery" width="75" height="85">
-            <p>jQuery</p>
-        </li>
-        <li class="col-xs-4">
-            <img src="img/skills/angularjs.png" alt="AngularJS" width="80" height="85">
-            <p>AngularJS</p>
-        </li>
-        <li class="col-xs-4">
-            <img src="img/skills/sql.png" alt="SQL" width="80" height="85">
-            <p>SQL</p>
-        </li>
-        <li class="col-xs-4">
-            <img src="img/skills/mongodb.png" alt="SQL" width="80" height="85">
-            <p>NoSQL</p>
+    <ul ng-controller="skillsController as skill" class="row text-center biggerFontSize">
+        <li ng-repeat="skill in codingSkills" class="col-xs-4">
+            <img ng-src="{{skill.photo}}" alt="{{skill.name}}" width="80" height="85">
+            <p>{{skill.name}}</p>
         </li>
     </ul>
 </section>
@@ -137,184 +103,15 @@
     <h2 class="slideanim bottom30">PROJECTS</h2>
 
     <div class="projectsContent text-center">
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 slideanim first">
-                <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="projectLink">
+        <div ng-controller="projectController as project" class="row">
+            <div ng-repeat="project in projects" class="col-sm-6 col-xs-12 slideanim">
+                <a href="{{project.link}}" target="_blank" class="projectLink">
                     <figure>
-                        <img src="img/portfolio/panattierethumbnail.jpg" alt="Panettiere Bakeshop" class="img-responsive" width="400">
+                        <img ng-src="{{project.photo}}" alt="{{project.name}}" class="img-responsive" width="400">
                         <figcaption>
-                            <h3>Bakeshop Website<sup><small>&#128279;</small></sup></h3>
+                            <h3>{{project.name}}<sup><small>&#128279;</small></sup></h3>
                             <ul>
-                                <li>AngularJS</li>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="http://www.dmcimanilacondos.com" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/dmcithumbnail.jpg" alt="Real Estate Website" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Real Estate Website<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>HTML5</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Cats%20and%20Dogs/catsdogs.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/catsdogsthumbnail.jpg" alt="Cats and Dogs Game" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Cats and Dogs Game<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>CSS3</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Weather%20App/weatherapp.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/weatherappthumbnail.jpg" alt="Weather App" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Weather App<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>HTML5</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Fly%20Game/fly.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/flythumbnail.jpg" alt="Kill the fly game" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Kill The Fly Game<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>CSS3</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Pop%20Game/pop.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/popthumbnail.jpg" alt="Pop the bubbles game" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Pop The Bubbles Game<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Ghost%20Game/ghost.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/ghostthumbnail.jpg" alt="Find the Ghost Game" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Find the Ghost Game<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/fortunecookiethumbnail.jpg" alt="Fortune Cookie" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Fortune Cookie App<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Apps/Birth%20Month%20Meaning/birthmonthmeaning.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/birthmonththumbnail.jpg" alt="Birth Month Meaning" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Birth Month Meaning App<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Websites/Kukolicious%20Nail%20Salon/index.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/kukoliciousthumbnail.jpg" alt="Kukolicious Nail Salon" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Nail Salon Website<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>CSS3</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 slideanim">
-                <a href="Websites/Korona%20Hair%20Salon/index.html" target="_blank" class="projectLink">
-                    <figure>
-                        <img src="img/portfolio/koronathumbnail.jpg" alt="Korona Hair Salon" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>Hair Salon Website<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>CSS3</li>
-                                <li>Bootstrap</li>
+                                <li ng-repeat="code in project.codes">{{code}}</li>
                             </ul>
                         </figcaption>
                     </figure>
@@ -337,14 +134,7 @@
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                 :&nbsp; bernadette@englemaninvest.com</p>
             <p class="top20">Find me on:&nbsp;
-                <!-- Github Icon Link -->
-                <a href="http://bit.ly/1ZQEuiB" target="_blank"><img src="img/github.png" alt="Github" width="30" class="socialIcons"></a>
-
-                <!-- Linkedin Icon Link -->
-                <a href="http://bit.ly/1RXNWwm" target="_blank"><img src="img/linkedinblack.png" alt="LinkedIn" width="30" class="socialIcons"></a>
-
-                <!-- Wordpress Icon Link -->
-                <a href="https://bernadetteengleman.wordpress.com/" target="_blank"><img src="img/wordpress.jpg" alt="Wordpress" width="29" class="socialIcons"></a>
+                <div social-media-icons></div>
             </p>
         </div>
 
@@ -372,6 +162,8 @@
 <!-- Contact Form Validation -->
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/portfolioScript.js"></script>
+<!-- AngularJS App -->
+<script src="js/app.js"></script>
 
 </body>
 
