@@ -285,6 +285,7 @@ a.projectLink ul li {
     padding: 1px 8px;
     border-radius: 5px;
     margin-bottom: 8px;
+    margin-right: 3px;
 }
 
 /** Contact Section **/
@@ -456,8 +457,8 @@ footer {
     .myPhoto {
         width: 190px;
     }
-    /* First Portfolio*/
-    .first {
+    /* First Portfolio */
+    .projectsContent .col-sm-6.col-xs-12:first-of-type {
         margin-top: 15px;
     }
 }
