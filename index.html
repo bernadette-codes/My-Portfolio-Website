@@ -1,177 +1,324 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="portfolio">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Bernadette Engleman</title>
-    <meta name="description" content="Bernadette Engleman Portfolio Website">
-    <meta name="keywords" content="Bernadette Engleman, Bernadette Engleman Portfolio, Bernadette Engleman Website">
-    <meta name="author" content="Bernadette Engleman">
-    <link rel="shortcut icon" href="img/beIcon.png">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Bernadette Engleman</title>
+  <meta name="description" content="bernadette engleman portfolio website">
+  <meta name="keywords" content="bernadette engleman, bernadette engleman portfolio, bernadette engleman website">
+  <meta name="author" content="Bernadette Engleman">
+  <link rel="shortcut icon" href="img/beIcon.png">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
+<body data-spy="scroll" data-target=".navbar" data-offset="160">
 
-<!-- Landing Section -->
-<header class="container-fluid text-center">
-    <!-- Background -->
-    <canvas id="canvas">
-    </canvas>
+<!-- Header -->
+<header class="container-fluid landing">
+  <!-- Name Box -->
+  <div class="well text-center intro wow zoomIn">
+    <h1>Bernadette Engleman</h1>
+    <h2 class="top20">Front-end Web Developer</h2>
+  </div>
 
-    <!-- Name Box -->
-    <div class="well wow zoomIn">
-        <h1 class="wow zoomIn">Bernadette Engleman</h1>
-        <h2 class="top20 wow zoomIn">Front-end Web Developer</h2>
-    </div>
-
-    <!-- Arrow Down Icon -->
-    <div>
-        <a href="#aboutSection">
-            <span class="glyphicon glyphicon-chevron-down"></span>
-        </a>
-    </div>
+  <!-- Arrow Down Icon -->
+  <div class="text-center">
+    <a href="#aboutSection" id="arrow">
+      <span class="glyphicon glyphicon-chevron-down"></span>
+    </a>
+  </div>
 </header>
 
 <!-- Nav Bar -->
 <nav class="container-fluid navbar navbar-inverse" data-spy="affix">
-    <div class="wrap1">
-        <ul class="nav navbar-nav">
-            <li><a href="#aboutSection">ABOUT</a></li>
-            <li><a href="#projetSection">PROJECTS</a></li>
-            <li><a href="#contactSection">CONTACT</a></li>
-        </ul>
+  <div class="wrap1">
+    <div class="wrap2">
+      <ul class="nav navbar-nav">
+        <li><a href="#aboutSection">About</a></li>
+        <li><a href="#portfolioSection">Portfolio</a></li>
+        <li><a href="#contactSection">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <!-- About Section -->
-<section id="aboutSection" class="container-fluid contentWidth">
-    <h2 class="text-center bottom30 slideanim">ABOUT ME</h2>
+<section>
+  <div id="aboutSection" class="container-fluid text-center">
+    <h1>About Me</h1>
 
-    <div class="row aboutMe bigFontSize">
-        <div class="col-sm-4 top30 text-center slideanim">
-            <!-- Profile Photo -->
-            <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive myPhoto" width="250">
+    <div class="row marginLeftRight top30 bottom100">
+      <div class="col-sm-4 wow slideInUp">
+        <img src="img/profilephoto.jpg" alt="Profile Photo" width="250" class="img-responsive text-center top20 myPhoto">
 
-            <p ng-controller="iconsController as icon" class="top40">Find me on:<br>
-                <span ng-repeat="icon in mediaIcons">
-                    <a href="{{icon.href}}" target="_blank">
-                        <img src="{{icon.photo}}" alt="{{icon.alt}}" width="30" class="socialIcons">
-                    </a>
-                </span>
-            </p>
+        <!-- Coding Skills -->
+        <h2 class="top30">Coding Skills</h2>
+
+        <div class="row top20 bottom30">
+          <div class="col-xs-6">
+            <p class="text-center skills">HTML</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">CSS</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">JavaScript</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">jQuery</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">Bootstrap</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center skills">AngularJS</p>
+          </div>
         </div>
-        <div class="col-sm-8 top30">
-            <!-- Introduction -->
-            <div class="slideanim">
-                <p class="biggerFontSize">Hello, I am Bernadette! I'm a self-taught web developer.</p>
-                <p class="top20">I learned how to make a basic website in High School and I started studying JavaScript, Java and PHP in 2014.<br>
-                    I love coding because building a website feels like putting a puzzle together.<br>
-                    I program websites and web apps using JavaScript frameworks like jQuery and AngularJS.<br>
-                    This portfolio website is built using jQuery and AngularJS as well.<br>
-                    The projects that I built so far are posted below.</p>
-            </div>
-            <!-- Education -->
-            <div class="slideanim">
-                <h3 class="top30">Education:</h3>
-                <p class="top20">
-                    <span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Bachelor of Business Management <br>
-                    <span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Bachelor of Science in Mathematics
-                </p>
-                <p class="top20">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                    :&nbsp; bernadette@englemaninvest.com</p>
-            </div>
-        </div>
+      </div>
+
+      <!-- About Me Description -->
+      <div class="col-sm-8 text-left">
+        <h3>Hello, I am Bernadette from New York City.</h3>
+        <p class="text-justify aboutFontSize top20">I moved here from Chicago in 2013. I am originally from the Philippines.</p>
+        <p class="text-justify aboutFontSize">
+          <!-- I have a degree in B.S. in Math and Business Management.
+          I worked as a Forex Broker, Financial Advisor and Business Manager.-->
+          I started studying web programming in 2015.
+          I love it because I like making fun websites and web apps<!-- that people enjoy-->.
+          The projects that I built so far are posted below.</p>
+        <p class="text-justify aboutFontSize">
+          I like to cook and I love to travel. I also like to volunteer and I am a team leader with the non-profit organization, NYCares.</p>
+
+
+        <p class="aboutFontSize top20">
+          <!-- Github -->
+          <a href="http://bit.ly/1ZQEuiB" target="_blank">
+            <img src="img/github.png" alt="Github" width="30" height="30">
+          </a>&nbsp;&nbsp;&nbsp;
+
+          <!-- Linkedin -->
+          <a href="http://bit.ly/1RXNWwm" target="_blank">
+            <img src="img/linkedinblack.png" alt="LinkedIn" width="30" height="30">
+          </a>&nbsp;&nbsp;&nbsp;
+
+          <!-- Wordpress -->
+          <a href="https://bernadetteengleman.wordpress.com" target="_blank">
+            <img src="img/wordpress.jpg" alt="Wordpress" width="30" height="30">
+          </a>&nbsp;&nbsp;&nbsp;
+
+          <!-- Email -->
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
+
+        <!-- Education -->
+        <h2 class="aboutFontSize top20"><strong>Education:</strong></h2>
+        <p class="aboutFontSize top10">Bachelor of Business Management &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2010</small><br>
+          Bachelor of Science in Mathematics &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007</small></p>
+
+        <!-- Work Experience -->
+        <h2 class="aboutFontSize top20"><strong>Work Experience:</strong></h2>
+        <p class="aboutFontSize">Operations Manager &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2009 - present</small><br>
+          Financial Advisor &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2008 - 2009</small><br>
+          Forex Broker &nbsp;
+          <span class="separator"></span>&nbsp;&nbsp;
+          <small><span class="glyphicon glyphicon-calendar"></span>&nbsp;2007 - 2008</small></p>
+
+      </div>
     </div>
 
-    <!-- Coding Skills -->
-    <h3 class="text-center top40 bottom30">Coding Skills</h3>
-    <ul ng-controller="skillsController as skill" class="row text-center biggerFontSize">
-        <li ng-repeat="skill in codingSkills" class="col-xs-4">
-            <img ng-src="{{skill.photo}}" alt="{{skill.name}}" width="80" height="85">
-            <p>{{skill.name}}</p>
-        </li>
-    </ul>
+  </div>
 </section>
 
-<!-- Project Section -->
-<section id="projetSection" class="container-fluid contentWidth text-center">
-    <h2 class="slideanim bottom30">PROJECTS</h2>
+<!-- Portfolio -->
+<section>
+  <div id="portfolioSection" class="container-fluid text-center">
+    <h1>Portfolio</h1>
 
-    <div class="projectsContent text-center">
-        <div ng-controller="projectController as project" class="row">
-            <div ng-repeat="project in projects" class="col-sm-6 col-xs-12 slideanim">
-                <a href="{{project.link}}" target="_blank" class="projectLink">
-                    <figure>
-                        <img ng-src="{{project.photo}}" alt="{{project.name}}" class="img-responsive" width="400">
-                        <figcaption>
-                            <h3>{{project.name}}<sup><small>&#128279;</small></sup></h3>
-                            <ul>
-                                <li ng-repeat="code in project.codes">{{code}}</li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
+    <div class="portfolioContent container LeftRight top50 bottom100">
+
+      <!-- Git box -->
+      <div class="row text-right">
+        <div class="col-xs-12 git">
+          <a href="http://bit.ly/1ZQEuiB" target="_blank">
+            <img src="img/github.png" alt="Github" width="30" height="30">
+          </a>
         </div>
+      </div>
+
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Cats%20and%20Dogs/catsdogs.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/catsdogsthumbnail.jpg" alt="Cats and Dogs Game" width="400" class="img-responsive">
+              <figcaption>Cats and Dogs Game</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Fly%20Game/fly.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/flythumbnail.jpg" alt="Kill the fly game" width="400" class="img-responsive">
+              <figcaption>Kill The Fly Game</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Pop%20Game/pop.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/popthumbnail.jpg" alt="Pop the bubbles game" width="400" class="img-responsive">
+              <figcaption>Pop The Bubbles Game</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Ghost%20Game/ghost.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/ghostthumbnail.jpg" alt="Find the Ghost Game" width="400" class="img-responsive">
+              <figcaption>Find the Ghost Game</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Fortune%20Cookie/fortunecookie.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/fortunecookiethumbnail.jpg" alt="Fortune Cookie" width="400" class="img-responsive">
+              <figcaption>Fortune Cookie</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Birth%20Month%20Meaning/birthmonthmeaning.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/birthmonththumbnail.jpg" alt="Birth Month Meaning" width="400" class="img-responsive">
+              <figcaption>Birth Month Meaning</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <div class="row text-center bottom30 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Apps/Weather%20App/weatherapp.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/#" alt="Weather App" width="400" class="img-responsive">
+              <figcaption>Weather App</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Websites/Korona%20Hair%20Salon/index.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/koronathumbnail.jpg" alt="Korona Hair Salon" width="400" class="img-responsive">
+              <figcaption>Hair Salon</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <div class="row text-center bottom50 wow slideInUp">
+        <div class="col-sm-6 col-xs-12">
+          <a href="Websites/Panettiere%20Bakeshop/index.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/panattierethumbnail.jpg" alt="Panettiere Bakeshop" width="400" class="img-responsive">
+              <figcaption>Bakeshop</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <a href="Websites/Kukolicious%20Nail%20Salon/index.html" target="_blank" class="portfolioLink">
+            <figure>
+              <img src="img/portfolio/kukoliciousthumbnail.jpg" alt="Kukolicious Nail Salon" width="400" class="img-responsive">
+              <figcaption>Nail Salon</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contactSection" class="container-fluid contentWidth">
-    <h2 class="text-center bottom30 slideanim">CONTACT ME</h2>
+<!-- Contact -->
+<section>
+  <div id="contactSection" class="container-fluid text-center">
+    <h1>Contact Me</h1>
 
-    <div class="row">
-        <div class="col-sm-6 top40 bigFontSize slideanim">
-            <p class="biggerFontSize">Thank you for visiting my website.</p>
-            <p class="top20">If you have an offer or inquiries,
-                you can contact me by sending an email or by filling out this form.</p>
-            <p class="top20">
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                :&nbsp; bernadette@englemaninvest.com</p>
-            <p ng-controller="iconsController as icon" class="top20">Find me on:&nbsp;
-                <span ng-repeat="icon in mediaIcons">
-                    <a href="{{icon.href}}" target="_blank">
-                        <img src="{{icon.photo}}" alt="{{icon.alt}}" width="30" class="socialIcons">
-                    </a>
-                </span>
-            </p>
-        </div>
+    <div class="row marginLeftRight top30 bottom100 wow slideInUp">
 
-        <div class="col-sm-6 top40">
-            <form action="contact.php" method="post" class="slideanim" name="contactForm" id="contactForm">
-                <input class="form-control required" id="yourname" name="yourname" type="text" placeholder="Name" title="Your name is required">
-                <input class="form-control required" id="email" name="email" type="email" placeholder="Email">
-                <input class="form-control required" id="subject" name="subject" type="text" placeholder="Subject" title="Subject is required">
-                <textarea class="form-control required" id="message" name="messages" placeholder="Message" rows="5" title="Your message is required"></textarea>
-                <button class="btn btn-default pull-right" type="submit">Send</button>
-            </form>
-        </div>
+      <div class="col-sm-6 text-left top20">
+        <p class="contactFontSize">Thank you for visiting my website.</p>
+        <p class="contactFontSize top10">If you have an offer or inquiries, you can contact me by sending an email<!-- or filling out this form-->.</p>
+      </div>
+
+      <div class="col-sm-6 text-left">
+        <p class="contactFontSize top20">
+          <small><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></small>
+          : bernadette@englemaninvest.com</p>
+        <p class="contactFontSize top20">Find me on :&nbsp;
+
+          <a href="http://bit.ly/1ZQEuiB">
+            <img src="img/github.png" alt="Github" width="30" height="30">
+          </a>&nbsp;&nbsp;
+
+          <a href="http://bit.ly/1RXNWwm">
+            <img src="img/linkedinblack.png" alt="LinkedIn" width="30" height="30">
+          </a>&nbsp;&nbsp;
+
+          <a href="https://bernadetteengleman.wordpress.com">
+            <img src="img/wordpress.jpg" alt="Wordpress" width="30" height="30">
+          </a>
+        </p>
+
+          <!--
+          <form role="form" action="contact.php" method="post">
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            <textarea class="form-control" rows="3" id="comment" placeholder="Message" required></textarea>
+
+            <button type="submit" class="btn btn-default">Send</button>
+
+          </form>-->
+      </div>
+
     </div>
+  </div>
 </section>
 
 <!-- Footer -->
-<footer class="container-fluid text-center">
-    <p><small>Copyright © <span id="year"></span> Bernadette Engleman. <span class="footer2ndLine">All rights reserved.</span></small></p>
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center footerSec">
+      <div class="col-xs-12">
+        <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- Entrance Animation Scroll -->
-<script src="js/wow.min.js"></script>
-<!-- Contact Form Validation -->
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/portfolioScript.js"></script>
-<!-- AngularJS App -->
-<script src="js/app.js"></script>
+<script src="js/jquery.easing.1.3.js"></script> <!-- Smooth Scrolling -->
+<script src="js/wow.min.js"></script> <!-- Entrance Animation Scroll -->
+<script src="js/portfolio.js"></script>
 
 </body>
 
