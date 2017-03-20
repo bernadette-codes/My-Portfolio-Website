@@ -60,19 +60,12 @@
             <!-- Profile Photo -->
             <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive myPhoto" width="250">
 
-            <p class="top40">Find me on:<br>
-                <!-- Github Icon Link -->
-                <a href="http://bit.ly/1ZQEuiB" target="_blank">
-                    <img src="img/github.png" alt="Github" width="30" class="socialIcons">
-                </a>
-                <!-- Linkedin Icon Link -->
-                <a href="http://bit.ly/1RXNWwm" target="_blank">
-                    <img src="img/linkedinblack.png" alt="LinkedIn" width="30" class="socialIcons">
-                </a>
-                <!-- Wordpress Icon Link -->
-                <a href="https://bernadetteengleman.wordpress.com/" target="_blank">
-                    <img src="img/wordpress.jpg" alt="Wordpress" width="29" class="socialIcons">
-                </a>
+            <p ng-controller="iconsController as icon" class="top40">Find me on:<br>
+                <span ng-repeat="icon in mediaIcons">
+                    <a href="{{icon.href}}" target="_blank">
+                        <img src="{{icon.photo}}" alt="{{icon.alt}}" width="30" class="socialIcons">
+                    </a>
+                </span>
             </p>
         </div>
         <div class="col-sm-8 top30">
@@ -144,19 +137,12 @@
             <p class="top20">
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                 :&nbsp; bernadette@englemaninvest.com</p>
-            <p class="top20">Find me on:&nbsp;
-                <!-- Github Icon Link -->
-                <a href="http://bit.ly/1ZQEuiB" target="_blank">
-                    <img src="img/github.png" alt="Github" width="30" class="socialIcons">
-                </a>
-                <!-- Linkedin Icon Link -->
-                <a href="http://bit.ly/1RXNWwm" target="_blank">
-                    <img src="img/linkedinblack.png" alt="LinkedIn" width="30" class="socialIcons">
-                </a>
-                <!-- Wordpress Icon Link -->
-                <a href="https://bernadetteengleman.wordpress.com/" target="_blank">
-                    <img src="img/wordpress.jpg" alt="Wordpress" width="29" class="socialIcons">
-                </a>
+            <p ng-controller="iconsController as icon" class="top20">Find me on:&nbsp;
+                <span ng-repeat="icon in mediaIcons">
+                    <a href="{{icon.href}}" target="_blank">
+                        <img src="{{icon.photo}}" alt="{{icon.alt}}" width="30" class="socialIcons">
+                    </a>
+                </span>
             </p>
         </div>
 
