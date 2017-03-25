@@ -29,11 +29,11 @@
   <!-- Name Box -->
   <div class="well wow zoomIn">
     <h1 class="wow zoomIn">Bernadette Engleman</h1>
-    <h2 class="top20 wow zoomIn">Front-end Web Developer</h2>
+    <h2 class="top20 wow zoomIn">Atlanta Web Developer</h2>
   </div>
 
   <!-- Arrow Down Icon -->
-  <div>
+  <div class="wow zoomIn">
     <a href="#aboutSection">
       <span class="glyphicon glyphicon-chevron-down"></span>
     </a>
@@ -45,7 +45,7 @@
   <div class="wrap1">
     <ul class="nav navbar-nav">
       <li><a href="#aboutSection">ABOUT</a></li>
-      <li><a href="#projetSection">PROJECTS</a></li>
+      <li><a href="#projectSection">PROJECTS</a></li>
       <li><a href="#contactSection">CONTACT</a></li>
     </ul>
   </div>
@@ -53,25 +53,25 @@
 
 <!-- About Section -->
 <section id="aboutSection" class="container-fluid contentWidth">
-  <h2 class="text-center bottom30 slideanim">ABOUT ME</h2>
+  <h2 class="text-center bottom30 wow zoomIn">ABOUT ME</h2>
 
   <div class="row aboutMe bigFontSize">
-    <div class="col-sm-4 top30 text-center slideanim">
+    <div class="col-sm-4 top30 text-center">
       <!-- Profile Photo -->
-      <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive myPhoto" width="250">
+      <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive myPhoto wow slideInLeft" width="250">
 
-      <p ng-controller="iconsController as icon" class="top40">Find me on:<br>
+      <p ng-controller="iconsController as icon" class="top40 slideanim">Find me on:<br>
         <media-icons></media-icons>
       </p>
     </div>
     <div class="col-sm-8 top30">
       <!-- Introduction -->
-      <div class="slideanim">
+      <div class="wow slideInRight">
         <p class="biggerFontSize">Hello, I am Bernadette! I'm a self-taught web developer.</p>
-        <p class="top20">I learned how to make a basic website in High School and I started studying JavaScript, Java and PHP in 2014.<br>
-          I love coding because building a website feels like putting a puzzle together.<br>
-          I program websites and web apps using JavaScript frameworks like jQuery and AngularJS.<br>
-          This portfolio website is built using jQuery and AngularJS as well.<br>
+        <p class="top20">I learned how to make a basic website in High School and I started studying PHP, Java and JavaScript in 2014.<br>
+          I love coding because building a website or web apps feels like putting a puzzle together.<br>
+          I program using JavaScript frameworks like jQuery and AngularJS.<br>
+          This portfolio website is built using jQuery, AngularJS and PHP for contact form.<br>
           The projects that I built so far are posted below.</p>
       </div>
       <!-- Education -->
@@ -89,33 +89,43 @@
   </div>
 
   <!-- Coding Skills -->
-  <h3 class="text-center top40 bottom30">Coding Skills</h3>
+  <h3 class="text-center top40 bottom30 wow zoomIn">Coding Skills</h3>
   <ul ng-controller="skillsController as skill" class="row text-center biggerFontSize">
     <li ng-repeat="skill in codingSkills" class="col-xs-4">
-      <img ng-src="{{skill.photo}}" alt="{{skill.name}}" width="80" height="85">
-      <p>{{skill.name}}</p>
+      <img ng-src="{{skill.photo}}" alt="{{skill.name}}" width="80" height="85" class="wow slideInLeft">
+      <h4 class="wow zoomIn">{{skill.name}}</h4>
     </li>
   </ul>
 </section>
 
 <!-- Project Section -->
-<section id="projetSection" class="container-fluid contentWidth text-center">
-  <h2 class="slideanim bottom30">PROJECTS</h2>
+<section ng-controller="projectController as project" id="projectSection" class="container-fluid contentWidth text-center">
+  <h2 class="wow zoomIn bottom30">PROJECTS</h2>
 
-  <div class="projectsContent text-center">
-    <div ng-controller="projectController as project" class="row">
-      <div ng-repeat="project in projects" class="col-sm-6 col-xs-12 slideanim">
+  <div class="projectsContent">
+    <div ng-repeat="project in projects" class="row">
+      <div class="col-sm-6 col-xs-12">
         <a href="{{project.link}}" target="_blank" class="projectLink">
-          <figure>
-            <img ng-src="{{project.photo}}" alt="{{project.name}}" class="img-responsive" width="400">
-            <figcaption>
-              <h3>{{project.name}}<sup><small>&#128279;</small></sup></h3>
-              <ul>
-                <li ng-repeat="code in project.codes">{{code}}</li>
-              </ul>
-            </figcaption>
+          <figure class="wow zoomIn">
+            <img ng-src="{{project.photo[0]}}" alt="{{project.name}}" class="img-responsive img1" width="400">
+            <div class="img2">
+              <img ng-src="{{project.photo[1]}}" alt="{{project.name}}" class="img-responsive" width="400">
+            </div>
           </figure>
         </a>
+      </div>
+
+      <div class="col-sm-6 col-xs-12 text-center wow zoomIn">
+        <a href="{{project.link}}" target="_blank" class="projectLink">
+          <h3>{{project.name}}</h3>
+        </a>
+        <p>{{project.description}}</p>
+        <a href="{{project.git}}" target="_blank" class="projectLink">
+          <img src="img/skills/css.png" alt="Github Link" width="30" class="socialIcons pull-left">
+        </a>
+        <ul class="projCodes">
+          <li ng-repeat="code in project.codes">{{code}}</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -123,23 +133,24 @@
 
 <!-- Contact Section -->
 <section id="contactSection" class="container-fluid contentWidth">
-  <h2 class="text-center bottom30 slideanim">CONTACT ME</h2>
+  <h2 class="text-center bottom30 wow zoomIn">CONTACT ME</h2>
 
   <div class="row">
-    <div class="col-sm-6 top40 bigFontSize slideanim">
+    <div class="col-sm-6 top40 bigFontSize wow slideInRight">
       <p class="biggerFontSize">Thank you for visiting my website.</p>
       <p class="top20">If you have an offer or inquiries,
         you can contact me by sending an email or by filling out this form and I will get back to you as soon as I can.</p>
       <p class="top20">
         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
         :&nbsp; bernadette@englemaninvest.com</p>
+      <!--
       <p ng-controller="iconsController as icon" class="top20">Find me on:&nbsp;
         <media-icons></media-icons>
-      </p>
+      </p>-->
     </div>
 
     <div class="col-sm-6 top40">
-      <form action="contact.php" method="post" class="slideanim" name="contactForm" id="contactForm">
+      <form action="contact.php" method="post" class="wow slideInLeft" name="contactForm" id="contactForm">
         <input class="form-control required" id="yourname" name="yourname" type="text" placeholder="Name" title="Your name is required">
         <input class="form-control required" id="email" name="email" type="email" placeholder="Email">
         <input class="form-control required" id="subject" name="subject" type="text" placeholder="Subject" title="Subject is required">
