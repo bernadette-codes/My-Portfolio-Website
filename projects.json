@@ -1,0 +1,56 @@
+[{
+  "name": "Real Estate Website",
+  "link": "http://www.dmcimanilacondos.com",
+  "photo": "img/portfolio/dmcithumbnail.jpg",
+  "codes": ["AngularJS", "JavaScript", "HTML5", "Bootstrap"]
+}, {
+  "name": "Bakeshop Website",
+  "link": "Websites/Panettiere%20Bakeshop/index.html",
+  "photo": "img/portfolio/panattierethumbnail.jpg",
+  "codes": ["AngularJS", "JavaScript", "Bootstrap"]
+}, {
+  "name": "Nail Salon Website",
+  "link": "Websites/Kukolicious%20Nail%20Salon/index.html",
+  "photo": "img/portfolio/kukoliciousthumbnail.jpg",
+  "codes": ["AngularJS", "JavaScript", "CCS3", "Bootstrap"]
+}, {
+  "name": "Hair Salon Website",
+  "link": "Websites/Korona%20Hair%20Salon/index.html",
+  "photo": "img/portfolio/koronathumbnail.jpg",
+  "codes": ["AngularJS", "JavaScript", "CCS3", "Bootstrap"]
+}, {
+  "name": "Cats and Dogs Game",
+  "link": "Apps/Cats%20and%20Dogs/catsdogs.html",
+  "photo": "img/portfolio/catsdogsthumbnail.jpg",
+  "codes": ["JavaScript", "jQuery", "CSS3", "Bootstrap"]
+}, {
+  "name": "Weather App",
+  "link": "Apps/Weather%20App/weatherapp.html",
+  "photo": "img/portfolio/weatherappthumbnail.jpg",
+  "codes": ["JavaScript", "jQuery", "HTML5", "Bootstrap"]
+}, {
+  "name": "Kill The Fly Game",
+  "link": "Apps/Fly%20Game/fly.html",
+  "photo": "img/portfolio/flythumbnail.jpg",
+  "codes": ["JavaScript", "jQuery", "CSS3", "Bootstrap"]
+}, {
+  "name": "Pop The Bubbles Game",
+  "link": "Apps/Pop%20Game/pop.html",
+  "photo": "img/portfolio/popthumbnail.jpg",
+  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+}, {
+  "name": "Find the Ghost Game",
+  "link": "Apps/Ghost%20Game/ghost.html",
+  "photo": "img/portfolio/ghostthumbnail.jpg",
+  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+}, {
+  "name": "Fortune Cookie App",
+  "link": "Apps/Fortune%20Cookie/fortunecookie.html",
+  "photo": "img/portfolio/fortunecookiethumbnail.jpg",
+  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+}, {
+  "name": "Birth Month Meaning App",
+  "link": "Apps/Birth%20Month%20Meaning/birthmonthmeaning.html",
+  "photo": "img/portfolio/birthmonththumbnail.jpg",
+  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+}]
