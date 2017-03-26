@@ -1,56 +1,85 @@
 [{
-  "name": "Real Estate Website",
+  "name": "Portfolio",
+  "link": "#",
+  "git": "https://github.com/bernadette-engleman/My-Portfolio-Website",
+  "photo": ["img/portfolio/portfoliothumbnail.jpg", "img/portfolio/portfoliothumbnail2.jpg"],
+  "codes": ["PHP", "AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML5"],
+  "description": "This portfolio website uses jQuery plugins, Bootstrap Scrollspy and Affix, HTML5 and PHP for the contact form"
+}, {
+  "name": "DMCI Homes",
   "link": "http://www.dmcimanilacondos.com",
-  "photo": "img/portfolio/dmcithumbnail.jpg",
-  "codes": ["AngularJS", "JavaScript", "HTML5", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Real-Estate",
+  "photo": ["img/portfolio/dmcithumbnail.jpg", "img/portfolio/dmcithumbnail2.jpg"],
+  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS", "HTML5"],
+  "description": "A 28-web page Real Estate website for a client"
 }, {
-  "name": "Bakeshop Website",
+  "name": "Panettiere",
   "link": "Websites/Panettiere%20Bakeshop/index.html",
-  "photo": "img/portfolio/panattierethumbnail.jpg",
-  "codes": ["AngularJS", "JavaScript", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Panettiere-Bakeshop",
+  "photo": ["img/portfolio/panattierethumbnail.jpg", "img/portfolio/panattierethumbnail2.jpg"],
+  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS", "HTML"],
+  "description": "Bakeshop website personal project"
 }, {
-  "name": "Nail Salon Website",
+  "name": "Kukolicious Nail & Spa",
   "link": "Websites/Kukolicious%20Nail%20Salon/index.html",
-  "photo": "img/portfolio/kukoliciousthumbnail.jpg",
-  "codes": ["AngularJS", "JavaScript", "CCS3", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Kukolicious",
+  "photo": ["img/portfolio/kukoliciousthumbnail.jpg", "img/portfolio/kukoliciousthumbnail2.jpg"],
+  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CCS3", "HTML"],
+  "description": "Nail & Spa salon website personal project"
 }, {
-  "name": "Hair Salon Website",
+  "name": "Korona Hair Salon",
   "link": "Websites/Korona%20Hair%20Salon/index.html",
-  "photo": "img/portfolio/koronathumbnail.jpg",
-  "codes": ["AngularJS", "JavaScript", "CCS3", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Korona",
+  "photo": ["img/portfolio/koronathumbnail.jpg", "img/portfolio/koronathumbnail2.jpg"],
+  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CCS3", "HTML"],
+  "description": "Hair Salon Website personal project"
 }, {
   "name": "Cats and Dogs Game",
   "link": "Apps/Cats%20and%20Dogs/catsdogs.html",
-  "photo": "img/portfolio/catsdogsthumbnail.jpg",
-  "codes": ["JavaScript", "jQuery", "CSS3", "Bootstrap"]
-}, {
-  "name": "Weather App",
-  "link": "Apps/Weather%20App/weatherapp.html",
-  "photo": "img/portfolio/weatherappthumbnail.jpg",
-  "codes": ["JavaScript", "jQuery", "HTML5", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/CatsnDogs-App",
+  "photo": ["img/portfolio/catsdogsthumbnail.jpg", "img/portfolio/catsdogsthumbnail2.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CCS3", "HTML"],
+  "description": "The objective of this game is to move all 10 pets to the pet store within 15 seconds."
 }, {
   "name": "Kill The Fly Game",
   "link": "Apps/Fly%20Game/fly.html",
-  "photo": "img/portfolio/flythumbnail.jpg",
-  "codes": ["JavaScript", "jQuery", "CSS3", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Fly-Game-App",
+  "photo": ["img/portfolio/flythumbnail.jpg", "img/portfolio/flythumbnail2.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CCS3", "HTML"],
+  "description": "The objective of this game is to click the moving fly as much as you can within 30 seconds."
 }, {
   "name": "Pop The Bubbles Game",
   "link": "Apps/Pop%20Game/pop.html",
-  "photo": "img/portfolio/popthumbnail.jpg",
-  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Pop-Game-App",
+  "photo": ["img/portfolio/popthumbnail2.jpg", "img/portfolio/popthumbnail.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
+  "description": "The objective of this game is to pop all 64 bubbles within 30 seconds."
+}, {
+  "name": "Weather App",
+  "link": "Apps/Weather%20App/weatherapp.html",
+  "git": "https://github.com/bernadette-engleman/Weather-App",
+  "photo": ["img/portfolio/weatherappthumbnail.jpg", "img/portfolio/weatherappthumbnail2.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML5"],
+  "description": "Shows the temperature, weather today and 5-day forecast based on the user's location."
 }, {
   "name": "Find the Ghost Game",
   "link": "Apps/Ghost%20Game/ghost.html",
-  "photo": "img/portfolio/ghostthumbnail.jpg",
-  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Ghost-App",
+  "photo": ["img/portfolio/ghostthumbnail2.jpg", "img/portfolio/ghostthumbnail.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
+  "description": "The objective of this game is to click the ghost when it appears."
 }, {
   "name": "Fortune Cookie App",
   "link": "Apps/Fortune%20Cookie/fortunecookie.html",
-  "photo": "img/portfolio/fortunecookiethumbnail.jpg",
-  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Fortune-Cookie-App",
+  "photo": ["img/portfolio/fortunecookiethumbnail.jpg", "img/portfolio/fortunecookiethumbnail2.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
+  "description": "Click the fortune cookie image to show a random quote."
 }, {
   "name": "Birth Month Meaning App",
   "link": "Apps/Birth%20Month%20Meaning/birthmonthmeaning.html",
-  "photo": "img/portfolio/birthmonththumbnail.jpg",
-  "codes": ["JavaScript", "jQuery", "Bootstrap"]
+  "git": "https://github.com/bernadette-engleman/Birth-Month-Meaning-App",
+  "photo": ["img/portfolio/birthmonththumbnail.jpg", "img/portfolio/birthmonththumbnail2.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
+  "description": "Shows the meaning of your birth month."
 }]
