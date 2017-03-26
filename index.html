@@ -71,8 +71,8 @@
         <p class="top20">I learned how to make a basic website in High School and I started studying PHP, Java and JavaScript in 2014.<br>
           I love coding because building a website or web apps feels like putting a puzzle together.<br>
           I program using JavaScript frameworks like jQuery and AngularJS.<br>
-          This portfolio website is built using jQuery, AngularJS and PHP for contact form.<br>
-          The projects that I built so far are posted below.</p>
+          This portfolio website is built using HTML5, CSS3, Bootstrap, jQuery, AngularJS and PHP for the contact form.<br>
+          The projects that I have built so far are posted below.</p>
       </div>
       <!-- Education -->
       <div class="slideanim">
@@ -120,9 +120,11 @@
           <h3>{{project.name}}</h3>
         </a>
         <p>{{project.description}}</p>
-        <a href="{{project.git}}" target="_blank" class="projectLink">
-          <img src="img/skills/css.png" alt="Github Link" width="30" class="socialIcons pull-left">
-        </a>
+        <div class="gitLink">
+          <a href="{{project.git}}" target="_blank" class="projectLink">
+            <img src="img/github.png" alt="Github Link" width="30" class="socialIcons pull-left">
+          </a>
+        </div>
         <ul class="projCodes">
           <li ng-repeat="code in project.codes">{{code}}</li>
         </ul>
@@ -143,10 +145,9 @@
       <p class="top20">
         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
         :&nbsp; bernadette@englemaninvest.com</p>
-      <!--
       <p ng-controller="iconsController as icon" class="top20">Find me on:&nbsp;
         <media-icons></media-icons>
-      </p>-->
+      </p>
     </div>
 
     <div class="col-sm-6 top40">
@@ -163,7 +164,7 @@
 
 <!-- Footer -->
 <footer class="container-fluid text-center">
-  <p><small>Copyright © <span id="year"></span> Bernadette Engleman. <span class="footer2ndLine">All rights reserved.</span></small></p>
+  <p><small>Copyright © 2015-<span id="year"></span> Bernadette Engleman. <span class="footer2ndLine">All rights reserved.</span></small></p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
