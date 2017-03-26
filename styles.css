@@ -6,7 +6,7 @@ body {
     font: 400 15px Lato, sans-serif;
     color: #434142;
     line-height: 1.8;
-  }
+}
 
 /** Colors **/
 #aboutSection,
@@ -15,14 +15,18 @@ body {
     background-color: #f2f2f2;
 }
 
-#projetSection {
+#projectSection {
     background-color: #d9d9d9;
+}
+
+a.projectLink h3 {
+    background-color: #434142;;
 }
 
 header .well,
 header a,
-a.projectLink ul li,
-form > button.btn,
+a.projectLink h3:hover,
+form > input.btn,
 footer {
     background-color: #2e2e2e;
 }
@@ -42,8 +46,8 @@ header a:visited,
 header a:active,
 ul.nav.navbar-nav > li > a:hover,
 ul.nav.navbar-nav > li > a:focus,
-a.projectLink ul li,
-form > button.btn,
+a.projectLink h3,
+form > input.btn,
 footer {
     color: #fff;
 }
@@ -84,6 +88,10 @@ header a {
     border-radius: 30px;
     -webkit-animation: bounce 0.75s infinite;
     animation: bounce 0.75s infinite;
+}
+
+header a:focus {
+    outline: none;
 }
 
 @-webkit-keyframes bounce {
@@ -141,6 +149,7 @@ ul.nav.navbar-nav > li > a {
 ul.nav.navbar-nav > li > a:hover,
 ul.nav.navbar-nav > li > a:focus {
     background-color: #080808;
+    outline: none;
 }
 
 /* All Section Styles */
@@ -169,9 +178,9 @@ ul.nav.navbar-nav > li > a:focus {
 @keyframes slide {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(70%);
-        -ms-transform: translateY(70%);
-        transform: translateY(70%);
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
     }
     100% {
         opacity: 1;
@@ -184,15 +193,15 @@ ul.nav.navbar-nav > li > a:focus {
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(70%);
-        -ms-transform: translateY(70%);
-        transform: translateY(70%);
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
     }
     100% {
         opacity: 1;
-        -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-        transform: translateY(0%);
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
@@ -214,6 +223,18 @@ div.aboutMe {
     margin-right: 8px;
 }
 
+.aboutMe span a:focus,
+#contactSection span a:focus,
+.projectsContent a:focus {
+    outline: none;
+}
+
+.aboutMe span a:hover img,
+#contactSection span a:hover img,
+.gitLink a:hover img {
+    border-radius: 10px;
+}
+
 /* Skills */
 #aboutSection ul {
     margin: 0 20%;
@@ -223,6 +244,12 @@ div.aboutMe {
 #aboutSection ul li {
     list-style: none;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+#aboutSection ul li h4 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /** Portfolio Section **/
@@ -233,35 +260,37 @@ div.aboutMe {
     padding: 5%;
 }
 
+.projectsContent .row {
+    margin-bottom: 25px;
+}
+
 /* Portfolio Thumbnails */
-#projetSection figure {
+#projectSection figure {
     position: relative;
     display: inline-block;
     margin: 5px;
 }
 
-#projetSection figure img {
+#projectSection figure img {
     border-radius: 5px;
     box-shadow: 0 0 8px 2px #dedede;
 }
 
 /* Portfolio Thumbnails Layover */
-#projetSection figcaption {
+#projectSection .img2 {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ededed;
-    padding-top: 25px;
     margin-left: auto;
     margin-right: auto;
     opacity: 0;
     transition: opacity .5s ease-out;
 }
 
-#projetSection figure:hover figcaption {
-    opacity: 0.9;
+#projectSection figure:hover .img2 {
+    opacity: 1;
 }
 
 /* Portfolio Thumbnails Description */
@@ -269,21 +298,28 @@ a.projectLink {
     color: #383838;
 }
 
+a.projectLink:focus {
+    outline: none;
+}
+
 a.projectLink h3 {
+    display: inline-block;
     font-weight: 800;
+    border-radius: 5px;
+    padding: 5px 10px;
     margin-bottom: 15px;
 }
 
-a.projectLink ul {
+ul.projCodes {
     list-style: none;
     width: 90%;
-    text-align: left;
 }
 
-a.projectLink ul li {
+ul.projCodes li {
     display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
     padding: 1px 8px;
-    border-radius: 5px;
     margin-bottom: 8px;
     margin-right: 3px;
 }
@@ -299,9 +335,14 @@ form .form-control:focus {
     box-shadow: none;
 }
 
-form > button.btn {
+form > input.btn {
     border-radius: 0;
     margin-top: 15px;
+}
+
+form > input.btn:hover {
+    background-color: #fff;
+    border: 2px solid #666666;
 }
 
 #contactForm input.error,
@@ -342,6 +383,15 @@ footer {
     margin-bottom: 30px;
 }
 
+/** Thank you Page **/
+.thanks h1 {
+    font-size: 2em;
+}
+
+.thanks p {
+    font-size: 1.4em;
+}
+
 /** Media Queries **/
 @media screen and (max-width: 1200px) {
     /* Name Box */
@@ -353,15 +403,15 @@ footer {
         width: 230px;
     }
     /* Portfolio Section Width */
-    #projetSection {
+    #projectSection {
         padding-left: 7%;
         padding-right: 7%;
     }
     /* Portfolio Thumbnails Layover */
-    #projetSection figcaption {
+    #projectSection .img2 {
         padding-top: 20px;
     }
-    a.projectLink ul li {
+    ul.projCodes li {
         font-size: 14px;
         margin-bottom: 5px;
     }
@@ -382,7 +432,7 @@ footer {
         width: 210px;
     }
     /* Portfolio Section Width */
-    #projetSection {
+    #projectSection {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -390,10 +440,10 @@ footer {
         padding: 3%;
     }
     /* Portfolio Thumbnails Layover */
-    #projetSection figcaption {
+    #projectSection .img2 {
         padding-top: 10px;
     }
-    a.projectLink ul li {
+    ul.projCodes li {
         font-size: 13px;
     }
 }
@@ -406,12 +456,12 @@ footer {
     }
     /* Nav Bar */
     ul.nav.navbar-nav {
-       margin: 0;
+        margin: 0;
     }
     /* Nav Bar Link */
     ul.nav.navbar-nav > li > a {
-       padding-top: 15px;
-       padding-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     div.aboutMe {
         margin-left: 0;
@@ -425,7 +475,7 @@ footer {
         margin: 0 10%;
     }
     /* Portfolio Section Width */
-    #projetSection {
+    #projectSection {
         padding-left: 7%;
         padding-right: 7%;
     }
@@ -433,10 +483,13 @@ footer {
         padding: 5%;
     }
     /* Portfolio Thumbnails Layover */
-    #projetSection figcaption {
+    #projectSection .img2 {
         padding-top: 12px;
     }
-    a.projectLink ul li {
+    .gitLink {
+        margin-left: 10%;
+    }
+    ul.projCodes li {
         font-size: 15px;
     }
     #contactSection {
@@ -451,8 +504,8 @@ footer {
 @media screen and (max-width: 650px) {
     /* Name Box */
     header .well {
-       width: 75%;
-       margin: 15% auto;
+        width: 75%;
+        margin: 15% auto;
     }
     .myPhoto {
         width: 190px;
@@ -466,7 +519,7 @@ footer {
 @media screen and (max-width: 570px) {
     /* Name Box */
     header .well {
-       width: 60%;
+        width: 60%;
     }
     header h1 {
         font-size: 1.9em;
@@ -493,12 +546,19 @@ footer {
     .biggerFontSize {
         font-size: 1.2em;
     }
+    .thanks h1 {
+        font-size: 1.8em;
+    }
+
+    .thanks p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 450px) {
     /* Name Box */
     header .well {
-       width: 77%;
+        width: 77%;
     }
     .navbar.navbar-inverse {
         letter-spacing: 0;
@@ -516,18 +576,18 @@ footer {
         height: 52px;
     }
     /* Portfolio Thumbnails Layover */
-    #projetSection figcaption {
+    #projectSection .img2 {
         padding-top: 8px;
     }
     a.projectLink h3 {
         font-size: 20px;
         margin-bottom: 10px;
     }
-    a.projectLink ul {
+    ul.projCodes {
         width: 95%;
         margin-left: -10px;
     }
-    a.projectLink ul li {
+    ul.projCodes li {
         font-size: 12px;
     }
     form {
@@ -559,7 +619,7 @@ footer {
         margin-top: 10px;
         margin-bottom: 8px;
     }
-    a.projectLink ul li {
+    ul.projCodes li {
         padding: 1px 5px;
         margin-bottom: 3px;
     }
@@ -585,8 +645,15 @@ footer {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    a.projectLink ul li {
+    ul.projCodes li {
         padding: 1px 3px;
         margin-bottom: 3px;
+    }
+    .thanks h1 {
+        font-size: 1.5em;
+    }
+
+    .thanks p {
+        font-size: 1em;
     }
 }
