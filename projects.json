@@ -7,7 +7,7 @@
   "description": "This portfolio website uses jQuery plugins, Bootstrap Scrollspy and Affix, HTML5 and PHP for the contact form"
 }, {
   "name": "DMCI Homes",
-  "link": "http://www.dmcimanilacondos.com",
+  "link": "Websites/DMCI/index.html",
   "git": "https://github.com/bernadette-engleman/Real-Estate",
   "photo": ["img/portfolio/dmcithumbnail.jpg", "img/portfolio/dmcithumbnail2.jpg"],
   "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS", "HTML5"],
