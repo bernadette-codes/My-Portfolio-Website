@@ -1,0 +1,28 @@
+[{
+  "name": "HTML5",
+  "photo": "img/skills/html.png"
+}, {
+  "name": "CSS3",
+  "photo": "img/skills/css.png"
+}, {
+  "name": "Bootstrap",
+  "photo": "img/skills/bootstrap.png"
+}, {
+  "name": "JavaScript",
+  "photo": "img/skills/javascript.png"
+}, {
+  "name": "jQuery",
+  "photo": "img/skills/jquery.png"
+}, {
+  "name": "PHP",
+  "photo": "img/skills/php.png"
+}, {
+  "name": "SQL",
+  "photo": "img/skills/sql.png"
+}, {
+  "name": "NoSQL",
+  "photo": "img/skills/mongodb.png"
+}, {
+  "name": "AngularJS",
+  "photo": "img/skills/angularjs.png"
+}]
