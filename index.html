@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | Bernadette Engleman</title>
+  <title>Bernadette Engleman Portfolio</title>
   <meta name="description" content="Bernadette Engleman Portfolio Website">
-  <meta name="keywords" content="Bernadette Engleman, Bernadette Engleman Portfolio, Bernadette Engleman Website, Atlanta web developer, javascript developer, web developer">
+  <meta name="keywords" content="Bernadette Engleman, Bernadette Engleman Portfolio, Bernadette Engleman Website, Atlanta web developer, javascript developer, web developer, AngularJS developer">
   <meta name="author" content="Bernadette Engleman">
   <link rel="shortcut icon" href="img/beIcon.png">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -60,7 +60,7 @@
       <!-- Profile Photo -->
       <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive myPhoto wow slideInLeft" width="250">
 
-      <p ng-controller="iconsController as icon" class="top40 slideanim">Find me on:<br>
+      <p ng-controller="IconsController as icon" class="top40 slideanim">Find me on:<br>
         <media-icons></media-icons>
       </p>
     </div>
@@ -90,7 +90,7 @@
 
   <!-- Coding Skills -->
   <h3 class="text-center top40 bottom30 wow zoomIn">Coding Skills</h3>
-  <ul ng-controller="skillsController as skill" class="row text-center biggerFontSize">
+  <ul ng-controller="SkillsController as skill" class="row text-center biggerFontSize">
     <li ng-repeat="skill in codingSkills" class="col-xs-4">
       <img ng-src="{{skill.photo}}" alt="{{skill.name}}" width="80" height="85" class="wow slideInLeft">
       <h4 class="wow zoomIn">{{skill.name}}</h4>
@@ -99,14 +99,14 @@
 </section>
 
 <!-- Project Section -->
-<section ng-controller="projectController as project" id="projectSection" class="container-fluid contentWidth text-center">
+<section ng-controller="ProjectController as project" id="projectSection" class="container-fluid contentWidth text-center">
   <h2 class="wow zoomIn bottom30">PROJECTS</h2>
 
   <div class="projectsContent">
     <div ng-repeat="project in projects" class="row">
       <div class="col-sm-6 col-xs-12">
         <a href="{{project.link}}" target="_blank" class="projectLink">
-          <figure class="wow zoomIn">
+          <figure class="wow slideInLeft">
             <img ng-src="{{project.photo[0]}}" alt="{{project.name}}" class="img-responsive img1" width="400">
             <div class="img2">
               <img ng-src="{{project.photo[1]}}" alt="{{project.name}}" class="img-responsive" width="400">
@@ -115,7 +115,7 @@
         </a>
       </div>
 
-      <div class="col-sm-6 col-xs-12 text-center wow zoomIn">
+      <div class="col-sm-6 col-xs-12 text-center wow slideInRight">
         <a href="{{project.link}}" target="_blank" class="projectLink">
           <h3>{{project.name}}</h3>
         </a>
@@ -145,7 +145,7 @@
       <p class="top20">
         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
         :&nbsp; bernadette@englemaninvest.com</p>
-      <p ng-controller="iconsController as icon" class="top20">Find me on:&nbsp;
+      <p ng-controller="IconsController as icon" class="top20">Find me on:&nbsp;
         <media-icons></media-icons>
       </p>
     </div>
