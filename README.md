@@ -1,18 +1,28 @@
-My Portfolio Website
 
-Desscription: This website showcases the programming projects that I built.
+**Portfolio Website**
+--------------------
 
-Link: http://www.bernadetteengleman.com/
+My [Portfolio website](http://www.bernadetteengleman.com/) showcases the projects that I built.
 
-Outline:
-Landing Page
-h1: Bernadette Engleman
-     h2: NYC-based Web Developer 
+![Landing Page](http://www.bernadetteengleman.com/img/portfolio/portfoliothumbnail.jpg)
 
-h2: About Me
-     p: Introduction
-     h3: Education
-     h3: Coding Skills
-h2: Portfolio
-h2: Contact Me
+![Contact Form](http://www.bernadetteengleman.com/img/portfolio/portfoliothumbnail2.jpg)
 
+
+ - Single-page, responsive web application built with HTML5, CSS3, Bootstrap, JavaScript and AngularJS
+ - Utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API
+ - Contact form is built with jQuery validation plugin and PHP
+ - Features Bootstrap Scrollspy and Affix
+
+**Front-End:**
+
+ - AngularJS
+ - JavaScriptj
+ - Query
+ - Bootstrap
+ - CSS3
+ - HTML5
+
+**Back-End:**
+
+ - PHP
