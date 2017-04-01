@@ -34,7 +34,7 @@
 
   <!-- Arrow Down Icon -->
   <div class="wow zoomIn">
-    <a href="#aboutSection">
+    <a href="#aboutSection" class="arrow">
       <span class="glyphicon glyphicon-chevron-down"></span>
     </a>
   </div>
@@ -53,7 +53,7 @@
 
 <!-- About Section -->
 <section id="aboutSection" class="container-fluid contentWidth">
-  <h2 class="text-center bottom30 wow zoomIn">ABOUT ME</h2>
+  <h2 class="text-center bottom30">ABOUT ME</h2>
 
   <div class="row aboutMe bigFontSize">
     <div class="col-sm-4 top30 text-center">
@@ -61,9 +61,8 @@
       <img src="img/profilephoto.jpg" alt="Profile Photo" class="img-responsive myPhoto" width="220">
 
       <p class="top40">
-        <span class="glyphicon glyphicon-map-marker"></span>
-        :&nbsp; Atlanta, GA</p>
-      <p ng-controller="IconsController as icon" class="top20">Find me on:<br>
+        <span class="glyphicon glyphicon-map-marker"></span> Atlanta, GA</p>
+      <p ng-controller="IconsController as icon" class="top20">Find me on<br>
         <media-icons></media-icons>
       </p>
     </div>
@@ -86,24 +85,24 @@
         </p>
         <p class="top20">
           <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-          :&nbsp; bernadette@englemaninvest.com</p>
+          &nbsp; bernadette@englemaninvest.com</p>
       </div>
     </div>
   </div>
 
   <!-- Coding Skills -->
-  <h3 class="text-center top40 bottom30 wow zoomIn">Coding Skills</h3>
+  <h3 class="text-center top40 bottom30">Coding Skills</h3>
   <ul ng-controller="SkillsController as skill" class="row text-center biggerFontSize">
     <li ng-repeat="skill in codingSkills" class="col-xs-4">
-      <img ng-src="{{skill.photo}}" alt="{{skill.name}}" width="80" height="85" class="wow slideInLeft">
-      <h4 class="text-center wow zoomIn">{{skill.name}}</h4>
+      <img ng-src="{{skill.photo}}" alt="{{skill.name}}" width="80" height="85">
+      <h4 class="text-center">{{skill.name}}</h4>
     </li>
   </ul>
 </section>
 
 <!-- Project Section -->
 <section ng-controller="ProjectController as project" id="projectSection" class="container-fluid contentWidth text-center">
-  <h2 class="wow zoomIn bottom30">PROJECTS</h2>
+  <h2 class="bottom30">PROJECTS</h2>
 
   <div class="projectsContent">
     <div ng-repeat="project in projects" class="row">
@@ -124,7 +123,7 @@
         </a>
         <p class="text-left">{{project.description}}</p>
         <div class="gitLink">
-          <a href="{{project.git}}" target="_blank" class="projectLink">
+          <a href="{{project.git}}" target="_blank" class="projectLink" title="Github">
             <img src="img/github.png" alt="Github Link" width="30" class="socialIcons pull-left">
           </a>
         </div>
@@ -138,23 +137,23 @@
 
 <!-- Contact Section -->
 <section id="contactSection" class="container-fluid contentWidth">
-  <h2 class="text-center bottom30 wow zoomIn">CONTACT ME</h2>
+  <h2 class="text-center bottom30">CONTACT ME</h2>
 
   <div class="row">
-    <div class="col-sm-6 top40 bigFontSize wow slideInRight">
+    <div class="col-sm-6 top40 bigFontSize">
       <p class="biggerFontSize">Thank you for visiting my website.</p>
       <p class="top20">If you have an offer or inquiries,
         you can contact me by sending an email or by filling out this form and I will get back to you as soon as I can.</p>
       <p class="top20">
         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-        :&nbsp; bernadette@englemaninvest.com</p>
-      <p ng-controller="IconsController as icon" class="top20">Find me on:&nbsp;
+        &nbsp; bernadette@englemaninvest.com</p>
+      <p ng-controller="IconsController as icon" class="top20">Find me on&nbsp;
         <media-icons></media-icons>
       </p>
     </div>
 
     <div class="col-sm-6 top40">
-      <form action="contact.php" method="post" class="wow slideInLeft" name="contactForm" id="contactForm">
+      <form action="contact.php" method="post" name="contactForm" id="contactForm">
         <input class="form-control required" id="yourname" name="yourname" type="text" placeholder="Name" title="Your name is required">
         <input class="form-control required" id="email" name="email" type="email" placeholder="Email">
         <input class="form-control required" id="subject" name="subject" type="text" placeholder="Subject" title="Subject is required">
