@@ -209,7 +209,7 @@ $(document).ready(function(){
         contactHeight = $contactSection.height(),
         footerHeight = $("footer").height();
 
-    //alert(windowHeight);
+    //alert(windowWidth);
 
     //Landing Page Size
     $landing.css("height",(windowHeight - 49));
