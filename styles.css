@@ -6,21 +6,22 @@ body {
     font: 400 15px Lato, sans-serif;
     color: #434142;
     line-height: 1.8;
+    overflow-x: hidden;
 }
 
 /** Colors **/
 #aboutSection,
 #contactSection,
 .projectsContent {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 #projectSection {
-    background-color: #d9d9d9;
+    background-color: #f2f2f2;
 }
 
 a.projectLink h3 {
-    background-color: #434142;;
+    background-color: #434142;
 }
 
 header .well,
@@ -29,14 +30,6 @@ a.projectLink h3:hover,
 form > input.btn,
 footer {
     background-color: #2e2e2e;
-}
-
-form .form-control,
-.form-control::-webkit-input-placeholder,
-.form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-control:-moz-placeholder {
-    background-color: #fff;
 }
 
 header,
@@ -80,7 +73,7 @@ header h2 {
 }
 
 /* Arrow Icon */
-header a {
+header a.arrow {
     position: relative;
     font-size: 1.5em;
     padding: 12px 10px 5px 12px;
@@ -162,49 +155,6 @@ ul.nav.navbar-nav > li > a:focus {
     padding: 60px 10%;
 }
 
-/* Entrance Animation Scroll */
-.slideanim {
-    visibility: hidden;
-}
-
-.slide {
-    -webkit-animation-name: slide;
-    animation-name: slide;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    visibility: visible;
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        transform: translateY(50%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-        transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        transform: translateY(50%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-}
-
 /** About Section **/
 div.aboutMe {
     margin-left: 10%;
@@ -233,6 +183,10 @@ div.aboutMe {
 #contactSection span a:hover img,
 .gitLink a:hover img {
     border-radius: 10px;
+    -webkit-transition: all 0.2s;
+    -webkit-transition-timing-function: linear;
+    transition: all 0.2s;
+    transition-timing-function: linear;
 }
 
 /* Skills */
@@ -304,10 +258,11 @@ a.projectLink:focus {
 
 a.projectLink h3 {
     display: inline-block;
+    font-size: 22px;
     font-weight: 800;
     border-radius: 5px;
-    padding: 5px 10px;
-    margin-bottom: 15px;
+    padding: 3px 8px;
+    margin-bottom: 10px;
 }
 
 ul.projCodes {
@@ -326,9 +281,12 @@ ul.projCodes li {
 
 /** Contact Section **/
 /* Contact Form */
-form .form-control {
+form#contactForm .form-control {
     border-radius: 0;
+    border: 1px groove #cacaca;
+    box-shadow: 0 0 8px 2px #cacaca;
 }
+
 
 form .form-control:focus {
     border-color: #666666;
@@ -392,15 +350,24 @@ footer {
     font-size: 1.4em;
 }
 
+.thanks a {
+    background-color: #FEFEFE;
+    color: #2E2E2E !important;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+.thanks a:hover {
+    background-color: #2E2E2E;
+    color: #FEFEFE !important;
+    text-decoration: none;
+}
+
 /** Media Queries **/
 @media screen and (max-width: 1200px) {
     /* Name Box */
     header .well {
         width: 45%;
-    }
-    /* Profile Photo */
-    .myPhoto {
-        width: 230px;
     }
     /* Portfolio Section Width */
     #projectSection {
@@ -539,6 +506,9 @@ footer {
         width: 60px;
         height: 64px;
     }
+    #aboutSection ul li h4 {
+        font-size: 16px;
+    }
     form {
         width: 80%;
         margin: 0 auto;
@@ -613,6 +583,10 @@ footer {
     .myPhoto {
         width: 160px;
     }
+    /* Skills */
+    #aboutSection ul li h4 {
+        font-size: 14px;
+    }
     /* Portfolio Thumbnails Layover */
     a.projectLink h3 {
         font-size: 18px;
@@ -648,6 +622,10 @@ footer {
     ul.projCodes li {
         padding: 1px 3px;
         margin-bottom: 3px;
+    }
+    /* Skills */
+    #aboutSection ul li h4 {
+        font-size: 12px;
     }
     .thanks h1 {
         font-size: 1.5em;
