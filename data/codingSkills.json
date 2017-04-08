@@ -14,15 +14,18 @@
   "name": "jQuery",
   "photo": "img/skills/jquery.png"
 }, {
-  "name": "PHP",
-  "photo": "img/skills/php.png"
+  "name": "AngularJS",
+  "photo": "img/skills/angularjs.png"
 }, {
-  "name": "SQL",
-  "photo": "img/skills/sql.png"
+  "name": "ReactJS",
+  "photo": "img/skills/react.svg"
 }, {
   "name": "NoSQL",
   "photo": "img/skills/mongodb.png"
 }, {
-  "name": "AngularJS",
-  "photo": "img/skills/angularjs.png"
+  "name": "SQL",
+  "photo": "img/skills/sql.png"
+}, {
+  "name": "PHP",
+  "photo": "img/skills/php.png"
 }]
