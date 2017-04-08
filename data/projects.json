@@ -11,7 +11,7 @@
   "git": "https://github.com/bernadette-engleman/Real-Estate",
   "photo": ["img/portfolio/dmcithumbnail.jpg", "img/portfolio/dmcithumbnail2.jpg"],
   "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS3", "HTML5"],
-  "description": "DMCI is a responsive 28-webpage Real Estate website featuring 26 properties created for a client. It utilizes AngularJS $http Service to provide data from JSON API for the home and location pages. It also uses AngularJS Custom Directives for contact modal and footer. This website shows google map for each 26 webpage properties using Geolocation API. It also features Bootstrap Scrollspy and Affix."
+  "description": "DMCI is a responsive Real Estate website featuring 26 properties created for a client. It utilizes AngularJS $http Service to provide data from JSON API for the home and location pages. It also uses AngularJS Custom Directives for contact modal and footer. This website shows google map for each 26 webpage properties using Geolocation API. It also features Bootstrap Scrollspy and Affix."
 }, {
   "name": "Panettiere",
   "link": "Websites/Panettiere%20Bakeshop/index.html",
