@@ -1,0 +1,566 @@
+@import "variables";
+@import "mixins";
+
+body {
+    position: relative;
+    font: 400 15px Lato, sans-serif;
+    color: $charcoal;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* Landing Page */
+header {
+    @include marginHeight(0, 100vh);
+    background: linear-gradient(-25deg, #7aeaaf, #029eff);
+    color: $white;
+    font-family: Georgia, serif;
+    overflow: hidden;
+
+    canvas {
+        @include marginPosition(0, absolute);
+        display: block;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    /* Name Box */
+    .well {
+        background-color: $softBlack;
+        width: $wellWidth;
+        margin: 10% auto;
+        border: 1px solid $lightGray;
+        @include respond-to(1200px) {
+          width: $wellWidth + 5;
+        }
+        @include respond-to(950px) {
+          width: $wellWidth + 15;
+          margin: 13% auto;
+        }
+        @include respond-to(767px) {
+          width: $wellWidth + 25;
+          margin: 15% auto;
+        }
+        @include respond-to(650px) {
+          width: $wellWidth + 35;
+        }
+        @include respond-to(570px) {
+          width: $wellWidth + 20;
+        }
+        @include respond-to(450px) {
+          width: $wellWidth + 37;
+        }
+
+        h1 {
+          @include respond-to(570px) {
+            font-size: $size1Em + 0.9;
+          }
+        }
+
+        h2 {
+          @include respond-to(570px) {
+            font-size: $size1Em + 0.1;
+          }
+        }
+    } // .well
+
+    h2 {
+        font-size: $sectionHeading;
+    }
+
+    /* Arrow Icon */
+    a {
+        @include color($softBlack, $white);
+
+        &:hover, &:visited, &:active {
+            color: $white;
+        }
+    } // a
+
+    a.arrow {
+        @include borderBorRadius(1px solid $lightGray, 30px);
+        position: relative;
+        font-size: $size1Em + 0.5;
+        padding: 12px 10px 5px 12px;
+        -webkit-animation: bounce 0.75s infinite;
+        animation: bounce 0.75s infinite;
+    }
+} // header
+
+/* Arrow Icon Animation */
+@-webkit-keyframes bounce {
+    @include animBounce;
+}
+@keyframes bounce {
+    @include animBounce;
+}
+
+/* Scrollspy */
+nav.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Nav Bar */
+nav.navbar.navbar-inverse {
+    font: {
+      family: Montserrat, sans-serif;
+      size: 14px;
+    }
+    letter-spacing: 4px;
+    margin: 0;
+    z-index: 9999;
+    @include borderBorRadius(none, 0);
+    @include respond-to(450px) {
+      letter-spacing: 0;
+    }
+    @include respond-to(350px) {
+      font-size: 12px;
+    }
+
+    .wrap1 {
+        @include navStyle(50%);
+    }
+
+    ul.nav.navbar-nav {
+        @include navStyle(-50%);
+        @include respond-to(767px) {
+          margin: 0;
+        }
+    }
+
+    li {
+        float: left;
+    }
+
+    a {
+        float: left;
+        color: $lightGray;
+        @include respond-to(767px) {
+          padding: {
+            top: 15px;
+            bottom: 15px;
+          }
+        }
+
+        &:hover, &:focus {
+            @include color(darken($softBlack, 10), $white);
+            outline: none;
+        }
+    } // a
+} // nav.navbar.navbar-inverse
+
+/* All Section Styles */
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+.contentWidth {
+    padding: 60px 10%;
+}
+
+/* About Section */
+#aboutSection {
+    background-color: $white;
+
+    div.aboutMe {
+        margin-left: $aboutMeMargin;
+        @include respond-to(950px) {
+          margin-left: $aboutMeMargin - 7;
+        }
+        @include respond-to(767px) {
+          margin-left: $aboutMeMargin * 0;
+        }
+
+        /* Profile Photo */
+        .myPhoto {
+            @include marginPosition(0 auto, relative);
+            @include borderRadboxShadow(50%, $boxShadow #e5e5e5);
+            @include respond-to(950px) {
+              width: $myPhotoWidth;
+            }
+            @include respond-to(767px) {
+              width: $myPhotoWidth - 10;
+            }
+            @include respond-to(650px) {
+              width: $myPhotoWidth - 20;
+            }
+            @include respond-to(570px) {
+              width: $myPhotoWidth - 30;
+            }
+            @include respond-to(450px) {
+              width: $myPhotoWidth - 40;
+            }
+            @include respond-to(400px) {
+              width: $myPhotoWidth - 50;
+            }
+            @include respond-to(350px) {
+              width: $myPhotoWidth - 60;
+            }
+        } // .myPhoto
+
+        span a:hover img {
+            @include socialBtn;
+        }
+    } // div.aboutMe
+
+    /* Coding Skills */
+    ul {
+        margin: 0 $aboutULmarginRight;
+        padding: 0;
+        @include respond-to(767px) {
+          margin: 0 ($aboutULmarginRight - 10);
+        }
+        @include respond-to(570px) {
+          margin: 0 ($aboutULmarginRight - 15);
+        }
+        @include respond-to(450px) {
+          margin: 0 ($aboutULmarginRight * 0);
+        }
+
+        img {
+          @include respond-to(570px) {
+            width: $aboutImg;
+            height: $aboutImg + 4;
+          }
+          @include respond-to(450px) {
+            width: $aboutImg - 10;
+            height: $aboutImg - 8;
+          }
+        } // img
+    } // ul
+
+    li {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 20px;
+
+        h4 {
+          font: {
+            size: $h4;
+            weight: 700;
+          }
+          @include respond-to(570px) {
+            font-size: $h4 - 4;
+          }
+          @include respond-to(400px) {
+            font-size: $h4 - 6;
+          }
+          @include respond-to(350px) {
+            font-size: $h4 - 8;
+          }
+        }//h4
+    } // li
+} // #aboutSection
+
+/* Social Media Icons */
+.socialIcons {
+    margin-right: 8px;
+}
+
+header a:focus,
+.aboutMe span a:focus,
+#contactSection span a:focus,
+.projectsContent a:focus {
+    outline: none;
+}
+
+/* Portfolio Section */
+#projectSection {
+    background-color: darken($white, 5);
+    @include respond-to(1200px) {
+      padding-left: $projectSecPadding; //7%;
+      padding-right: $projectSecPadding; //7%;
+    }
+    @include respond-to(950px) {
+      padding-left: $projectSecPadding - 2;//5%;
+      padding-right: $projectSecPadding - 2;//5%;
+    }
+    @include respond-to(767px) {
+      padding-left: $projectSecPadding;
+      padding-right: $projectSecPadding;
+    }
+
+    .projectsContent {
+        width: 100%;
+        padding: $projectsContentPadding;
+        @include color($white, darken($softBlack, 10));
+        @include respond-to(950px) {
+            padding: $projectsContentPadding - 2;
+        }
+        @include respond-to(767px) {
+            padding: $projectsContentPadding;
+        }
+
+        /* First Portfolio */
+        .col-sm-6.col-xs-12:first-of-type {
+          @include respond-to(650px) {
+            margin-top: 15px;
+          }
+        }
+    } //.projectsContent
+
+    .row {
+        margin-bottom: 25px;
+    }
+
+    .gitLink {
+      @include respond-to(767px) {
+        margin-left: 10%;
+      }
+    }
+
+    .gitLink a:hover img {
+        @include socialBtn;
+    }
+
+    h3 {
+        font: {
+          size: $h3FontSize;
+          weight: 800;
+        }
+        border-radius: 5px;
+        margin-bottom: $h3Margin;
+        @include color($charcoal, $white);
+        @include displayPadding(inline-block, 3px 8px);
+        @include respond-to(450px) {
+          font-size: $h3FontSize - 2;
+        }
+        @include respond-to(400px) {
+          font-size: $h3FontSize - 4;
+          margin: {
+            top: 10px;
+            bottom: $h3Margin - 2;
+          }
+        }
+        @include respond-to(350px) {
+          margin: {
+            top: 5px;
+            bottom: $h3Margin - 5;
+          }
+        }
+
+        &:hover {
+            background-color: $softBlack;
+        }
+    } //h3
+
+    /* Portfolio Thumbnails */
+    figure {
+        @include marginPosition(5px, relative);
+        display: inline-block;
+
+        &:hover .img2 {
+            opacity: 1;
+        }
+
+        img {
+            @include borderRadboxShadow(5px, $boxShadow #dedede);
+        }
+
+        /* Portfolio Thumbnails Layover */
+        .img2 {
+            margin: {
+              @include leftRight(auto, auto);
+            }
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity .5s ease-out;
+            @include leftRight(0, 0);
+            @include respond-to(1200px) {
+              padding-top: $img2Padding;
+            }
+            @include respond-to(950px) {
+              padding-top: $img2Padding - 10;
+            }
+            @include respond-to(767px) {
+              padding-top: $img2Padding - 8;
+            }
+            @include respond-to(450px) {
+              padding-top: $img2Padding - 12;
+            }
+        } //.img2
+    } // figure
+
+    ul.projCodes {
+        list-style: none;
+        width: 90%;
+        @include respond-to(450px) {
+          width: 95%;
+          margin-left: -10px;
+        }
+
+        li {
+            font: {
+              size: $projCodesLiFont;
+              weight: 700;
+            }
+            margin: {
+              bottom: $projCodesLiMarginB;
+              right: 3px;
+            }
+            @include displayPadding(inline-block, 1px $projCodesLiPadding);
+            @include respond-to(1200px) {
+              font-size: $projCodesLiFont - 2;
+              margin-bottom: $projCodesLiMarginB - 3;
+            }
+            @include respond-to(950px) {
+                font-size: $projCodesLiFont - 3;
+            }
+            @include respond-to(767px) {
+                font-size: $projCodesLiFont - 1;
+            }
+            @include respond-to(450px) {
+                font-size: $projCodesLiFont - 4; //12px;
+            }
+            @include respond-to(400px) {
+              padding: 1px ($projCodesLiPadding - 3);
+              margin-bottom: $projCodesLiMarginB - 5px;
+            }
+            @include respond-to(350px) {
+              padding: 1px ($projCodesLiPadding - 5);
+            }
+        } // li
+    } // ul.projCodes
+} // #projectSection
+
+/* Contact Section */
+#contactSection {
+    background-color: $white;
+    @include respond-to(767px) {
+      text-align: center;
+    }
+
+    span a:hover img {
+        @include socialBtn;
+    }
+
+} // #contactSection
+
+/* Contact Form */
+form#contactForm {
+    @include respond-to(767px) {
+      width: $formWidth;;
+      margin: 0 auto;
+    }
+    @include respond-to(570px) {
+      width: $formWidth + 10;
+    }
+    @include respond-to(450px) {
+      width: $formWidth + 30;
+    }
+
+    input.error,
+    textarea.error  {
+        border: 1px solid red;
+    }
+} //form#contactForm
+
+form#contactForm .form-control {
+    $formColor: lighten($lightGray, 2);
+    @include borderBorRadius(1px groove $formColor, 0);
+    box-shadow: $boxShadow $formColor;
+
+    &:focus {
+        border-color: darken($lightGray, 10);
+        box-shadow: $boxShadow darken($lightGray, 10);
+    }
+
+} // form#contactForm .form-control
+
+form#contactForm > input.btn {
+    @include color($softBlack, $white);
+    border-radius: 0;
+    margin-top: 15px;
+
+    &:hover {
+        @include color($white, $softBlack);
+        border: 2px solid $charcoal;
+    }
+} // form#contactForm > input.btn
+
+/* Footer Section */
+footer {
+    padding-top: 10px;
+    @include color($softBlack, $white);
+    @include marginHeight(0, 50px);
+    @include respond-to(450px) {
+      height: 70px;
+    }
+
+    .footer2ndLine {
+      @include respond-to(450px) {
+        display: block;
+      }
+    } // .footer2ndLine
+} // footer
+
+/* Thank you Page */
+.thanks h1 {
+    font-size: $size1Em * 2;
+    @include respond-to(570px) {
+      font-size: $size1Em + 0.8;
+    }
+    @include respond-to(350px) {
+      font-size: $size1Em + 0.5;
+    }
+} // .thanks h1
+
+.thanks p {
+    font-size: $size1Em + 0.4;
+    @include respond-to(570px) {
+      font-size: $size1Em + 0.2;
+    }
+    @include respond-to(350px) {
+      font-size: $size1Em;
+    }
+
+    a {
+        @include color(darken($white, 3), $softBlack !important);
+        padding: 5px 8px;
+        border-radius: 8px;
+
+        &:hover {
+            @include color($softBlack, darken($white, 3) !important);
+            text-decoration: none;
+        }
+    } // a
+} //.thanks p
+
+/* Font Styles */
+.biggerFontSize {
+    font-size: $sectionHeading;
+    @include respond-to(570px) {
+      font-size: $size1Em + 0.2;
+    }
+    @include respond-to(450px) {
+      font-size: $size1Em + 0.1;
+    }
+    @include respond-to(400px) {
+      font-size: $size1Em;
+    }
+} //.biggerFontSize
+
+.bigFontSize {
+    font-size: $size1Em + 0.2;
+    @include respond-to(450px) {
+      font-size: $size1Em;
+    }
+    @include respond-to(400px) {
+      font-size: $size1Em - 0.1;
+    }
+}
+
+/* Margin & Padding */
+@each $num in $topHeight {
+  .top#{$num} {
+    margin-top: #{$num}px;
+  }
+}
+
+.bottom30 {
+    margin-bottom: 30px;
+}
