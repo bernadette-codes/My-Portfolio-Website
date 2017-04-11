@@ -1,85 +1,34 @@
 [{
-  "name": "Portfolio",
-  "link": "#",
-  "git": "https://github.com/bernadette-engleman/My-Portfolio-Website",
-  "photo": ["img/portfolio/portfoliothumbnail.jpg", "img/portfolio/portfoliothumbnail2.jpg"],
-  "codes": ["PHP", "AngularJS", "JavaScript", "jQuery", "Bootstrap", "Sass", "CSS3", "HTML5"],
-  "description": "This website is a single-page, responsive web application built with HTML5, CSS3, Sass Bootstrap, JavaScript and AngularJS. It utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API. The contact form is built with jQuery validation plugin and PHP. This portfolio also features Bootstrap Scrollspy and Affix."
+  "name": "HTML5",
+  "photo": "img/skills/html.png"
 }, {
-  "name": "DMCI Homes",
-  "link": "http://www.dmcicondomanila.com/",
-  "git": "https://github.com/bernadette-engleman/Real-Estate",
-  "photo": ["img/portfolio/dmcithumbnail.jpg", "img/portfolio/dmcithumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS3", "HTML5"],
-  "description": "DMCI is a responsive Real Estate website featuring 26 properties created for a client. It utilizes AngularJS $http Service to provide data from JSON API for the home and location pages. It also uses AngularJS Custom Directives for contact modal and footer. This website shows google map for each 26 webpage properties using Geolocation API. It also features Bootstrap Scrollspy and Affix."
+  "name": "CSS3",
+  "photo": "img/skills/css.png"
 }, {
-  "name": "Panettiere",
-  "link": "Websites/Panettiere%20Bakeshop/index.html",
-  "git": "https://github.com/bernadette-engleman/Panettiere-Bakeshop",
-  "photo": ["img/portfolio/panattierethumbnail.jpg", "img/portfolio/panattierethumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS", "HTML"],
-  "description": "Panettiere is a responsive 5-webpage bakeshop website built as personal project. It utilizes AngularJS $http Service to provide data from JSON API for all products. It also uses AngularJS Custom Directives to populate products for 4-webpages. This website features Bootstrap Scrollspy and Affix. "
+  "name": "SASS",
+  "photo": "img/skills/sass.png"
 }, {
-  "name": "Kukolicious Nail & Spa",
-  "link": "Websites/Kukolicious%20Nail%20Salon/index.html",
-  "git": "https://github.com/bernadette-engleman/Kukolicious",
-  "photo": ["img/portfolio/kukoliciousthumbnail.jpg", "img/portfolio/kukoliciousthumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS3", "HTML"],
-  "description": "Kukolicious is a responsive 4-webpage nail salon websites built as personal project. It utilizes AngularJS $http Service to provide data from JSON API for list of services and photos. It also uses AngularJS Custom Directives for list of services and photos."
+  "name": "Bootstrap",
+  "photo": "img/skills/bootstrap.png"
 }, {
-  "name": "Korona Hair Salon",
-  "link": "Websites/Korona%20Hair%20Salon/index.html",
-  "git": "https://github.com/bernadette-engleman/Korona",
-  "photo": ["img/portfolio/koronathumbnail.jpg", "img/portfolio/koronathumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS3", "HTML"],
-  "description": "Korona is a responsive 4-webpage hair salon websites built as personal project. It utilizes AngularJS $http Service to provide data from JSON API for list of services and photos. It also uses AngularJS Custom Directives for list of services and photos"
+  "name": "JavaScript",
+  "photo": "img/skills/javascript.png"
 }, {
-  "name": "Cats and Dogs Game",
-  "link": "Apps/Cats%20and%20Dogs/catsdogs.html",
-  "git": "https://github.com/bernadette-engleman/CatsnDogs-App",
-  "photo": ["img/portfolio/catsdogsthumbnail.jpg", "img/portfolio/catsdogsthumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "The objective of this game is to move all 10 pets to the pet store within 15 seconds. Cats & Dogs Game is a single-page, responsive web application game programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  "name": "jQuery",
+  "photo": "img/skills/jquery.png"
 }, {
-  "name": "Kill The Fly Game",
-  "link": "Apps/Fly%20Game/fly.html",
-  "git": "https://github.com/bernadette-engleman/Fly-Game-App",
-  "photo": ["img/portfolio/flythumbnail.jpg", "img/portfolio/flythumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "The objective of this game is to click the moving fly as much as you can within 30 seconds. Kill the Fly Game is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  "name": "AngularJS",
+  "photo": "img/skills/angularjs.png"
 }, {
-  "name": "Pop The Bubbles Game",
-  "link": "Apps/Pop%20Game/pop.html",
-  "git": "https://github.com/bernadette-engleman/Pop-Game-App",
-  "photo": ["img/portfolio/popthumbnail2.jpg", "img/portfolio/popthumbnail.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "The objective of this game is to pop all 64 bubbles within 30 seconds. Pop the Bubble is a single-page, responsive web application game programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  "name": "ReactJS",
+  "photo": "img/skills/react.svg"
 }, {
-  "name": "Weather App",
-  "link": "Apps/Weather%20App/weatherapp.html",
-  "git": "https://github.com/bernadette-engleman/Weather-App",
-  "photo": ["img/portfolio/weatherappthumbnail.jpg", "img/portfolio/weatherappthumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML5"],
-  "description": "Shows the temperature, weather today and 5-day forecast based on the user's location. Weather App detects and shows the user’s location using Geolocation API. It provides location’s current weather using Open Weather API. It also features 5-day forecast using simpleWeather.js API."
+  "name": "NoSQL",
+  "photo": "img/skills/mongodb.png"
 }, {
-  "name": "Find the Ghost Game",
-  "link": "Apps/Ghost%20Game/ghost.html",
-  "git": "https://github.com/bernadette-engleman/Ghost-App",
-  "photo": ["img/portfolio/ghostthumbnail2.jpg", "img/portfolio/ghostthumbnail.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "The objective of this game is to click the ghost when it appears. Find the Ghost game is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  "name": "SQL",
+  "photo": "img/skills/sql.png"
 }, {
-  "name": "Fortune Cookie App",
-  "link": "Apps/Fortune%20Cookie/fortunecookie.html",
-  "git": "https://github.com/bernadette-engleman/Fortune-Cookie-App",
-  "photo": ["img/portfolio/fortunecookiethumbnail.jpg", "img/portfolio/fortunecookiethumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "Click the fortune cookie image to show a random quote. It is a single-page, responsive application programmed with JavaScript"
-}, {
-  "name": "Birth Month Meaning App",
-  "link": "Apps/Birth%20Month%20Meaning/birthmonthmeaning.html",
-  "git": "https://github.com/bernadette-engleman/Birth-Month-Meaning-App",
-  "photo": ["img/portfolio/birthmonththumbnail.jpg", "img/portfolio/birthmonththumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "Shows the meaning of your birth month. It is a single-page, responsive application programmed with JavaScript"
+  "name": "PHP",
+  "photo": "img/skills/php.png"
 }]
