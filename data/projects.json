@@ -3,8 +3,8 @@
   "link": "#",
   "git": "https://github.com/bernadette-engleman/My-Portfolio-Website",
   "photo": ["img/portfolio/portfoliothumbnail.jpg", "img/portfolio/portfoliothumbnail2.jpg"],
-  "codes": ["PHP", "AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML5"],
-  "description": "This website is a single-page, responsive web application built with HTML5, CSS3, Bootstrap, JavaScript and AngularJS. It utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API. The contact form is built with jQuery validation plugin and PHP. This portfolio also features Bootstrap Scrollspy and Affix."
+  "codes": ["PHP", "AngularJS", "JavaScript", "jQuery", "Bootstrap", "Sass", "CSS3", "HTML5"],
+  "description": "This website is a single-page, responsive web application built with HTML5, CSS3, Sass Bootstrap, JavaScript and AngularJS. It utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API. The contact form is built with jQuery validation plugin and PHP. This portfolio also features Bootstrap Scrollspy and Affix."
 }, {
   "name": "DMCI Homes",
   "link": "http://www.dmcicondomanila.com/",
