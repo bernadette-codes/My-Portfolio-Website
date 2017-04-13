@@ -4,34 +4,34 @@
   "git": "https://github.com/bernadette-engleman/My-Portfolio-Website",
   "photo": ["img/portfolio/portfoliothumbnail.jpg", "img/portfolio/portfoliothumbnail2.jpg"],
   "codes": ["PHP", "AngularJS", "JavaScript", "jQuery", "Bootstrap", "Sass", "CSS3", "HTML5"],
-  "description": "This website is a single-page, responsive web application built with HTML5, CSS3, Sass Bootstrap, JavaScript and AngularJS. It utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API. The contact form is built with jQuery validation plugin and PHP. This portfolio also features Bootstrap Scrollspy and Affix."
+  "description": "This website is a single-page, responsive web application built with HTML5, CSS3, Sass, Bootstrap, JavaScript and AngularJS. It utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API. The contact form is built with jQuery validation plugin and PHP. This portfolio also features Bootstrap Scrollspy and Affix."
 }, {
   "name": "DMCI Homes",
   "link": "http://www.dmcicondomanila.com/",
   "git": "https://github.com/bernadette-engleman/Real-Estate",
   "photo": ["img/portfolio/dmcithumbnail.jpg", "img/portfolio/dmcithumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS3", "HTML5"],
+  "codes": ["AngularJS", "JavaScript", "jQuery", "Bootstrap", "Sass", "CSS3", "HTML5"],
   "description": "DMCI is a responsive Real Estate website featuring 26 properties created for a client. It utilizes AngularJS $http Service to provide data from JSON API for the home and location pages. It also uses AngularJS Custom Directives for contact modal and footer. This website shows google map for each 26 webpage properties using Geolocation API. It also features Bootstrap Scrollspy and Affix."
 }, {
   "name": "Panettiere",
   "link": "Websites/Panettiere%20Bakeshop/index.html",
   "git": "https://github.com/bernadette-engleman/Panettiere-Bakeshop",
   "photo": ["img/portfolio/panattierethumbnail.jpg", "img/portfolio/panattierethumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS", "HTML"],
+  "codes": ["AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
   "description": "Panettiere is a responsive 5-webpage bakeshop website built as personal project. It utilizes AngularJS $http Service to provide data from JSON API for all products. It also uses AngularJS Custom Directives to populate products for 4-webpages. This website features Bootstrap Scrollspy and Affix. "
 }, {
   "name": "Kukolicious Nail & Spa",
   "link": "Websites/Kukolicious%20Nail%20Salon/index.html",
   "git": "https://github.com/bernadette-engleman/Kukolicious",
   "photo": ["img/portfolio/kukoliciousthumbnail.jpg", "img/portfolio/kukoliciousthumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS3", "HTML"],
+  "codes": ["AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
   "description": "Kukolicious is a responsive 4-webpage nail salon websites built as personal project. It utilizes AngularJS $http Service to provide data from JSON API for list of services and photos. It also uses AngularJS Custom Directives for list of services and photos."
 }, {
   "name": "Korona Hair Salon",
   "link": "Websites/Korona%20Hair%20Salon/index.html",
   "git": "https://github.com/bernadette-engleman/Korona",
   "photo": ["img/portfolio/koronathumbnail.jpg", "img/portfolio/koronathumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "Bootstrap", "CSS3", "HTML"],
+  "codes": ["AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
   "description": "Korona is a responsive 4-webpage hair salon websites built as personal project. It utilizes AngularJS $http Service to provide data from JSON API for list of services and photos. It also uses AngularJS Custom Directives for list of services and photos"
 }, {
   "name": "Cats and Dogs Game",
