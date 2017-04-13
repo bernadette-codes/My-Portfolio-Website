@@ -17,8 +17,8 @@ My [Portfolio website](http://www.bernadetteengleman.com/) showcases the project
 **Front-End:**
 
  - AngularJS
- - JavaScriptj
- - Query
+ - JavaScript
+ - jQuery
  - Bootstrap
  - Sass
  - CSS3
