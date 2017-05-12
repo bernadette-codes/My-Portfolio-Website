@@ -1,0 +1,22 @@
+[{
+  "name": "Git",
+  "photo": "img/skills/git.png"
+}, {
+  "name": "Webpack",
+  "photo": "img/skills/webpack.png"
+}, {
+  "name": "npm",
+  "photo": "img/skills/npm.png"
+}, {
+  "name": "Prepos",
+  "photo": "img/skills/prepos.png"
+}, {
+  "name": "Atom",
+  "photo": "img/skills/atom.png"
+}, {
+  "name": "Webstorm",
+  "photo": "img/skills/webstorm.svg"
+}]
+
+
+
