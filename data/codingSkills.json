@@ -26,12 +26,21 @@
   "name": "ReactJS",
   "photo": "img/skills/react.svg"
 }, {
+  "name": "Node.js",
+  "photo": "img/skills/nodejs.png"
+}, {
+  "name": "Express.js",
+  "photo": "img/skills/expressjs.png"
+}, {
   "name": "NoSQL",
   "photo": "img/skills/mongodb.png"
 }, {
-  "name": "SQL",
-  "photo": "img/skills/sql.png"
+  "name": "REST API",
+  "photo": "img/skills/restAPI.png"
 }, {
   "name": "PHP",
   "photo": "img/skills/php.png"
+}, {
+  "name": "SQL",
+  "photo": "img/skills/sql.png"
 }]
