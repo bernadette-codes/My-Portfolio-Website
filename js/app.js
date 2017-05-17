@@ -18,6 +18,14 @@
 
     }]);
 
+    app.controller('ToolsController', ['$scope', '$http', function($scope, $http){
+
+        $http.get('data/tools.json').success(function(data){
+            $scope.tools = data;
+        });
+
+    }]);
+
     app.controller('ProjectController', ['$scope', '$http', function($scope, $http){
 
         $http.get('data/projects.json').success(function(data){
@@ -25,7 +33,6 @@
         });
 
     }]);
-
 
     app.directive('mediaIcons', function(){
         return {
@@ -37,6 +44,5 @@
             '</span>'
         };
     });
-
-
+    
 })();
