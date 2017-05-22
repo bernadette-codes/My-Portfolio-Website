@@ -16,7 +16,10 @@
 }, {
   "name": "Webstorm",
   "photo": "img/skills/webstorm.svg"
+}, {
+  "name": "Eclipse",
+  "photo": "img/skills/eclipse.png"
+}, {
+  "name": "NetBeans",
+  "photo": "img/skills/netbeans.png"
 }]
-
-
-
