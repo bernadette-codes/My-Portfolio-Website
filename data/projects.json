@@ -34,26 +34,33 @@
   "codes": ["AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
   "description": "Korona hair salon is a responsive website built as personal project. It utilizes AngularJS Custom Directives and $http Service to provide data from JSON API for list of services and photos."
 }, {
+  "name": "Guess the City Game",
+  "link": "Apps/Guess-The-City-Game-App/guessTheCity.html",
+  "git": "https://github.com/bernadette-engleman/Guess-The-City-Game-App",
+  "photo": ["img/portfolio/guesscitythumbnail.jpg", "img/portfolio/guesscitythumbnail2.jpg"],
+  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
+  "description": "The objective of Guess the City Game is to guess the randomly selected city in the US. The player is given 6 tries to guess a letter. Then, the player has to guess the word. It is a single-page, responsive web application game programmed with JavaScript."
+}, {
   "name": "Cats and Dogs Game",
   "link": "Apps/CatsnDogs-Game-App/catsdogs.html",
   "git": "https://github.com/bernadette-engleman/CatsnDogs-App",
   "photo": ["img/portfolio/catsdogsthumbnail.jpg", "img/portfolio/catsdogsthumbnail2.jpg"],
   "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "The objective of Cats & Dogs Game is to move all 10 pets to the pet store within 15 seconds. It is a single-page, responsive web application game programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  "description": "The objective of Cats and Dogs Game is to move all 10 pets to the pet store within 15 seconds. It is a single-page, responsive web application game programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
 }, {
-  "name": "Kill The Fly Game",
+  "name": "Kill the Fly Game",
   "link": "Apps/Fly-Game-App/fly.html",
   "git": "https://github.com/bernadette-engleman/Fly-Game-App",
   "photo": ["img/portfolio/flythumbnail.jpg", "img/portfolio/flythumbnail2.jpg"],
   "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
   "description": "The objective of Kill the Fly Game is to click the moving fly as much as you can within 30 seconds. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
 }, {
-  "name": "Pop The Bubbles Game",
+  "name": "Pop the Bubbles Game",
   "link": "Apps/Pop-Game-App/pop.html",
   "git": "https://github.com/bernadette-engleman/Pop-Game-App",
   "photo": ["img/portfolio/popthumbnail2.jpg", "img/portfolio/popthumbnail.jpg"],
   "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "The objective of Pop the Bubble game is to pop all 64 bubbles within 30 seconds. Some bubbles will make popped bubbles appear again but there is only one bubble that can pop everything. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  "description": "The objective of Pop the Bubbles game is to pop all 64 bubbles within 30 seconds. Some bubbles will make popped bubbles appear again but there is only one bubble that can pop everything. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
 }, {
   "name": "Weather App",
   "link": "Apps/Weather-App/weatherapp.html",
