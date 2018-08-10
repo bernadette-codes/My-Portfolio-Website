@@ -21,13 +21,13 @@
   "photo": "img/skills/jquery.png"
 }, {
   "name": "AngularJS",
-  "photo": "img/skills/chai.png"
+  "photo": "img/skills/angularjs.png"
 }, {
   "name": "ReactJS",
   "photo": "img/skills/react.svg"
 },{
   "name": "ChaiJS",
-  "photo": "img/skills/webdriver.png"
+  "photo": "img/skills/chai.png"
 }, {
   "name": "PHP",
   "photo": "img/skills/php.png"
