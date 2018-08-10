@@ -8,6 +8,30 @@
   "name": "npm",
   "photo": "img/skills/npm.png"
 }, {
+  "name": "JSlint",
+  "photo": "img/skills/jslint.png"
+}, {
+  "name": "JSDoc",
+  "photo": "img/skills/jsdoc.png"
+}, {
+  "name": "Grunt",
+  "photo": "img/skills/grunt.png"
+}, {
+  "name": "Jenkins",
+  "photo": "img/skills/jenkins.png"
+}, {
+  "name": "uDeploy",
+  "photo": "img/skills/uDeploy.png"
+}, {
+  "name": "SourceTree",
+  "photo": "img/skills/sourceTree.png"
+}, {
+  "name": "Charles",
+  "photo": "img/skills/charles_icon.png"
+}, {
+  "name": "scorch",
+  "photo": "img/skills/scorch.png"
+}, {
   "name": "Prepos",
   "photo": "img/skills/prepos.png"
 }, {
@@ -23,3 +47,4 @@
   "name": "NetBeans",
   "photo": "img/skills/netbeans.png"
 }]
+
