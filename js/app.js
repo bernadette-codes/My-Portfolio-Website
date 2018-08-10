@@ -4,8 +4,8 @@
 
     app.controller('IconsController', function($scope){
         $scope.mediaIcons = [
-            {href: 'http://bit.ly/1ZQEuiB', photo: 'img/github.png', alt: 'Github'},
-            {href: 'http://bit.ly/1RXNWwm', photo: 'img/linkedinblack.png', alt: 'LinkedIn'},
+            {href: 'https://github.com/bernadette-estacio', photo: 'img/github.png', alt: 'Github'},
+            {href: 'https://www.linkedin.com/in/bernadetteestacio/', photo: 'img/linkedinblack.png', alt: 'LinkedIn'},
             {href: 'https://bernadetteengleman.wordpress.com/', photo: 'img/wordpress.jpg', alt: 'wordpress'}
         ];
     });
@@ -34,6 +34,7 @@
 
     }]);
 
+
     app.directive('mediaIcons', function(){
         return {
             template:
@@ -44,5 +45,6 @@
             '</span>'
         };
     });
-    
+
+
 })();
