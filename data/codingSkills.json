@@ -21,14 +21,23 @@
   "photo": "img/skills/jquery.png"
 }, {
   "name": "AngularJS",
-  "photo": "img/skills/angularjs.png"
+  "photo": "img/skills/chai.png"
 }, {
   "name": "ReactJS",
   "photo": "img/skills/react.svg"
 },{
+  "name": "ChaiJS",
+  "photo": "img/skills/webdriver.png"
+}, {
   "name": "PHP",
   "photo": "img/skills/php.png"
 }, {
   "name": "XML",
   "photo": "img/skills/xml-tutorial.png"
+}, {
+  "name": "Galen",
+  "photo": "img/skills/galen.png"
+}, {
+  "name": "Webdriver",
+  "photo": "img/skills/webdriver.png"
 }]
