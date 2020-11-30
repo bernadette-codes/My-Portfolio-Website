@@ -1,50 +1,62 @@
-[{
-  "name": "Git",
-  "photo": "img/skills/git.png"
-}, {
-  "name": "Webpack",
-  "photo": "img/skills/webpack.png"
-}, {
-  "name": "npm",
-  "photo": "img/skills/npm.png"
-}, {
-  "name": "JSlint",
-  "photo": "img/skills/jslint.png"
-}, {
-  "name": "JSDoc",
-  "photo": "img/skills/jsdoc.png"
-}, {
-  "name": "Grunt",
-  "photo": "img/skills/grunt.png"
-}, {
-  "name": "Jenkins",
-  "photo": "img/skills/jenkins.png"
-}, {
-  "name": "uDeploy",
-  "photo": "img/skills/uDeploy.png"
-}, {
-  "name": "SourceTree",
-  "photo": "img/skills/sourceTree.png"
-}, {
-  "name": "Charles",
-  "photo": "img/skills/charles_icon.png"
-}, {
-  "name": "scorch",
-  "photo": "img/skills/scorch.png"
-}, {
-  "name": "Prepos",
-  "photo": "img/skills/prepos.png"
-}, {
-  "name": "Atom",
-  "photo": "img/skills/atom.png"
-}, {
-  "name": "Webstorm",
-  "photo": "img/skills/webstorm.svg"
-}, {
-  "name": "Eclipse",
-  "photo": "img/skills/eclipse.png"
-}, {
-  "name": "NetBeans",
-  "photo": "img/skills/netbeans.png"
-}]
-
+[
+  {
+    "name": "Git",
+    "photo": "img/skills/git.png"
+  },
+  {
+    "name": "Webpack",
+    "photo": "img/skills/webpack.png"
+  },
+  {
+    "name": "npm",
+    "photo": "img/skills/npm.png"
+  },
+  {
+    "name": "JSlint",
+    "photo": "img/skills/jslint.png"
+  },
+  {
+    "name": "JSDoc",
+    "photo": "img/skills/jsdoc.png"
+  },
+  {
+    "name": "Grunt",
+    "photo": "img/skills/grunt.png"
+  },
+  {
+    "name": "Jenkins",
+    "photo": "img/skills/jenkins.png"
+  },
+  {
+    "name": "uDeploy",
+    "photo": "img/skills/uDeploy.png"
+  },
+  {
+    "name": "SourceTree",
+    "photo": "img/skills/SourceTree.png"
+  },
+  {
+    "name": "Charles",
+    "photo": "img/skills/charles.png"
+  },
+  {
+    "name": "Torch",
+    "photo": "img/skills/Torch.png"
+  },
+  {
+    "name": "Atom",
+    "photo": "img/skills/Atom.png"
+  },
+  {
+    "name": "Webstorm",
+    "photo": "img/skills/Webstorm.png"
+  },
+  {
+    "name": "Eclipse",
+    "photo": "img/skills/Eclipse.png"
+  },
+  {
+    "name": "NetBeans",
+    "photo": "img/skills/NetBeans.png"
+  }
+]

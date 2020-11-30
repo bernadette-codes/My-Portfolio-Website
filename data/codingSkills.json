@@ -1,43 +1,62 @@
-[{
-  "name": "HTML5",
-  "photo": "img/skills/html.png"
-}, {
-  "name": "CSS3",
-  "photo": "img/skills/css.png"
-}, {
-  "name": "SASS",
-  "photo": "img/skills/sass.png"
-}, {
-  "name": "Bootstrap",
-  "photo": "img/skills/bootstrap.png"
-}, {
-  "name": "JavaScript",
-  "photo": "img/skills/javascript.png"
-}, {
-  "name": "ES6",
-  "photo": "img/skills/es6.png"
-}, {
-  "name": "jQuery",
-  "photo": "img/skills/jquery.png"
-}, {
-  "name": "AngularJS",
-  "photo": "img/skills/angularjs.png"
-}, {
-  "name": "ReactJS",
-  "photo": "img/skills/react.svg"
-},{
-  "name": "ChaiJS",
-  "photo": "img/skills/chai.png"
-}, {
-  "name": "PHP",
-  "photo": "img/skills/php.png"
-}, {
-  "name": "XSLT",
-  "photo": "img/skills/xsl.png"
-}, {
-  "name": "Galen",
-  "photo": "img/skills/galen.png"
-}, {
-  "name": "Webdriver",
-  "photo": "img/skills/webdriver.png"
-}]
+[
+  {
+    "name": "HTML5",
+    "photo": "img/skills/html5.png"
+  },
+  {
+    "name": "CSS3",
+    "photo": "img/skills/css3.png"
+  },
+  {
+    "name": "SASS",
+    "photo": "img/skills/sass.png"
+  },
+  {
+    "name": "Bootstrap",
+    "photo": "img/skills/bootstrap.png"
+  },
+  {
+    "name": "JavaScript",
+    "photo": "img/skills/javascript.png"
+  },
+  {
+    "name": "ES6",
+    "photo": "img/skills/es6.png"
+  },
+  {
+    "name": "jQuery",
+    "photo": "img/skills/jquery.png"
+  },
+  {
+    "name": "AngularJS",
+    "photo": "img/skills/angularjs.png"
+  },
+  {
+    "name": "ReactJS",
+    "photo": "img/skills/react.ico"
+  },
+  {
+    "name": "ChaiJS",
+    "photo": "img/skills/chai.png"
+  },
+  {
+    "name": "PHP",
+    "photo": "img/skills/php.png"
+  },
+  {
+    "name": "XML",
+    "photo": "img/skills/xml.jpg"
+  },
+  {
+    "name": "XSLT",
+    "photo": "img/skills/xslt.jpg"
+  },
+  {
+    "name": "Galen",
+    "photo": "img/skills/galen.png"
+  },
+  {
+    "name": "Webdriver",
+    "photo": "img/skills/webdriver.png"
+  }
+]

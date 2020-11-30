@@ -1,92 +1,233 @@
-[{
-  "name": "Portfolio",
-  "link": "#",
-  "git": "https://github.com/bernadette-estacio/My-Portfolio-Website",
-  "photo": ["img/portfolio/portfoliothumbnail.jpg", "img/portfolio/portfoliothumbnail2.jpg"],
-  "codes": ["PHP", "AngularJS", "JavaScript", "jQuery", "Bootstrap", "Sass", "CSS3", "HTML5"],
-  "description": "This website is a single-page, responsive web application with Bootstrap Scrollspy and Affix features. It utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API. The contact form is built with jQuery validation plugin and PHP."
-}, {
-  "name": "DMCI Homes",
-  "link": "http://www.dmcicondomanila.com/",
-  "git": "https://github.com/bernadette-estacio/dmcicondomanila",
-  "photo": ["img/portfolio/dmcireactthumbnail.jpg", "img/portfolio/dmcireactthumbnail2.jpg"],
-  "codes": ["Webpack", "ReactJS", "JavaScript", "jQuery", "Bootstrap", "Sass", "CSS3", "HTML5"],
-  "description": "DMCI Homes is a responsive Real Estate website featuring 27 properties created for a client. It utilizes React Router for main menu to view 3 web pages and React Hash Router for footer menu. It is made up of 12 React components and is built using Webpack. This website shows google map for each 27 properties using Geolocation API. "
-}, {
-  "name": "Panettiere Bakeshop",
-  "link": "Websites/Panettiere-Bakeshop/index.html",
-  "git": "https://github.com/bernadette-estacio/Panettiere-Bakeshop",
-  "photo": ["img/portfolio/panattierethumbnail.jpg", "img/portfolio/panattierethumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "Panettiere Bakeshop is a responsive website built as personal project. It utilizes AngularJS $http Service to provide data from JSON API for all products. It also uses Custom Directives to populate products for 4 webpages. This website features Bootstrap Scrollspy and Affix. "
-}, {
-  "name": "Kukolicious Nail & Spa",
-  "link": "Websites/kukolicious-react/",
-  "git": "https://github.com/bernadette-estacio/kukolicious-react",
-  "photo": ["img/portfolio/kukoliciousreactthumbnail.jpg", "img/portfolio/kukoliciousreactthumbnail2.jpg"],
-  "codes": ["Webpack", "ReactJS", "JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "Kukolicious nail salon is a responsive single-page website built as personal project. It utilizes React Route to view 4 web pages. It is made up of 8 React components and is built using Webpack."
-}, {
-  "name": "Korona Hair Salon",
-  "link": "Websites/Korona/index.html",
-  "git": "https://github.com/bernadette-estacio/Korona",
-  "photo": ["img/portfolio/koronathumbnail.jpg", "img/portfolio/koronathumbnail2.jpg"],
-  "codes": ["AngularJS", "JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "Korona hair salon is a responsive website built as personal project. It utilizes AngularJS Custom Directives and $http Service to provide data from JSON API for list of services and photos."
-}, {
-  "name": "Guess the City Game",
-  "link": "Apps/Guess-The-City-Game-App/guessTheCity.html",
-  "git": "https://github.com/bernadette-estacio/Guess-The-City-Game-App",
-  "photo": ["img/portfolio/guesscitythumbnail.jpg", "img/portfolio/guesscitythumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "The objective of Guess the City Game is to guess the randomly selected city in the US. The player is given 6 tries to guess a letter. Then, the player has to guess the word. It is a single-page, responsive web application game programmed with JavaScript."
-}, {
-  "name": "Cats and Dogs Game",
-  "link": "Apps/CatsnDogs-Game-App/catsdogs.html",
-  "git": "https://github.com/bernadette-estacio/CatsnDogs-App",
-  "photo": ["img/portfolio/catsdogsthumbnail.jpg", "img/portfolio/catsdogsthumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "The objective of Cats and Dogs Game is to move all 10 pets to the pet store within 15 seconds. It is a single-page, responsive web application game programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
-}, {
-  "name": "Kill the Fly Game",
-  "link": "Apps/Fly-Game-App/fly.html",
-  "git": "https://github.com/bernadette-estacio/Fly-Game-App",
-  "photo": ["img/portfolio/flythumbnail.jpg", "img/portfolio/flythumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS3", "HTML"],
-  "description": "The objective of Kill the Fly Game is to click the moving fly as much as you can within 30 seconds. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
-}, {
-  "name": "Pop the Bubbles Game",
-  "link": "Apps/Pop-Game-App/pop.html",
-  "git": "https://github.com/bernadette-estacio/Pop-Game-App",
-  "photo": ["img/portfolio/popthumbnail2.jpg", "img/portfolio/popthumbnail.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "The objective of Pop the Bubbles game is to pop all 64 bubbles within 30 seconds. Some bubbles will make popped bubbles appear again but there is only one bubble that can pop everything. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
-}, {
-  "name": "Weather App",
-  "link": "Apps/Weather-App/weatherapp.html",
-  "git": "https://github.com/bernadette-estacio/Weather-App",
-  "photo": ["img/portfolio/weatherappthumbnail.jpg", "img/portfolio/weatherappthumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML5"],
-  "description": "Weather App shows the temperature, weather today and 5-day forecast based on the user's location. This app detects and shows the user’s location using Geolocation API. It provides location’s current weather using Open Weather API and 5-day forecast using simpleWeather.js API. Background color also changes based on today's temperature."
-}, {
-  "name": "Find the Ghost Game",
-  "link": "Apps/Ghost-Game-App/ghost.html",
-  "git": "https://github.com/bernadette-estacio/Ghost-App",
-  "photo": ["img/portfolio/ghostthumbnail2.jpg", "img/portfolio/ghostthumbnail.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "The objective of Find the Ghost game is to click the ghost when it appears. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
-}, {
-  "name": "Fortune Cookie App",
-  "link": "Apps/Fortune-Cookie-App/fortunecookie.html",
-  "git": "https://github.com/bernadette-estacio/Fortune-Cookie-App",
-  "photo": ["img/portfolio/fortunecookiethumbnail.jpg", "img/portfolio/fortunecookiethumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "Click the fortune cookie image to show a random quote. It is a single-page, responsive application programmed with JavaScript."
-}, {
-  "name": "Birth Month Meaning App",
-  "link": "Apps/Birth-Month-Meaning-App/birthmonthmeaning.html",
-  "git": "https://github.com/bernadette-estacio/Birth-Month-Meaning-App",
-  "photo": ["img/portfolio/birthmonththumbnail.jpg", "img/portfolio/birthmonththumbnail2.jpg"],
-  "codes": ["JavaScript", "jQuery", "Bootstrap", "CSS", "HTML"],
-  "description": "Birth Month Meaning App shows the meaning of your birth month. It is a single-page, responsive application programmed with JavaScript."
-}]
+[
+  {
+    "name": "Portfolio",
+    "link": "#",
+    "git": "https://github.com/bernadette-estacio/My-Portfolio-Website",
+    "photo": [
+      "img/portfolio/portfoliothumbnail.jpg",
+      "img/portfolio/portfoliothumbnail2.jpg"
+    ],
+    "codes": [
+      "PHP",
+      "AngularJS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "Sass",
+      "CSS3",
+      "HTML5"
+    ],
+    "description": "This website is a single-page, responsive web application with Bootstrap Scrollspy and Affix features. It utilizes AngularJS $http Service to provide coding skills and projects sections as data from JSON API. The contact form is built with jQuery validation plugin and PHP."
+  },
+  {
+    "name": "DMCI Homes",
+    "link": "http://www.dmcicondomanila.com/",
+    "git": "https://github.com/bernadette-estacio/dmcicondomanila",
+    "photo": [
+      "img/portfolio/dmcireactthumbnail.jpg",
+      "img/portfolio/dmcireactthumbnail2.jpg"
+    ],
+    "codes": [
+      "Webpack",
+      "ReactJS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "Sass",
+      "CSS3",
+      "HTML5"
+    ],
+    "description": "DMCI Homes is a responsive Real Estate website featuring 27 properties. It utilizes React Router for main menu to view 3 web pages and React Hash Router for footer menu. It is made up of 12 React components and is built using Webpack. This website shows google map for each 27 properties using Geolocation API. "
+  },
+  {
+    "name": "Panettiere Bakeshop",
+    "link": "Websites/Panettiere-Bakeshop/index.html",
+    "git": "https://github.com/bernadette-estacio/Panettiere-Bakeshop",
+    "photo": [
+      "img/portfolio/panattierethumbnail.jpg",
+      "img/portfolio/panattierethumbnail2.jpg"
+    ],
+    "codes": [
+      "AngularJS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS",
+      "HTML"
+    ],
+    "description": "Panettiere Bakeshop is a responsive that utilizes AngularJS $http Service to provide data from JSON API for all products. It also uses Custom Directives to populate products for 4 webpages. This website features Bootstrap Scrollspy and Affix. "
+  },
+  {
+    "name": "Kukolicious Nail & Spa",
+    "link": "Websites/kukolicious-react/",
+    "git": "https://github.com/bernadette-estacio/kukolicious-react",
+    "photo": [
+      "img/portfolio/kukoliciousreactthumbnail.jpg",
+      "img/portfolio/kukoliciousreactthumbnail2.jpg"
+    ],
+    "codes": [
+      "Webpack",
+      "ReactJS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS3",
+      "HTML"
+    ],
+    "description": "Kukolicious nail salon is a responsive single-page website that  utilizes React Route to view 4 web pages. It is made up of 8 React components and is built using Webpack."
+  },
+  {
+    "name": "Korona Hair Salon",
+    "link": "Websites/Korona/index.html",
+    "git": "https://github.com/bernadette-estacio/Korona",
+    "photo": [
+      "img/portfolio/koronathumbnail.jpg",
+      "img/portfolio/koronathumbnail2.jpg"
+    ],
+    "codes": [
+      "AngularJS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS3",
+      "HTML"
+    ],
+    "description": "Korona hair salon is a responsive website that utilizes AngularJS Custom Directives and $http Service to provide data from JSON API for list of services and photos."
+  },
+  {
+    "name": "Guess the City Game",
+    "link": "Apps/Guess-The-City-Game-App/guessTheCity.html",
+    "git": "https://github.com/bernadette-estacio/Guess-The-City-Game-App",
+    "photo": [
+      "img/portfolio/guesscitythumbnail.jpg",
+      "img/portfolio/guesscitythumbnail2.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS3",
+      "HTML"
+    ],
+    "description": "The objective of Guess the City Game is to guess the randomly selected city in the US. The player is given 6 tries to guess a letter. Then, the player has to guess the word. It is a single-page, responsive web application game programmed with JavaScript."
+  },
+  {
+    "name": "Cats and Dogs Game",
+    "link": "Apps/CatsnDogs-Game-App/catsdogs.html",
+    "git": "https://github.com/bernadette-estacio/CatsnDogs-App",
+    "photo": [
+      "img/portfolio/catsdogsthumbnail.jpg",
+      "img/portfolio/catsdogsthumbnail2.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS3",
+      "HTML"
+    ],
+    "description": "The objective of Cats and Dogs Game is to move all 10 pets to the pet store within 15 seconds. It is a single-page, responsive web application game programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  },
+  {
+    "name": "Kill the Fly Game",
+    "link": "Apps/Fly-Game-App/fly.html",
+    "git": "https://github.com/bernadette-estacio/Fly-Game-App",
+    "photo": [
+      "img/portfolio/flythumbnail.jpg",
+      "img/portfolio/flythumbnail2.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS3",
+      "HTML"
+    ],
+    "description": "The objective of Kill the Fly Game is to click the moving fly as much as you can within 30 seconds. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  },
+  {
+    "name": "Pop the Bubbles Game",
+    "link": "Apps/Pop-Game-App/pop.html",
+    "git": "https://github.com/bernadette-estacio/Pop-Game-App",
+    "photo": [
+      "img/portfolio/popthumbnail2.jpg",
+      "img/portfolio/popthumbnail.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS",
+      "HTML"
+    ],
+    "description": "The objective of Pop the Bubbles game is to pop all 64 bubbles within 30 seconds. Some bubbles will make popped bubbles appear again but there is only one bubble that can pop everything. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  },
+  {
+    "name": "Weather App",
+    "link": "Apps/Weather-App/weatherapp.html",
+    "git": "https://github.com/bernadette-estacio/Weather-App",
+    "photo": [
+      "img/portfolio/weatherappthumbnail.jpg",
+      "img/portfolio/weatherappthumbnail2.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS",
+      "HTML5"
+    ],
+    "description": "Weather App shows the temperature, weather today and 5-day forecast based on the user's location. This app detects and shows the user’s location using Geolocation API. It provides location’s current weather using Open Weather API and 5-day forecast using simpleWeather.js API. Background color also changes based on today's temperature."
+  },
+  {
+    "name": "Find the Ghost Game",
+    "link": "Apps/Ghost-Game-App/ghost.html",
+    "git": "https://github.com/bernadette-estacio/Ghost-App",
+    "photo": [
+      "img/portfolio/ghostthumbnail2.jpg",
+      "img/portfolio/ghostthumbnail.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS",
+      "HTML"
+    ],
+    "description": "The objective of Find the Ghost game is to click the ghost when it appears. It is a single-page, responsive web application programmed with JavaScript. It utilizes CSS3 Animation and jQuery UI."
+  },
+  {
+    "name": "Fortune Cookie App",
+    "link": "Apps/Fortune-Cookie-App/fortunecookie.html",
+    "git": "https://github.com/bernadette-estacio/Fortune-Cookie-App",
+    "photo": [
+      "img/portfolio/fortunecookiethumbnail.jpg",
+      "img/portfolio/fortunecookiethumbnail2.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS",
+      "HTML"
+    ],
+    "description": "Click the fortune cookie image to show a random quote. It is a single-page, responsive application programmed with JavaScript."
+  },
+  {
+    "name": "Birth Month Meaning App",
+    "link": "Apps/Birth-Month-Meaning-App/birthmonthmeaning.html",
+    "git": "https://github.com/bernadette-estacio/Birth-Month-Meaning-App",
+    "photo": [
+      "img/portfolio/birthmonththumbnail.jpg",
+      "img/portfolio/birthmonththumbnail2.jpg"
+    ],
+    "codes": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "CSS",
+      "HTML"
+    ],
+    "description": "Birth Month Meaning App shows the meaning of your birth month. It is a single-page, responsive application programmed with JavaScript."
+  }
+]
