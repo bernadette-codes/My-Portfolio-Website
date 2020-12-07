@@ -2,11 +2,11 @@
 **Portfolio Website**
 --------------------
 
-My [Portfolio website](http://www.bernadetteengleman.com/) showcases the projects that I built.
+My [Portfolio website](https://bernadette-estacio.netlify.app/) showcases the projects that I built.
 
-![Landing Page](http://www.bernadetteengleman.com/img/portfolio/portfoliothumbnail.jpg)
+![Landing Page](https://bernadette-estacio.netlify.app/img/portfolio/portfoliothumbnail.jpg)
 
-![Contact Form](http://www.bernadetteengleman.com/img/portfolio/portfoliothumbnail2.jpg)
+![Contact Form](https://bernadette-estacio.netlify.app/img/portfolio/portfoliothumbnail2.jpg)
 
 
  - Single-page, responsive web application built with HTML5, CSS3, Sass, Bootstrap, JavaScript, jQuery, AngularJS and PHP
