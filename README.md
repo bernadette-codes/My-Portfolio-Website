@@ -2,11 +2,9 @@
 **Portfolio Website**
 --------------------
 
-My [Portfolio website](https://bernadette-estacio.netlify.app/) showcases the projects that I built.
+My [Portfolio website](https://bernadette-old-portfolio.netlify.app/) showcases the projects that I built.
 
-![Landing Page](https://bernadette-estacio.netlify.app/img/portfolio/portfoliothumbnail.jpg)
-
-![Contact Form](https://bernadette-estacio.netlify.app/img/portfolio/portfoliothumbnail2.jpg)
+![Landing Page](https://raw.githubusercontent.com/bernadette-codes/Bernadettecodes/master/public/assets/img/portfolio/old-portfolio.png)
 
 
  - Single-page, responsive web application built with HTML5, CSS3, Sass, Bootstrap, JavaScript, jQuery, AngularJS and PHP
